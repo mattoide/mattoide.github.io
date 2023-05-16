@@ -6,16 +6,13 @@
 <body>
 <h1>Elenco file nella cartella</h1>
 <ul>
-    <!-- Scansione della cartella -->
     <?php
         $directory = "./"; // Percorso della cartella corrente
         $files = scandir($directory);
 
         foreach($files as $file) {
             if ($file !== '.' && $file !== '..') {
-                // Generazione del link per ogni file
-                $fileLink = urlencode($file);
-                echo "<li><a href=\"$fileLink\">$file</a></li>";
+                echo "<li>$file</li>";
     }
     }
     ?>
