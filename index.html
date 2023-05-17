@@ -24,37 +24,64 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      margin: 50px;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
       background-color: #f2f2f2;
+    }
+    .container {
+      max-width: 600px;
+      padding: 50px;
+      text-align: center;
+      background-color: #ffffff;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     }
     h1 {
       color: #333333;
       font-size: 24px;
+      margin-bottom: 20px;
     }
     p {
       color: #666666;
       font-size: 16px;
+      margin-bottom: 10px;
     }
     .accent {
       color: #FF5733;
       font-weight: bold;
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+      100% {
+        transform: scale(1);
+      }
     }
   </style>
 </head>
 <body>
-  <h1>Programma Python per generare contenuti Instagram</h1>
-  <p>
-    Benvenuti nel mio progetto innovativo che utilizza Python e le API di OpenAI per generare contenuti unici da pubblicare su Instagram in modo automatico.
-  </p>
-  <p>
-    Il programma si collega alle API di OpenAI per generare parole creative e interessanti, che vengono poi fornite a un'altra API di OpenAI specializzata nella generazione di immagini. Questa combinazione di intelligenza artificiale ci permette di creare immagini uniche e affascinanti basate sulle parole generate.
-  </p>
-  <p>
-    Una volta che l'immagine è stata generata, il programma automaticamente crea una descrizione coinvolgente e pertinenti hashtag per accompagnare l'immagine prima di pubblicarla su Instagram. Questo processo completamente automatizzato ci consente di generare e condividere contenuti creativi in modo rapido ed efficace.
-  </p>
-  <p>
-    Sono entusiasta di condividere con voi questa innovativa soluzione che unisce l'intelligenza artificiale e la automazione per creare un'esperienza coinvolgente su Instagram.
-  </p>
-  <p class="accent">Seguimi su Instagram per scoprire le meravigliose creazioni generate dal mio programma!</p>
+  <div class="container">
+    <h1>Programma Python per generare contenuti Instagram</h1>
+    <p>
+      Benvenuti nel mio progetto innovativo che utilizza Python e le API di OpenAI per generare contenuti unici da pubblicare su Instagram in modo automatico.
+    </p>
+    <p>
+      Il programma si collega alle API di OpenAI per generare parole creative e interessanti, che vengono poi fornite a un'altra API di OpenAI specializzata nella generazione di immagini. Questa combinazione di intelligenza artificiale ci permette di creare immagini uniche e affascinanti basate sulle parole generate.
+    </p>
+    <p>
+      Una volta che l'immagine è stata generata, il programma automaticamente crea una descrizione coinvolgente e pertinenti hashtag per accompagnare l'immagine prima di pubblicarla su Instagram. Questo processo completamente automatizzato ci consente di generare e condividere contenuti creativi in modo rapido ed efficace.
+    </p>
+    <p>
+      Sono entusiasta di condividere con voi questa innovativa soluzione che unisce l'intelligenza artificiale e la automazione per creare un'esperienza coinvolgente su Instagram.
+    </p>
+    <p class="accent">Seguimi su Instagram per scoprire le meravigliose creazioni generate dal mio programma!</p>
+  </div>
 </body>
 </html>
