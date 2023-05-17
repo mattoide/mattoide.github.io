@@ -17,56 +17,86 @@
 	</ul>
 </body>
 </html>--->
+
 <!DOCTYPE html>
 <html>
 <head>
   <title>Programma Python per generare contenuti Instagram</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      height: 100vh;
+    }
+
+    .image {
+      background-position: center;
+      background-size: cover;
+    }
+
+    .image1 {
+      background-image: url('https://raw.githubusercontent.com/mattoide/mattoide.github.io/master/images/happy/_hero_knight_rescue_city_liberation_eroe_cavaliere_salvataggio_citt%C3%A0_liberazione.png');
+    }
+
+    .image2 {
+      background-image: url('https://raw.githubusercontent.com/mattoide/mattoide.github.io/master/images/sad/_bed_pillow_lamp_solitude_disorder_sadness_dark.png');
+    }
+    .image3 {
+      background-image:                         url('https://raw.githubusercontent.com/mattoide/mattoide.github.io/master/images/sad/_bottiglia_ampolla_liquido_frutta_macabro_scuro_bottle_vial_liquid_fruit_macabre_dark.png');
+ }
+    .image4 {
+      background-image: url('https://raw.githubusercontent.com/mattoide/mattoide.github.io/master/images/sad/_bed_pillow_lamp_solitude_disorder_sadness_dark.png');
+    }
+    .image5 {
+      background-image:                         url('https://raw.githubusercontent.com/mattoide/mattoide.github.io/master/images/happy/_rassicurante_calm_allegra_joyful_confortante_comforting_incoraggiante_encouraging_casa_home_divano_couch_tranquillit%C3%A0_tranquillity_serenit%C3%A0_serenity.png');
+ }
+    .image6 {
+      background-image:                         url('https://raw.githubusercontent.com/mattoide/mattoide.github.io/master/images/sad/_bottiglia_macabra_candele_tavolo_scuro_bottle_macabre_candles_table_dark.png');
+    }
+    .image7 {
+      background-image:                         url('https://raw.githubusercontent.com/mattoide/mattoide.github.io/master/images/happy/_rassicurante_calm_allegra_joyful_confortante_comforting_incoraggiante_encouraging_uomo_man_preghiera_prayer_vaso_vase.png');
+  }
+    .image8 {
+      background-image:                         url('https://raw.githubusercontent.com/mattoide/mattoide.github.io/master/images/sad/_scala_colonna_tetro_triste_macabro_candele_scuro_stairs_column_dreary_sad_macabre_candles_dark.png');
+}
+    .image9 {
+      background-image:                         url('https://raw.githubusercontent.com/mattoide/mattoide.github.io/master/images/happy/_rassicurante_calm_allegra_joyful_confortante_comforting_incoraggiante_encouraging_uomo_man_prete_priest_martire_saggio_martyr_wise_sage.png');
+}
+    .image10 {
+      background-image: url('https://raw.githubusercontent.com/mattoide/mattoide.github.io/master/images/sad/_scuro_tetro_ambiguo_strano_triste_enigmatico_dark_gloomy_ambiguous_strange_sad_enigmatic.png');
+ }
+
+    /* Ripeti l'aggiunta delle classi .image3, .image4, ..., .image10 per le restanti immagini */
+
+    .container {
+      grid-column: 1 / -1;
+      grid-row: 1 / -1;
       display: flex;
       justify-content: center;
       align-items: center;
-      min-height: 100vh;
-      background-image: url('https://raw.githubusercontent.com/mattoide/mattoide.github.io/master/images/happy/_hero_knight_rescue_city_liberation_eroe_cavaliere_salvataggio_citt%C3%A0_liberazione.png'), 
-                        url('https://raw.githubusercontent.com/mattoide/mattoide.github.io/master/images/sad/_bed_pillow_lamp_solitude_disorder_sadness_dark.png'),
-                        url('https://raw.githubusercontent.com/mattoide/mattoide.github.io/master/images/happy/_rassicurante_calm_allegra_joyful_confortante_comforting_incoraggiante_encouraging.png'),
-                        url('https://raw.githubusercontent.com/mattoide/mattoide.github.io/master/images/sad/_bottiglia_ampolla_liquido_frutta_macabro_scuro_bottle_vial_liquid_fruit_macabre_dark.png'),
-                        url('https://raw.githubusercontent.com/mattoide/mattoide.github.io/master/images/happy/_rassicurante_calm_allegra_joyful_confortante_comforting_incoraggiante_encouraging_casa_home_divano_couch_tranquillit%C3%A0_tranquillity_serenit%C3%A0_serenity.png'),
-                        url('https://raw.githubusercontent.com/mattoide/mattoide.github.io/master/images/sad/_bottiglia_macabra_candele_tavolo_scuro_bottle_macabre_candles_table_dark.png'),
-                        url('https://raw.githubusercontent.com/mattoide/mattoide.github.io/master/images/happy/_rassicurante_calm_allegra_joyful_confortante_comforting_incoraggiante_encouraging_uomo_man_preghiera_prayer_vaso_vase.png'),
-                        url('https://raw.githubusercontent.com/mattoide/mattoide.github.io/master/images/sad/_scala_colonna_tetro_triste_macabro_candele_scuro_stairs_column_dreary_sad_macabre_candles_dark.png'),
-                        url('https://raw.githubusercontent.com/mattoide/mattoide.github.io/master/images/happy/_rassicurante_calm_allegra_joyful_confortante_comforting_incoraggiante_encouraging_uomo_man_prete_priest_martire_saggio_martyr_wise_sage.png'),
-                        url('https://raw.githubusercontent.com/mattoide/mattoide.github.io/master/images/sad/_scuro_tetro_ambiguo_strano_triste_enigmatico_dark_gloomy_ambiguous_strange_sad_enigmatic.png');
-
-      background-repeat: repeat;
-      background-position: center;
-      background-size: cover;
-      opacity: 0.9;
-    }
-    .container {
-      max-width: 600px;
-      padding: 50px;
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 20px;
       text-align: center;
-      background-color: #ffffff;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     }
+
     h1 {
-      color: #333333;
       font-size: 24px;
       margin-bottom: 20px;
     }
+
     p {
-      color: #666666;
       font-size: 16px;
       margin-bottom: 10px;
     }
+
     .accent {
       color: #FF5733;
       font-weight: bold;
       animation: pulse 2s infinite;
     }
+
     @keyframes pulse {
       0% {
         transform: scale(1);
@@ -81,6 +111,18 @@
   </style>
 </head>
 <body>
+  <div class="image image1"></div>
+  <div class="image image2"></div>
+  <div class="image image3"></div>
+  <div class="image image4"></div>
+  <div class="image image5"></div>
+  <div class="image image6"></div>
+  <div class="image image7"></div>
+  <div class="image image8"></div>
+  <div class="image image9"></div>
+  <div class="image image10"></div>
+  <!-- Aggiungi gli elementi div per le restanti immagini utilizzando le classi .image3, .image4, ..., .image10 -->
+
   <div class="container">
     <h1>Programma Python per generare contenuti Instagram</h1>
     <p>
@@ -99,5 +141,6 @@
   </div>
 </body>
 </html>
+
 
 
