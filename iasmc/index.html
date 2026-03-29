@@ -5,201 +5,155 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IASMC — Automated Trading Signals | Free Telegram Channel</title>
     <meta name="description" content="IASMC delivers professional automated trading signals via Telegram. Smart Money Concepts strategy with verified MyFXBook results. Free channel with auto-copier bot.">
-    <meta name="keywords" content="trading signals, telegram trading signals, automated trading, forex signals, gold signals, smart money concepts, SMC trading, MT5 signals, free trading signals, signal copier, FTMO signals, segnali trading, segnali forex gratis, segnali telegram">
-    <meta name="author" content="IASMC">
+    <meta name="keywords" content="trading signals, telegram trading signals, automated trading, forex signals, gold signals, smart money concepts, SMC trading, MT5 signals, free trading signals, signal copier, FTMO signals, segnali trading, segnali forex gratis, signaux trading, senales trading, Handelssignale, sinais trading">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://mattoide.github.io/iasmc/">
     <meta property="og:title" content="IASMC — Automated Trading Signals">
     <meta property="og:description" content="Professional automated trading signals via Telegram. Verified results on MyFXBook.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://mattoide.github.io/iasmc/">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="IASMC — Automated Trading Signals">
-    <meta name="twitter:description" content="Professional automated trading signals via Telegram. Verified results on MyFXBook.">
-    <script type="application/ld+json">
-    {"@context":"https://schema.org","@type":"SoftwareApplication","name":"IASMC Signal Copier","description":"Automated trading signal copier for MetaTrader 5.","applicationCategory":"FinanceApplication","operatingSystem":"Windows","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
-    </script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"IASMC Signal Copier","description":"Automated trading signal copier for MetaTrader 5.","applicationCategory":"FinanceApplication","operatingSystem":"Windows","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}</script>
     <style>
-        *{margin:0;padding:0;box-sizing:border-box}
-        body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;background:#0a0a1a;color:#e0e0e0;line-height:1.6}
-        .container{max-width:900px;margin:0 auto;padding:0 20px}
-        .lang-switch{position:fixed;top:15px;right:15px;z-index:100;display:flex;gap:5px}
-        .lang-btn{background:#151530;color:#aaa;border:1px solid #252550;padding:6px 12px;border-radius:6px;cursor:pointer;font-size:.85em;transition:.3s}
+        *{margin:0;padding:0;box-sizing:border-box}body{font-family:'Segoe UI',system-ui,sans-serif;background:#0a0a1a;color:#e0e0e0;line-height:1.6}.container{max-width:900px;margin:0 auto;padding:0 20px}
+        .lang-switch{position:fixed;top:12px;right:12px;z-index:100;display:flex;gap:4px;flex-wrap:wrap;max-width:220px;justify-content:flex-end}
+        .lang-btn{background:#151530;color:#888;border:1px solid #252550;padding:4px 8px;border-radius:4px;cursor:pointer;font-size:.75em;transition:.2s}
         .lang-btn.active,.lang-btn:hover{background:#00ff88;color:#0a0a1a;border-color:#00ff88}
         .hero{text-align:center;padding:80px 20px 60px;background:linear-gradient(135deg,#0a0a1a,#1a1a3e,#0a0a1a)}
         .hero h1{font-size:3em;color:#00ff88;margin-bottom:10px;letter-spacing:2px}
-        .hero .subtitle{font-size:1.3em;color:#aaa;margin-bottom:30px}
-        .hero .tagline{font-size:1.1em;color:#ccc;max-width:600px;margin:0 auto 40px}
-        .cta-buttons{display:flex;gap:15px;justify-content:center;flex-wrap:wrap;margin:30px 0}
-        .btn{display:inline-block;padding:14px 32px;border-radius:8px;text-decoration:none;font-weight:600;font-size:1.1em;transition:.3s}
-        .btn-primary{background:#00ff88;color:#0a0a1a}
-        .btn-primary:hover{background:#00cc6a;transform:translateY(-2px)}
-        .btn-secondary{background:transparent;color:#00ff88;border:2px solid #00ff88}
-        .btn-secondary:hover{background:#00ff8820;transform:translateY(-2px)}
-        .btn-download{background:#2196F3;color:#fff}
-        .btn-download:hover{background:#1976D2;transform:translateY(-2px)}
-        .stats{display:flex;justify-content:center;gap:40px;padding:40px 20px;background:#111128;flex-wrap:wrap}
-        .stat{text-align:center}
-        .stat-value{font-size:2.5em;font-weight:700;color:#00ff88}
-        .stat-label{font-size:.9em;color:#888;text-transform:uppercase;letter-spacing:1px}
-        section{padding:60px 20px}
-        section h2{font-size:2em;color:#fff;text-align:center;margin-bottom:40px}
-        section h2 span{color:#00ff88}
-        .features{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px;max-width:900px;margin:0 auto}
-        .feature{background:#151530;padding:25px;border-radius:12px;border:1px solid #252550}
-        .feature h3{color:#00ff88;margin-bottom:10px;font-size:1.2em}
-        .feature p{color:#aaa}
-        .myfxbook{background:#111128;text-align:center}
-        .myfxbook a{color:#00ff88;text-decoration:none}
-        .myfxbook a:hover{text-decoration:underline}
-        .steps{max-width:700px;margin:0 auto}
-        .step{display:flex;gap:20px;margin-bottom:30px;align-items:flex-start}
-        .step-num{background:#00ff88;color:#0a0a1a;width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:1.2em;flex-shrink:0}
-        .step-text h3{color:#fff;margin-bottom:5px}
-        .step-text p{color:#aaa}
-        .signal-example{background:#0d1117;border:1px solid #30363d;border-radius:12px;padding:25px;max-width:500px;margin:30px auto;font-family:Consolas,monospace;font-size:.95em;line-height:1.8}
-        .signal-example .green{color:#00ff88}
-        .signal-example .gray{color:#888}
-        .download{background:#111128;text-align:center}
-        .download p{color:#aaa;max-width:600px;margin:0 auto 30px}
-        footer{text-align:center;padding:30px 20px;color:#555;font-size:.85em;border-top:1px solid #1a1a3e}
-        footer a{color:#00ff88;text-decoration:none}
-        @media(max-width:600px){.hero h1{font-size:2em}.stats{gap:20px}.stat-value{font-size:1.8em}}
+        .hero .subtitle{font-size:1.3em;color:#aaa;margin-bottom:20px}
+        .hero .tagline{font-size:1.05em;color:#ccc;max-width:600px;margin:0 auto 35px}
+        .cta-buttons{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin:25px 0}
+        .btn{display:inline-block;padding:13px 28px;border-radius:8px;text-decoration:none;font-weight:600;font-size:1.05em;transition:.3s}
+        .btn-primary{background:#00ff88;color:#0a0a1a}.btn-primary:hover{background:#00cc6a;transform:translateY(-2px)}
+        .btn-secondary{background:transparent;color:#00ff88;border:2px solid #00ff88}.btn-secondary:hover{background:#00ff8820;transform:translateY(-2px)}
+        .btn-download{background:#2196F3;color:#fff}.btn-download:hover{background:#1976D2;transform:translateY(-2px)}
+        .myfxbook-stats{padding:30px 20px;background:#111128;text-align:center}
+        .myfxbook-stats iframe{border:none;border-radius:10px;max-width:100%}
+        section{padding:50px 20px}section h2{font-size:1.9em;color:#fff;text-align:center;margin-bottom:35px}section h2 span{color:#00ff88}
+        .features{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;max-width:900px;margin:0 auto}
+        .feature{background:#151530;padding:22px;border-radius:12px;border:1px solid #252550}.feature h3{color:#00ff88;margin-bottom:8px;font-size:1.1em}.feature p{color:#aaa;font-size:.95em}
+        .myfxbook{background:#111128;text-align:center}.myfxbook a{color:#00ff88;text-decoration:none}.myfxbook a:hover{text-decoration:underline}
+        .steps{max-width:700px;margin:0 auto}.step{display:flex;gap:18px;margin-bottom:25px;align-items:flex-start}
+        .step-num{background:#00ff88;color:#0a0a1a;width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:1.1em;flex-shrink:0}
+        .step-text h3{color:#fff;margin-bottom:4px}.step-text p{color:#aaa}
+        .signal-example{background:#0d1117;border:1px solid #30363d;border-radius:12px;padding:22px;max-width:480px;margin:25px auto;font-family:Consolas,monospace;font-size:.9em;line-height:1.8}.signal-example .green{color:#00ff88}.signal-example .gray{color:#888}
+        .download{background:#111128;text-align:center}.download p{color:#aaa;max-width:600px;margin:0 auto 25px}
+        footer{text-align:center;padding:25px 20px;color:#555;font-size:.8em;border-top:1px solid #1a1a3e}footer a{color:#00ff88;text-decoration:none}
+        @media(max-width:600px){.hero h1{font-size:2em}.hero{padding:60px 15px 40px}}
     </style>
 </head>
 <body>
 
-<!-- Language Switch -->
 <div class="lang-switch">
-    <button class="lang-btn" onclick="setLang('en')" id="btn-en">EN</button>
-    <button class="lang-btn" onclick="setLang('it')" id="btn-it">IT</button>
+    <button class="lang-btn" onclick="setLang('en')">EN</button>
+    <button class="lang-btn" onclick="setLang('it')">IT</button>
+    <button class="lang-btn" onclick="setLang('es')">ES</button>
+    <button class="lang-btn" onclick="setLang('fr')">FR</button>
+    <button class="lang-btn" onclick="setLang('de')">DE</button>
+    <button class="lang-btn" onclick="setLang('pt')">PT</button>
+    <button class="lang-btn" onclick="setLang('ru')">RU</button>
+    <button class="lang-btn" onclick="setLang('zh')">ZH</button>
+    <button class="lang-btn" onclick="setLang('ja')">JA</button>
+    <button class="lang-btn" onclick="setLang('ar')">AR</button>
 </div>
 
-<!-- Hero -->
 <div class="hero"><div class="container">
     <h1>IASMC</h1>
     <p class="subtitle">Intelligent Automated Smart Money Concepts</p>
-    <p class="tagline" data-en="Professional automated trading signals delivered to your Telegram. Powered by institutional-grade Smart Money Concepts with statistically validated entries." data-it="Segnali di trading automatici professionali su Telegram. Basati su Smart Money Concepts istituzionali con ingressi validati statisticamente."></p>
+    <p class="tagline" data-i18n="tagline"></p>
     <div class="cta-buttons">
-        <a href="https://t.me/SMCTradingSignalsIA" class="btn btn-primary" target="_blank" data-en="Join Free Channel" data-it="Unisciti Gratis"></a>
-        <a href="https://www.myfxbook.com/portfolio/iasmc/11976661" class="btn btn-secondary" target="_blank" data-en="View Live Results" data-it="Vedi Risultati Live"></a>
+        <a href="https://t.me/SMCTradingSignalsIA" class="btn btn-primary" target="_blank" data-i18n="join_btn"></a>
+        <a href="https://www.myfxbook.com/portfolio/iasmc/11976661" class="btn btn-secondary" target="_blank" data-i18n="results_btn"></a>
     </div>
 </div></div>
 
-<!-- Stats -->
-<div class="stats">
-    <div class="stat"><div class="stat-value">70%+</div><div class="stat-label" data-en="Win Rate" data-it="Win Rate"></div></div>
-    <div class="stat"><div class="stat-value">2.8</div><div class="stat-label" data-en="Profit Factor" data-it="Profit Factor"></div></div>
-    <div class="stat"><div class="stat-value">9</div><div class="stat-label" data-en="Symbols" data-it="Simboli"></div></div>
-    <div class="stat"><div class="stat-value">24/7</div><div class="stat-label" data-en="Automated" data-it="Automatico"></div></div>
+<!-- MyFXBook Stats Widget (live data) -->
+<div class="myfxbook-stats">
+    <iframe src="https://widgets.myfxbook.com/custom-widget?id=11976661&width=800&height=120&bart=1&linet=0&bgColor=111128&gridColor=1a1a3e&lineColor=00ff88&barColor=00ff88&fontColor=e0e0e0&title=&titles=0&chartbgc=111128" width="800" height="120" style="max-width:100%"></iframe>
 </div>
 
-<!-- Features -->
 <section><div class="container">
-    <h2 data-en="Why <span>IASMC</span>?" data-it="Perche' <span>IASMC</span>?"></h2>
+    <h2 data-i18n="why_title"></h2>
     <div class="features">
-        <div class="feature"><h3 data-en="Smart Money Concepts" data-it="Smart Money Concepts"></h3><p data-en="Institutional-grade strategy based on Order Blocks, Fair Value Gaps, Break of Structure, and liquidity analysis." data-it="Strategia istituzionale basata su Order Block, Fair Value Gap, Break of Structure e analisi della liquidita'."></p></div>
-        <div class="feature"><h3 data-en="Statistically Validated" data-it="Validato Statisticamente"></h3><p data-en="Every entry is validated with FDR-corrected statistical testing. Walk-forward confirmed across 3+ years of data." data-it="Ogni ingresso e' validato con test statistici corretti per FDR. Walk-forward confermato su 3+ anni di dati."></p></div>
-        <div class="feature"><h3 data-en="Real-Time Signals" data-it="Segnali in Tempo Reale"></h3><p data-en="Signals sent instantly to Telegram with Entry, Stop Loss, Take Profit, and suggested risk percentage." data-it="Segnali inviati istantaneamente su Telegram con Entry, Stop Loss, Take Profit e rischio suggerito."></p></div>
-        <div class="feature"><h3 data-en="Full Trade Management" data-it="Gestione Completa"></h3><p data-en="Not just entries — you get trailing stop updates, partial take profits, breakeven moves, and portfolio management." data-it="Non solo ingressi — ricevi aggiornamenti trailing stop, take profit parziali, breakeven e gestione portfolio."></p></div>
-        <div class="feature"><h3 data-en="Multi-Asset Coverage" data-it="Multi-Asset"></h3><p data-en="Gold (XAUUSD), Forex majors, US/EU indices, Oil. 9 symbols across multiple sessions." data-it="Gold (XAUUSD), Forex major, indici US/EU, Petrolio. 9 simboli su piu' sessioni."></p></div>
-        <div class="feature"><h3 data-en="Verified Results" data-it="Risultati Verificati"></h3><p data-en="Live trading results published on MyFXBook with full transparency." data-it="Risultati di trading live pubblicati su MyFXBook in totale trasparenza."></p></div>
+        <div class="feature"><h3 data-i18n="f1_title"></h3><p data-i18n="f1_desc"></p></div>
+        <div class="feature"><h3 data-i18n="f2_title"></h3><p data-i18n="f2_desc"></p></div>
+        <div class="feature"><h3 data-i18n="f3_title"></h3><p data-i18n="f3_desc"></p></div>
+        <div class="feature"><h3 data-i18n="f4_title"></h3><p data-i18n="f4_desc"></p></div>
+        <div class="feature"><h3 data-i18n="f5_title"></h3><p data-i18n="f5_desc"></p></div>
+        <div class="feature"><h3 data-i18n="f6_title"></h3><p data-i18n="f6_desc"></p></div>
     </div>
 </div></section>
 
-<!-- MyFXBook -->
 <section class="myfxbook"><div class="container">
-    <h2 data-en="Live <span>Verified</span> Results" data-it="Risultati <span>Verificati</span> Live"></h2>
-    <p style="color:#aaa;margin-bottom:20px" data-en="Real-time performance tracked and verified by MyFXBook" data-it="Performance in tempo reale tracciata e verificata da MyFXBook"></p>
-    <a href="https://www.myfxbook.com/portfolio/iasmc/11976661" target="_blank">
-        <img src="https://widgets.myfxbook.com/custom-widget?id=11976661&width=500&height=200&bart=0&linet=1&bgColor=0a0a1a&gridColor=1a1a3e&lineColor=00ff88&barColor=00ff88&fontColor=e0e0e0&title=IASMC&titles=20&chartbgc=111128" alt="IASMC MyFXBook Performance" style="max-width:100%;border-radius:12px;">
-    </a>
-    <p style="margin-top:15px"><a href="https://www.myfxbook.com/portfolio/iasmc/11976661" target="_blank" data-en="View full portfolio on MyFXBook" data-it="Vedi il portfolio completo su MyFXBook"></a></p>
+    <h2 data-i18n="live_title"></h2>
+    <iframe src="https://widgets.myfxbook.com/custom-widget?id=11976661&width=700&height=300&bart=0&linet=1&bgColor=0a0a1a&gridColor=1a1a3e&lineColor=00ff88&barColor=00ff88&fontColor=e0e0e0&title=IASMC&titles=20&chartbgc=111128" width="700" height="300" style="max-width:100%;border:none;border-radius:12px"></iframe>
+    <p style="margin-top:12px"><a href="https://www.myfxbook.com/portfolio/iasmc/11976661" target="_blank" data-i18n="view_portfolio"></a></p>
 </div></section>
 
-<!-- Signal Example -->
 <section><div class="container">
-    <h2 data-en="What You <span>Receive</span>" data-it="Cosa <span>Ricevi</span>"></h2>
+    <h2 data-i18n="receive_title"></h2>
     <div class="signal-example">
-        <span class="green">SIGNAL: BUY XAUUSD</span><br><br>
-        Entry: 4450.50<br>
-        Stop Loss: 4440.00 (-105.0 pips)<br>
-        Take Profit: 4465.00 (+145.0 pips)<br>
-        Risk/Reward: 1:1.4<br>
-        Suggested Risk: 0.5%<br><br>
-        <span class="gray">29 Mar 2026 14:30 UTC</span>
+        <span class="green">SIGNAL: BUY XAUUSD</span><br><br>Entry: 4450.50<br>Stop Loss: 4440.00 (-105.0 pips)<br>Take Profit: 4465.00 (+145.0 pips)<br>Risk/Reward: 1:1.4<br>Suggested Risk: 0.5%<br><br><span class="gray">29 Mar 2026 14:30 UTC</span>
     </div>
-    <p style="text-align:center;color:#aaa;margin-top:15px" data-en="Plus: SL updates, partial TPs, portfolio management signals" data-it="Inclusi: aggiornamenti SL, TP parziali, segnali gestione portfolio"></p>
+    <p style="text-align:center;color:#aaa;margin-top:12px" data-i18n="plus_signals"></p>
 </div></section>
 
-<!-- How it works -->
 <section style="background:#111128"><div class="container">
-    <h2 data-en="How It <span>Works</span>" data-it="Come <span>Funziona</span>"></h2>
+    <h2 data-i18n="how_title"></h2>
     <div class="steps">
-        <div class="step"><div class="step-num">1</div><div class="step-text"><h3 data-en="Join the Telegram Channel" data-it="Unisciti al Canale Telegram"></h3><p data-en="Free access to all trading signals. No subscription, no hidden fees." data-it="Accesso gratuito a tutti i segnali. Nessun abbonamento, nessun costo nascosto."></p></div></div>
-        <div class="step"><div class="step-num">2</div><div class="step-text"><h3 data-en="Receive Signals" data-it="Ricevi i Segnali"></h3><p data-en="Get real-time alerts with exact Entry, SL, TP and risk management." data-it="Ricevi avvisi in tempo reale con Entry, SL, TP e gestione del rischio."></p></div></div>
-        <div class="step"><div class="step-num">3</div><div class="step-text"><h3 data-en="Copy Manually or Use the Bot" data-it="Copia Manualmente o Usa il Bot"></h3><p data-en="Execute trades yourself or download our free Signal Copier to automate everything on MT5." data-it="Esegui i trade manualmente o scarica il nostro Signal Copier gratuito per automatizzare tutto su MT5."></p></div></div>
+        <div class="step"><div class="step-num">1</div><div class="step-text"><h3 data-i18n="s1_title"></h3><p data-i18n="s1_desc"></p></div></div>
+        <div class="step"><div class="step-num">2</div><div class="step-text"><h3 data-i18n="s2_title"></h3><p data-i18n="s2_desc"></p></div></div>
+        <div class="step"><div class="step-num">3</div><div class="step-text"><h3 data-i18n="s3_title"></h3><p data-i18n="s3_desc"></p></div></div>
     </div>
 </div></section>
 
-<!-- Download -->
 <section class="download"><div class="container">
-    <h2 data-en="Free <span>Signal Copier</span>" data-it="<span>Signal Copier</span> Gratuito"></h2>
-    <p data-en="Automatically copy every signal to your MetaTrader 5 account. Works with any broker." data-it="Copia automaticamente ogni segnale sul tuo conto MetaTrader 5. Funziona con qualsiasi broker."></p>
+    <h2 data-i18n="dl_title"></h2>
+    <p data-i18n="dl_desc"></p>
     <div class="cta-buttons">
-        <a href="https://github.com/mattoide/IASMC_SignalCopier/releases/latest" class="btn btn-download" target="_blank" data-en="Download for Windows" data-it="Scarica per Windows"></a>
-        <a href="https://github.com/mattoide/IASMC_SignalCopier" class="btn btn-secondary" target="_blank" data-en="View Source Code" data-it="Vedi Codice Sorgente"></a>
+        <a href="https://github.com/mattoide/IASMC_SignalCopier/releases/latest/download/IASMC_SignalCopier.exe" class="btn btn-download" data-i18n="dl_btn"></a>
     </div>
-    <p style="color:#666;font-size:.85em;margin-top:15px" data-en="Open source. No hidden fees. Works with any MT5 broker." data-it="Open source. Nessun costo. Funziona con qualsiasi broker MT5."></p>
+    <p style="color:#666;font-size:.8em;margin-top:12px" data-i18n="dl_note"></p>
 </div></section>
 
-<!-- Final CTA -->
 <section><div class="container" style="text-align:center">
-    <h2 data-en="Start Trading <span>Smarter</span>" data-it="Inizia a Fare Trading <span>Meglio</span>"></h2>
-    <p style="color:#aaa;max-width:500px;margin:0 auto 30px" data-en="Join traders receiving institutional-grade signals directly on Telegram." data-it="Unisciti ai trader che ricevono segnali istituzionali direttamente su Telegram."></p>
-    <a href="https://t.me/SMCTradingSignalsIA" class="btn btn-primary" target="_blank" data-en="Join Free Channel" data-it="Unisciti Gratis"></a>
+    <h2 data-i18n="cta_title"></h2>
+    <p style="color:#aaa;max-width:500px;margin:0 auto 25px" data-i18n="cta_desc"></p>
+    <a href="https://t.me/SMCTradingSignalsIA" class="btn btn-primary" target="_blank" data-i18n="join_btn"></a>
 </div></section>
 
-<!-- Footer -->
 <footer>
     <p>IASMC &copy; 2026 | <a href="https://www.myfxbook.com/portfolio/iasmc/11976661" target="_blank">MyFXBook</a> | <a href="https://github.com/mattoide/IASMC_SignalCopier" target="_blank">GitHub</a></p>
-    <p style="margin-top:10px" data-en="Trading involves risk. Past performance does not guarantee future results. Trade responsibly." data-it="Il trading comporta rischi. I risultati passati non garantiscono quelli futuri. Fai trading responsabilmente."></p>
+    <p style="margin-top:8px" data-i18n="disclaimer"></p>
 </footer>
 
 <script>
-// Auto-detect language from browser, default to EN
-let currentLang = localStorage.getItem('iasmc-lang');
-if (!currentLang) {
-    const browserLang = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
-    currentLang = browserLang.startsWith('it') ? 'it' : 'en';
-}
-setLang(currentLang);
-
-function setLang(lang) {
-    currentLang = lang;
-    localStorage.setItem('iasmc-lang', lang);
-    document.documentElement.lang = lang;
-
-    // Update all elements with data-en/data-it
-    document.querySelectorAll('[data-en]').forEach(el => {
-        const text = el.getAttribute('data-' + lang);
-        if (text) {
-            if (el.tagName === 'A' || el.tagName === 'BUTTON') {
-                el.textContent = text;
-            } else {
-                el.innerHTML = text;
-            }
-        }
+const T={
+en:{tagline:"Professional automated trading signals delivered to your Telegram. Powered by institutional-grade Smart Money Concepts.",join_btn:"Join Free Channel",results_btn:"View Live Results",why_title:"Why <span>IASMC</span>?",f1_title:"Smart Money Concepts",f1_desc:"Institutional strategy: Order Blocks, Fair Value Gaps, Break of Structure, liquidity analysis.",f2_title:"Statistically Validated",f2_desc:"FDR-corrected testing. Walk-forward confirmed across 3+ years.",f3_title:"Real-Time Signals",f3_desc:"Instant Telegram alerts with Entry, SL, TP and suggested risk.",f4_title:"Full Trade Management",f4_desc:"Trailing stops, partial TPs, breakeven moves, portfolio management.",f5_title:"Multi-Asset",f5_desc:"Gold, Forex majors, US/EU indices, Oil. 9 symbols, multiple sessions.",f6_title:"Verified Results",f6_desc:"Live results on MyFXBook. Full transparency.",live_title:"Live <span>Verified</span> Results",view_portfolio:"View full portfolio on MyFXBook",receive_title:"What You <span>Receive</span>",plus_signals:"Plus: SL updates, partial TPs, portfolio management",how_title:"How It <span>Works</span>",s1_title:"Join the Telegram Channel",s1_desc:"Free access. No subscription, no hidden fees.",s2_title:"Receive Signals",s2_desc:"Real-time alerts with Entry, SL, TP and risk management.",s3_title:"Copy or Automate",s3_desc:"Trade manually or use our free Signal Copier for MT5.",dl_title:"Free <span>Signal Copier</span>",dl_desc:"Auto-copy signals to MT5. Works with any broker.",dl_btn:"Download for Windows",source_btn:"View Source Code",dl_note:"Open source. Free. Any MT5 broker.",cta_title:"Start Trading <span>Smarter</span>",cta_desc:"Join traders receiving institutional-grade signals on Telegram.",disclaimer:"Trading involves risk. Past performance does not guarantee future results."},
+it:{tagline:"Segnali di trading automatici professionali su Telegram. Smart Money Concepts istituzionali con ingressi validati.",join_btn:"Unisciti Gratis",results_btn:"Vedi Risultati Live",why_title:"Perch\u00e9 <span>IASMC</span>?",f1_title:"Smart Money Concepts",f1_desc:"Strategia istituzionale: Order Block, Fair Value Gap, Break of Structure, liquidit\u00e0.",f2_title:"Validato Statisticamente",f2_desc:"Test FDR. Walk-forward confermato su 3+ anni.",f3_title:"Segnali in Tempo Reale",f3_desc:"Avvisi Telegram con Entry, SL, TP e rischio suggerito.",f4_title:"Gestione Completa",f4_desc:"Trailing stop, TP parziali, breakeven, gestione portfolio.",f5_title:"Multi-Asset",f5_desc:"Gold, Forex, indici US/EU, Petrolio. 9 simboli.",f6_title:"Risultati Verificati",f6_desc:"Risultati live su MyFXBook. Totale trasparenza.",live_title:"Risultati <span>Verificati</span> Live",view_portfolio:"Vedi portfolio su MyFXBook",receive_title:"Cosa <span>Ricevi</span>",plus_signals:"Inclusi: aggiornamenti SL, TP parziali, gestione portfolio",how_title:"Come <span>Funziona</span>",s1_title:"Unisciti al Canale",s1_desc:"Accesso gratuito. Nessun costo nascosto.",s2_title:"Ricevi i Segnali",s2_desc:"Avvisi con Entry, SL, TP e gestione rischio.",s3_title:"Copia o Automatizza",s3_desc:"Trada manualmente o usa il Signal Copier gratuito per MT5.",dl_title:"<span>Signal Copier</span> Gratuito",dl_desc:"Copia automatica su MT5. Qualsiasi broker.",dl_btn:"Scarica per Windows",source_btn:"Codice Sorgente",dl_note:"Open source. Gratis. Qualsiasi broker MT5.",cta_title:"Inizia a Fare Trading <span>Meglio</span>",cta_desc:"Unisciti ai trader che ricevono segnali istituzionali su Telegram.",disclaimer:"Il trading comporta rischi. I risultati passati non garantiscono quelli futuri."},
+es:{tagline:"Se\u00f1ales de trading automatizadas en Telegram. Smart Money Concepts con validaci\u00f3n estad\u00edstica.",join_btn:"Unirse Gratis",results_btn:"Ver Resultados",why_title:"\u00bfPor qu\u00e9 <span>IASMC</span>?",f1_title:"Smart Money Concepts",f1_desc:"Estrategia institucional: Order Blocks, FVG, BOS, liquidez.",f2_title:"Validado Estad\u00edsticamente",f2_desc:"Tests FDR. Walk-forward en 3+ a\u00f1os.",f3_title:"Se\u00f1ales en Tiempo Real",f3_desc:"Alertas Telegram con Entry, SL, TP y riesgo.",f4_title:"Gesti\u00f3n Completa",f4_desc:"Trailing stops, TPs parciales, breakeven, gesti\u00f3n de portfolio.",f5_title:"Multi-Activo",f5_desc:"Oro, Forex, \u00edndices US/EU, Petr\u00f3leo. 9 s\u00edmbolos.",f6_title:"Resultados Verificados",f6_desc:"Resultados en MyFXBook. Transparencia total.",live_title:"Resultados <span>Verificados</span>",view_portfolio:"Ver portfolio en MyFXBook",receive_title:"Qu\u00e9 <span>Recibes</span>",plus_signals:"Incluye: actualizaciones SL, TPs parciales, gesti\u00f3n portfolio",how_title:"C\u00f3mo <span>Funciona</span>",s1_title:"Unirse al Canal",s1_desc:"Acceso gratuito. Sin costos ocultos.",s2_title:"Recibir Se\u00f1ales",s2_desc:"Alertas con Entry, SL, TP y gesti\u00f3n de riesgo.",s3_title:"Copiar o Automatizar",s3_desc:"Opera manualmente o usa el Signal Copier gratuito.",dl_title:"<span>Signal Copier</span> Gratis",dl_desc:"Copia autom\u00e1tica en MT5. Cualquier broker.",dl_btn:"Descargar para Windows",source_btn:"C\u00f3digo Fuente",dl_note:"Open source. Gratis. Cualquier broker MT5.",cta_title:"Empieza a Operar <span>Mejor</span>",cta_desc:"\u00danete a traders que reciben se\u00f1ales institucionales en Telegram.",disclaimer:"El trading conlleva riesgo. Resultados pasados no garantizan futuros."},
+fr:{tagline:"Signaux de trading automatis\u00e9s sur Telegram. Smart Money Concepts valid\u00e9s statistiquement.",join_btn:"Rejoindre Gratuitement",results_btn:"Voir R\u00e9sultats",why_title:"Pourquoi <span>IASMC</span> ?",f1_title:"Smart Money Concepts",f1_desc:"Strat\u00e9gie institutionnelle : Order Blocks, FVG, BOS, liquidit\u00e9.",f2_title:"Valid\u00e9 Statistiquement",f2_desc:"Tests FDR. Walk-forward sur 3+ ans.",f3_title:"Signaux en Temps R\u00e9el",f3_desc:"Alertes Telegram avec Entry, SL, TP et risque sugg\u00e9r\u00e9.",f4_title:"Gestion Compl\u00e8te",f4_desc:"Trailing stops, TPs partiels, breakeven, gestion portfolio.",f5_title:"Multi-Actifs",f5_desc:"Or, Forex, indices US/EU, P\u00e9trole. 9 symboles.",f6_title:"R\u00e9sultats V\u00e9rifi\u00e9s",f6_desc:"R\u00e9sultats live sur MyFXBook. Transparence totale.",live_title:"R\u00e9sultats <span>V\u00e9rifi\u00e9s</span>",view_portfolio:"Voir portfolio sur MyFXBook",receive_title:"Ce Que Vous <span>Recevez</span>",plus_signals:"Inclus : mises \u00e0 jour SL, TPs partiels, gestion portfolio",how_title:"Comment \u00c7a <span>Marche</span>",s1_title:"Rejoindre le Canal",s1_desc:"Acc\u00e8s gratuit. Aucun frais cach\u00e9.",s2_title:"Recevoir les Signaux",s2_desc:"Alertes avec Entry, SL, TP et gestion du risque.",s3_title:"Copier ou Automatiser",s3_desc:"Tradez manuellement ou utilisez le Signal Copier gratuit.",dl_title:"<span>Signal Copier</span> Gratuit",dl_desc:"Copie automatique sur MT5. Tout broker.",dl_btn:"T\u00e9l\u00e9charger pour Windows",source_btn:"Code Source",dl_note:"Open source. Gratuit. Tout broker MT5.",cta_title:"Tradez Plus <span>Intelligemment</span>",cta_desc:"Rejoignez les traders recevant des signaux institutionnels sur Telegram.",disclaimer:"Le trading comporte des risques. Les performances pass\u00e9es ne garantissent pas les r\u00e9sultats futurs."},
+de:{tagline:"Professionelle automatisierte Handelssignale auf Telegram. Institutionelle Smart Money Concepts.",join_btn:"Kostenlos Beitreten",results_btn:"Ergebnisse Ansehen",why_title:"Warum <span>IASMC</span>?",f1_title:"Smart Money Concepts",f1_desc:"Institutionelle Strategie: Order Blocks, FVG, BOS, Liquidit\u00e4t.",f2_title:"Statistisch Validiert",f2_desc:"FDR-Tests. Walk-forward \u00fcber 3+ Jahre.",f3_title:"Echtzeit-Signale",f3_desc:"Telegram-Alerts mit Entry, SL, TP und Risiko.",f4_title:"Vollst\u00e4ndiges Management",f4_desc:"Trailing Stops, Teil-TPs, Breakeven, Portfolio-Management.",f5_title:"Multi-Asset",f5_desc:"Gold, Forex, US/EU-Indizes, \u00d6l. 9 Symbole.",f6_title:"Verifizierte Ergebnisse",f6_desc:"Live-Ergebnisse auf MyFXBook. Volle Transparenz.",live_title:"<span>Verifizierte</span> Ergebnisse",view_portfolio:"Portfolio auf MyFXBook ansehen",receive_title:"Was Sie <span>Erhalten</span>",plus_signals:"Plus: SL-Updates, Teil-TPs, Portfolio-Management",how_title:"So <span>Funktioniert</span> Es",s1_title:"Kanal Beitreten",s1_desc:"Kostenloser Zugang. Keine versteckten Kosten.",s2_title:"Signale Empfangen",s2_desc:"Echtzeit-Alerts mit Entry, SL, TP und Risikomanagement.",s3_title:"Kopieren oder Automatisieren",s3_desc:"Manuell handeln oder den kostenlosen Signal Copier nutzen.",dl_title:"Kostenloser <span>Signal Copier</span>",dl_desc:"Automatische Kopie auf MT5. Jeder Broker.",dl_btn:"F\u00fcr Windows Herunterladen",source_btn:"Quellcode",dl_note:"Open Source. Kostenlos. Jeder MT5-Broker.",cta_title:"Smarter <span>Handeln</span>",cta_desc:"Schlie\u00dfen Sie sich Tradern an, die institutionelle Signale auf Telegram erhalten.",disclaimer:"Handel birgt Risiken. Vergangene Ergebnisse garantieren keine zuk\u00fcnftigen."},
+pt:{tagline:"Sinais de trading automatizados no Telegram. Smart Money Concepts validados estatisticamente.",join_btn:"Entrar Gratis",results_btn:"Ver Resultados",why_title:"Por que <span>IASMC</span>?",f1_title:"Smart Money Concepts",f1_desc:"Estrat\u00e9gia institucional: Order Blocks, FVG, BOS, liquidez.",f2_title:"Validado Estatisticamente",f2_desc:"Testes FDR. Walk-forward em 3+ anos.",f3_title:"Sinais em Tempo Real",f3_desc:"Alertas Telegram com Entry, SL, TP e risco.",f4_title:"Gest\u00e3o Completa",f4_desc:"Trailing stops, TPs parciais, breakeven, gest\u00e3o de portfolio.",f5_title:"Multi-Ativo",f5_desc:"Ouro, Forex, \u00edndices US/EU, Petr\u00f3leo. 9 s\u00edmbolos.",f6_title:"Resultados Verificados",f6_desc:"Resultados ao vivo no MyFXBook. Transpar\u00eancia total.",live_title:"Resultados <span>Verificados</span>",view_portfolio:"Ver portfolio no MyFXBook",receive_title:"O Que Voc\u00ea <span>Recebe</span>",plus_signals:"Inclui: atualiza\u00e7\u00f5es SL, TPs parciais, gest\u00e3o portfolio",how_title:"Como <span>Funciona</span>",s1_title:"Entrar no Canal",s1_desc:"Acesso gratuito. Sem custos ocultos.",s2_title:"Receber Sinais",s2_desc:"Alertas com Entry, SL, TP e gest\u00e3o de risco.",s3_title:"Copiar ou Automatizar",s3_desc:"Opere manualmente ou use o Signal Copier gratuito.",dl_title:"<span>Signal Copier</span> Gratuito",dl_desc:"C\u00f3pia autom\u00e1tica no MT5. Qualquer corretora.",dl_btn:"Baixar para Windows",source_btn:"C\u00f3digo Fonte",dl_note:"Open source. Gratis. Qualquer corretora MT5.",cta_title:"Comece a Operar <span>Melhor</span>",cta_desc:"Junte-se a traders que recebem sinais institucionais no Telegram.",disclaimer:"Trading envolve riscos. Resultados passados n\u00e3o garantem futuros."},
+ru:{tagline:"\u041f\u0440\u043e\u0444\u0435\u0441\u0441\u0438\u043e\u043d\u0430\u043b\u044c\u043d\u044b\u0435 \u0442\u043e\u0440\u0433\u043e\u0432\u044b\u0435 \u0441\u0438\u0433\u043d\u0430\u043b\u044b \u0432 Telegram. Smart Money Concepts \u0441 \u0441\u0442\u0430\u0442\u0438\u0441\u0442\u0438\u0447\u0435\u0441\u043a\u043e\u0439 \u0432\u0430\u043b\u0438\u0434\u0430\u0446\u0438\u0435\u0439.",join_btn:"\u041f\u0440\u0438\u0441\u043e\u0435\u0434\u0438\u043d\u0438\u0442\u044c\u0441\u044f",results_btn:"\u0420\u0435\u0437\u0443\u043b\u044c\u0442\u0430\u0442\u044b",why_title:"\u041f\u043e\u0447\u0435\u043c\u0443 <span>IASMC</span>?",f1_title:"Smart Money Concepts",f1_desc:"\u0418\u043d\u0441\u0442\u0438\u0442\u0443\u0446\u0438\u043e\u043d\u0430\u043b\u044c\u043d\u0430\u044f \u0441\u0442\u0440\u0430\u0442\u0435\u0433\u0438\u044f: Order Blocks, FVG, BOS.",f2_title:"\u0421\u0442\u0430\u0442\u0438\u0441\u0442\u0438\u0447\u0435\u0441\u043a\u0438 \u043f\u043e\u0434\u0442\u0432\u0435\u0440\u0436\u0434\u0435\u043d\u043e",f2_desc:"FDR-\u0442\u0435\u0441\u0442\u044b. Walk-forward 3+ \u043b\u0435\u0442.",f3_title:"\u0421\u0438\u0433\u043d\u0430\u043b\u044b \u0432 \u0440\u0435\u0430\u043b\u044c\u043d\u043e\u043c \u0432\u0440\u0435\u043c\u0435\u043d\u0438",f3_desc:"\u041e\u043f\u043e\u0432\u0435\u0449\u0435\u043d\u0438\u044f Telegram: Entry, SL, TP, \u0440\u0438\u0441\u043a.",f4_title:"\u041f\u043e\u043b\u043d\u043e\u0435 \u0443\u043f\u0440\u0430\u0432\u043b\u0435\u043d\u0438\u0435",f4_desc:"Trailing stops, \u0447\u0430\u0441\u0442\u0438\u0447\u043d\u044b\u0435 TP, breakeven, \u0443\u043f\u0440\u0430\u0432\u043b\u0435\u043d\u0438\u0435 \u043f\u043e\u0440\u0442\u0444\u0435\u043b\u0435\u043c.",f5_title:"\u041c\u0443\u043b\u044c\u0442\u0438-\u0430\u043a\u0442\u0438\u0432",f5_desc:"\u0417\u043e\u043b\u043e\u0442\u043e, Forex, \u0438\u043d\u0434\u0435\u043a\u0441\u044b US/EU, \u043d\u0435\u0444\u0442\u044c. 9 \u0441\u0438\u043c\u0432\u043e\u043b\u043e\u0432.",f6_title:"\u041f\u0440\u043e\u0432\u0435\u0440\u0435\u043d\u043d\u044b\u0435 \u0440\u0435\u0437\u0443\u043b\u044c\u0442\u0430\u0442\u044b",f6_desc:"\u0420\u0435\u0437\u0443\u043b\u044c\u0442\u0430\u0442\u044b \u043d\u0430 MyFXBook. \u041f\u043e\u043b\u043d\u0430\u044f \u043f\u0440\u043e\u0437\u0440\u0430\u0447\u043d\u043e\u0441\u0442\u044c.",live_title:"<span>\u041f\u0440\u043e\u0432\u0435\u0440\u0435\u043d\u043d\u044b\u0435</span> \u0440\u0435\u0437\u0443\u043b\u044c\u0442\u0430\u0442\u044b",view_portfolio:"\u041f\u043e\u0440\u0442\u0444\u0435\u043b\u044c \u043d\u0430 MyFXBook",receive_title:"\u0427\u0442\u043e \u0432\u044b <span>\u043f\u043e\u043b\u0443\u0447\u0438\u0442\u0435</span>",plus_signals:"\u0422\u0430\u043a\u0436\u0435: \u043e\u0431\u043d\u043e\u0432\u043b\u0435\u043d\u0438\u044f SL, \u0447\u0430\u0441\u0442\u0438\u0447\u043d\u044b\u0435 TP, \u0443\u043f\u0440\u0430\u0432\u043b\u0435\u043d\u0438\u0435",how_title:"\u041a\u0430\u043a \u044d\u0442\u043e <span>\u0440\u0430\u0431\u043e\u0442\u0430\u0435\u0442</span>",s1_title:"\u041f\u0440\u0438\u0441\u043e\u0435\u0434\u0438\u043d\u0438\u0442\u044c\u0441\u044f",s1_desc:"\u0411\u0435\u0441\u043f\u043b\u0430\u0442\u043d\u044b\u0439 \u0434\u043e\u0441\u0442\u0443\u043f. \u0411\u0435\u0437 \u0441\u043a\u0440\u044b\u0442\u044b\u0445 \u043f\u043b\u0430\u0442\u0435\u0436\u0435\u0439.",s2_title:"\u041f\u043e\u043b\u0443\u0447\u0430\u0442\u044c \u0441\u0438\u0433\u043d\u0430\u043b\u044b",s2_desc:"\u041e\u043f\u043e\u0432\u0435\u0449\u0435\u043d\u0438\u044f \u0441 Entry, SL, TP \u0438 \u0443\u043f\u0440\u0430\u0432\u043b\u0435\u043d\u0438\u0435\u043c \u0440\u0438\u0441\u043a\u0430.",s3_title:"\u041a\u043e\u043f\u0438\u0440\u0443\u0439\u0442\u0435 \u0438\u043b\u0438 \u0430\u0432\u0442\u043e\u043c\u0430\u0442\u0438\u0437\u0438\u0440\u0443\u0439\u0442\u0435",s3_desc:"\u0422\u043e\u0440\u0433\u0443\u0439\u0442\u0435 \u0432\u0440\u0443\u0447\u043d\u0443\u044e \u0438\u043b\u0438 \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u0443\u0439\u0442\u0435 Signal Copier.",dl_title:"\u0411\u0435\u0441\u043f\u043b\u0430\u0442\u043d\u044b\u0439 <span>Signal Copier</span>",dl_desc:"\u0410\u0432\u0442\u043e\u043a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u043d\u0438\u0435 \u043d\u0430 MT5. \u041b\u044e\u0431\u043e\u0439 \u0431\u0440\u043e\u043a\u0435\u0440.",dl_btn:"\u0421\u043a\u0430\u0447\u0430\u0442\u044c",source_btn:"\u0418\u0441\u0445\u043e\u0434\u043d\u044b\u0439 \u043a\u043e\u0434",dl_note:"Open source. \u0411\u0435\u0441\u043f\u043b\u0430\u0442\u043d\u043e.",cta_title:"\u0422\u043e\u0440\u0433\u0443\u0439\u0442\u0435 <span>\u0443\u043c\u043d\u0435\u0435</span>",cta_desc:"\u041f\u0440\u0438\u0441\u043e\u0435\u0434\u0438\u043d\u044f\u0439\u0442\u0435\u0441\u044c \u043a \u0442\u0440\u0435\u0439\u0434\u0435\u0440\u0430\u043c \u0432 Telegram.",disclaimer:"\u0422\u043e\u0440\u0433\u043e\u0432\u043b\u044f \u0441\u0432\u044f\u0437\u0430\u043d\u0430 \u0441 \u0440\u0438\u0441\u043a\u043e\u043c."},
+zh:{tagline:"\u4e13\u4e1a\u81ea\u52a8\u4ea4\u6613\u4fe1\u53f7\u901a\u8fc7Telegram\u53d1\u9001\u3002\u673a\u6784\u7ea7Smart Money Concepts\u7ecf\u7edf\u8ba1\u9a8c\u8bc1\u3002",join_btn:"\u514d\u8d39\u52a0\u5165",results_btn:"\u67e5\u770b\u7ed3\u679c",why_title:"\u4e3a\u4ec0\u4e48\u9009\u62e9<span>IASMC</span>\uff1f",f1_title:"Smart Money Concepts",f1_desc:"\u673a\u6784\u7ea7\u7b56\u7565\uff1aOrder Blocks\u3001FVG\u3001BOS\u3001\u6d41\u52a8\u6027\u5206\u6790\u3002",f2_title:"\u7edf\u8ba1\u9a8c\u8bc1",f2_desc:"FDR\u6d4b\u8bd5\u3002Walk-forward 3+\u5e74\u3002",f3_title:"\u5b9e\u65f6\u4fe1\u53f7",f3_desc:"Telegram\u63d0\u9192\uff1aEntry\u3001SL\u3001TP\u548c\u5efa\u8bae\u98ce\u9669\u3002",f4_title:"\u5b8c\u6574\u7ba1\u7406",f4_desc:"Trailing stops\u3001\u90e8\u5206TP\u3001\u4fdd\u672c\u3001\u7ec4\u5408\u7ba1\u7406\u3002",f5_title:"\u591a\u8d44\u4ea7",f5_desc:"\u9ec4\u91d1\u3001\u5916\u6c47\u3001\u7f8e\u56fd/\u6b27\u6d32\u6307\u6570\u3001\u77f3\u6cb9\u30029\u4e2a\u54c1\u79cd\u3002",f6_title:"\u5df2\u9a8c\u8bc1\u7ed3\u679c",f6_desc:"MyFXBook\u5b9e\u76d8\u7ed3\u679c\u3002\u5b8c\u5168\u900f\u660e\u3002",live_title:"\u5b9e\u76d8<span>\u9a8c\u8bc1</span>\u7ed3\u679c",view_portfolio:"\u5728MyFXBook\u67e5\u770b",receive_title:"\u4f60\u5c06<span>\u6536\u5230</span>",plus_signals:"\u8fd8\u5305\u62ec\uff1aSL\u66f4\u65b0\u3001\u90e8\u5206TP\u3001\u7ec4\u5408\u7ba1\u7406",how_title:"\u5982\u4f55<span>\u8fd0\u4f5c</span>",s1_title:"\u52a0\u5165\u9891\u9053",s1_desc:"\u514d\u8d39\u8bbf\u95ee\u3002\u65e0\u9690\u85cf\u8d39\u7528\u3002",s2_title:"\u63a5\u6536\u4fe1\u53f7",s2_desc:"\u5b9e\u65f6\u63d0\u9192\uff1aEntry\u3001SL\u3001TP\u3002",s3_title:"\u624b\u52a8\u6216\u81ea\u52a8",s3_desc:"\u624b\u52a8\u4ea4\u6613\u6216\u4f7f\u7528\u514d\u8d39Signal Copier\u3002",dl_title:"\u514d\u8d39<span>Signal Copier</span>",dl_desc:"\u81ea\u52a8\u590d\u5236\u5230MT5\u3002\u4efb\u4f55\u7ecf\u7eaa\u5546\u3002",dl_btn:"\u4e0b\u8f7dWindows\u7248",source_btn:"\u6e90\u4ee3\u7801",dl_note:"\u5f00\u6e90\u3002\u514d\u8d39\u3002",cta_title:"\u66f4\u806a\u660e\u5730<span>\u4ea4\u6613</span>",cta_desc:"\u52a0\u5165Telegram\u83b7\u53d6\u673a\u6784\u7ea7\u4fe1\u53f7\u3002",disclaimer:"\u4ea4\u6613\u6709\u98ce\u9669\u3002\u8fc7\u5f80\u4e1a\u7ee9\u4e0d\u4fdd\u8bc1\u672a\u6765\u7ed3\u679c\u3002"},
+ja:{tagline:"Telegram\u3067\u30d7\u30ed\u306e\u81ea\u52d5\u30c8\u30ec\u30fc\u30c9\u30b7\u30b0\u30ca\u30eb\u3002\u7d71\u8a08\u7684\u306b\u691c\u8a3c\u3055\u308c\u305fSmart Money Concepts\u3002",join_btn:"\u7121\u6599\u53c2\u52a0",results_btn:"\u7d50\u679c\u3092\u898b\u308b",why_title:"\u306a\u305c<span>IASMC</span>\uff1f",f1_title:"Smart Money Concepts",f1_desc:"\u6a5f\u95a2\u6295\u8cc7\u5bb6\u6226\u7565\uff1aOrder Blocks\u3001FVG\u3001BOS\u3002",f2_title:"\u7d71\u8a08\u7684\u691c\u8a3c",f2_desc:"FDR\u30c6\u30b9\u30c8\u30023\u5e74\u4ee5\u4e0a\u306eWalk-forward\u3002",f3_title:"\u30ea\u30a2\u30eb\u30bf\u30a4\u30e0\u30b7\u30b0\u30ca\u30eb",f3_desc:"Telegram\u30a2\u30e9\u30fc\u30c8\uff1aEntry\u3001SL\u3001TP\u3002",f4_title:"\u5b8c\u5168\u306a\u7ba1\u7406",f4_desc:"Trailing stops\u3001\u90e8\u5206TP\u3001\u30d6\u30ec\u30fc\u30af\u30a4\u30fc\u30d6\u30f3\u3002",f5_title:"\u30de\u30eb\u30c1\u30a2\u30bb\u30c3\u30c8",f5_desc:"\u30b4\u30fc\u30eb\u30c9\u3001FX\u3001\u6307\u6570\u3001\u77f3\u6cb9\u30029\u30b7\u30f3\u30dc\u30eb\u3002",f6_title:"\u691c\u8a3c\u6e08\u307f\u7d50\u679c",f6_desc:"MyFXBook\u3067\u30e9\u30a4\u30d6\u7d50\u679c\u3002",live_title:"<span>\u691c\u8a3c\u6e08\u307f</span>\u7d50\u679c",view_portfolio:"MyFXBook\u3067\u898b\u308b",receive_title:"\u53d7\u3051\u53d6\u308b<span>\u5185\u5bb9</span>",plus_signals:"SL\u66f4\u65b0\u3001\u90e8\u5206TP\u3001\u30dd\u30fc\u30c8\u30d5\u30a9\u30ea\u30aa\u7ba1\u7406\u3082\u542b\u3080",how_title:"\u4ed5\u7d44\u307f",s1_title:"\u30c1\u30e3\u30f3\u30cd\u30eb\u53c2\u52a0",s1_desc:"\u7121\u6599\u30a2\u30af\u30bb\u30b9\u3002\u96a0\u308c\u305f\u8cbb\u7528\u306a\u3057\u3002",s2_title:"\u30b7\u30b0\u30ca\u30eb\u53d7\u4fe1",s2_desc:"Entry\u3001SL\u3001TP\u306e\u30a2\u30e9\u30fc\u30c8\u3002",s3_title:"\u30b3\u30d4\u30fc\u307e\u305f\u306f\u81ea\u52d5\u5316",s3_desc:"\u624b\u52d5\u307e\u305f\u306f\u7121\u6599Signal Copier\u3092\u4f7f\u7528\u3002",dl_title:"\u7121\u6599<span>Signal Copier</span>",dl_desc:"MT5\u3078\u81ea\u52d5\u30b3\u30d4\u30fc\u3002\u3069\u306e\u30d6\u30ed\u30fc\u30ab\u30fc\u3067\u3082\u3002",dl_btn:"Windows\u7248\u30c0\u30a6\u30f3\u30ed\u30fc\u30c9",source_btn:"\u30bd\u30fc\u30b9\u30b3\u30fc\u30c9",dl_note:"\u30aa\u30fc\u30d7\u30f3\u30bd\u30fc\u30b9\u3002\u7121\u6599\u3002",cta_title:"\u3088\u308a<span>\u8ce2\u304f</span>\u30c8\u30ec\u30fc\u30c9",cta_desc:"Telegram\u3067\u6a5f\u95a2\u6295\u8cc7\u5bb6\u30b7\u30b0\u30ca\u30eb\u3092\u53d7\u3051\u53d6\u308b\u3002",disclaimer:"\u53d6\u5f15\u306b\u306f\u30ea\u30b9\u30af\u304c\u4f34\u3044\u307e\u3059\u3002"},
+ar:{tagline:"\u0625\u0634\u0627\u0631\u0627\u062a \u062a\u062f\u0627\u0648\u0644 \u0622\u0644\u064a\u0629 \u0639\u0628\u0631 Telegram. Smart Money Concepts \u0645\u0639 \u062a\u062d\u0642\u0642 \u0625\u062d\u0635\u0627\u0626\u064a.",join_btn:"\u0627\u0646\u0636\u0645 \u0645\u062c\u0627\u0646\u0627\u064b",results_btn:"\u0639\u0631\u0636 \u0627\u0644\u0646\u062a\u0627\u0626\u062c",why_title:"\u0644\u0645\u0627\u0630\u0627 <span>IASMC</span>\u061f",f1_title:"Smart Money Concepts",f1_desc:"\u0627\u0633\u062a\u0631\u0627\u062a\u064a\u062c\u064a\u0629 \u0645\u0624\u0633\u0633\u064a\u0629: Order Blocks\u060c FVG\u060c BOS.",f2_title:"\u0645\u062a\u062d\u0642\u0642 \u0625\u062d\u0635\u0627\u0626\u064a\u0627\u064b",f2_desc:"\u0627\u062e\u062a\u0628\u0627\u0631\u0627\u062a FDR. Walk-forward \u0644\u0623\u0643\u062b\u0631 \u0645\u0646 3 \u0633\u0646\u0648\u0627\u062a.",f3_title:"\u0625\u0634\u0627\u0631\u0627\u062a \u0641\u0648\u0631\u064a\u0629",f3_desc:"\u062a\u0646\u0628\u064a\u0647\u0627\u062a Telegram: Entry\u060c SL\u060c TP.",f4_title:"\u0625\u062f\u0627\u0631\u0629 \u0643\u0627\u0645\u0644\u0629",f4_desc:"Trailing stops\u060c TP \u062c\u0632\u0626\u064a\u060c breakeven.",f5_title:"\u0645\u062a\u0639\u062f\u062f \u0627\u0644\u0623\u0635\u0648\u0644",f5_desc:"\u0630\u0647\u0628\u060c \u0641\u0648\u0631\u0643\u0633\u060c \u0645\u0624\u0634\u0631\u0627\u062a\u060c \u0646\u0641\u0637. 9 \u0631\u0645\u0648\u0632.",f6_title:"\u0646\u062a\u0627\u0626\u062c \u0645\u0648\u062b\u0642\u0629",f6_desc:"\u0646\u062a\u0627\u0626\u062c \u062d\u064a\u0629 \u0639\u0644\u0649 MyFXBook.",live_title:"\u0646\u062a\u0627\u0626\u062c <span>\u0645\u0648\u062b\u0642\u0629</span>",view_portfolio:"\u0639\u0631\u0636 \u0639\u0644\u0649 MyFXBook",receive_title:"\u0645\u0627\u0630\u0627 <span>\u062a\u062a\u0644\u0642\u0649</span>",plus_signals:"\u064a\u0634\u0645\u0644: \u062a\u062d\u062f\u064a\u062b\u0627\u062a SL\u060c TP \u062c\u0632\u0626\u064a\u060c \u0625\u062f\u0627\u0631\u0629 \u0627\u0644\u0645\u062d\u0641\u0638\u0629",how_title:"\u0643\u064a\u0641 <span>\u064a\u0639\u0645\u0644</span>",s1_title:"\u0627\u0646\u0636\u0645 \u0644\u0644\u0642\u0646\u0627\u0629",s1_desc:"\u0648\u0635\u0648\u0644 \u0645\u062c\u0627\u0646\u064a. \u0628\u062f\u0648\u0646 \u0631\u0633\u0648\u0645 \u0645\u062e\u0641\u064a\u0629.",s2_title:"\u0627\u0633\u062a\u0642\u0628\u0644 \u0627\u0644\u0625\u0634\u0627\u0631\u0627\u062a",s2_desc:"\u062a\u0646\u0628\u064a\u0647\u0627\u062a \u0645\u0639 Entry\u060c SL\u060c TP.",s3_title:"\u0627\u0646\u0633\u062e \u0623\u0648 \u0623\u062a\u0645\u062a",s3_desc:"\u062a\u062f\u0627\u0648\u0644 \u064a\u062f\u0648\u064a\u0627\u064b \u0623\u0648 \u0627\u0633\u062a\u062e\u062f\u0645 Signal Copier \u0627\u0644\u0645\u062c\u0627\u0646\u064a.",dl_title:"<span>Signal Copier</span> \u0645\u062c\u0627\u0646\u064a",dl_desc:"\u0646\u0633\u062e \u062a\u0644\u0642\u0627\u0626\u064a \u0625\u0644\u0649 MT5.",dl_btn:"\u062a\u062d\u0645\u064a\u0644 \u0644\u0648\u064a\u0646\u062f\u0648\u0632",source_btn:"\u0627\u0644\u0643\u0648\u062f \u0627\u0644\u0645\u0635\u062f\u0631\u064a",dl_note:"\u0645\u0641\u062a\u0648\u062d \u0627\u0644\u0645\u0635\u062f\u0631. \u0645\u062c\u0627\u0646\u064a.",cta_title:"\u062a\u062f\u0627\u0648\u0644 <span>\u0628\u0630\u0643\u0627\u0621</span>",cta_desc:"\u0627\u0646\u0636\u0645 \u0644\u0644\u0645\u062a\u062f\u0627\u0648\u0644\u064a\u0646 \u0639\u0644\u0649 Telegram.",disclaimer:"\u0627\u0644\u062a\u062f\u0627\u0648\u0644 \u064a\u0646\u0637\u0648\u064a \u0639\u0644\u0649 \u0645\u062e\u0627\u0637\u0631."}
+};
+const TITLES={en:"IASMC \u2014 Automated Trading Signals",it:"IASMC \u2014 Segnali Trading Automatici",es:"IASMC \u2014 Se\u00f1ales de Trading",fr:"IASMC \u2014 Signaux de Trading",de:"IASMC \u2014 Handelssignale",pt:"IASMC \u2014 Sinais de Trading",ru:"IASMC \u2014 \u0422\u043e\u0440\u0433\u043e\u0432\u044b\u0435 \u0441\u0438\u0433\u043d\u0430\u043b\u044b",zh:"IASMC \u2014 \u4ea4\u6613\u4fe1\u53f7",ja:"IASMC \u2014 \u30c8\u30ec\u30fc\u30c9\u30b7\u30b0\u30ca\u30eb",ar:"IASMC \u2014 \u0625\u0634\u0627\u0631\u0627\u062a \u0627\u0644\u062a\u062f\u0627\u0648\u0644"};
+let lang=localStorage.getItem('iasmc-lang');
+if(!lang){const b=(navigator.language||'en').slice(0,2).toLowerCase();lang=T[b]?b:'en';}
+setLang(lang);
+function setLang(l){
+    lang=l;localStorage.setItem('iasmc-lang',l);document.documentElement.lang=l;
+    if(l==='ar')document.body.style.direction='rtl';else document.body.style.direction='ltr';
+    document.title=TITLES[l]||TITLES.en;
+    const t=T[l]||T.en;
+    document.querySelectorAll('[data-i18n]').forEach(el=>{
+        const k=el.getAttribute('data-i18n'),v=t[k];
+        if(v){if(el.tagName==='A'||el.tagName==='BUTTON')el.textContent=v;else el.innerHTML=v;}
     });
-
-    // Update active button
-    document.getElementById('btn-en').classList.toggle('active', lang === 'en');
-    document.getElementById('btn-it').classList.toggle('active', lang === 'it');
-
-    // Update page title
-    document.title = lang === 'it'
-        ? 'IASMC — Segnali Trading Automatici | Canale Telegram Gratis'
-        : 'IASMC — Automated Trading Signals | Free Telegram Channel';
+    document.querySelectorAll('.lang-btn').forEach(b=>b.classList.toggle('active',b.textContent===l.toUpperCase()));
 }
 </script>
 </body>
