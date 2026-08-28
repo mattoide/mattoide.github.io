@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<!--
+  DEMO PER: Santilli Ricambi Auto e Veicoli Industriali — Isernia (IS) · 28/08/2026
+  IMPOSTAZIONE: non è un'officina, è un RICAMBISTA. Cambia tutto.
+  Chi lo cerca non ha un'auto da riparare: ha un pezzo da trovare, e
+  spesso è un altro meccanico o un autotrasportatore che ha il mezzo
+  fermo. Quello che conta è "ce l'hai?" e "quando arriva?".
+
+  Per questo la pagina è costruita sulla RICHIESTA DEL PEZZO, non su
+  un elenco di servizi: un blocco grande che dice come chiedere e
+  cosa serve sapere (marca, modello, targa).
+
+  DUE COSE VERE E POCO SFRUTTATE, entrambe in evidenza:
+   - la scheda Google dichiara la CONSEGNA: per chi ha il mezzo
+     fermo è il motivo per cui chiama te e non un altro;
+   - il nome dice "e Veicoli Industriali": camion e furgoni, cioè
+     clienti che comprano molto più di un privato.
+
+  DATI VERIFICATI (scheda Google):
+    Via Casale 1/A, 86170 Isernia IS · 0865 413518
+    4,7 su 44 recensioni · categoria: Auto parts store · Delivery
+    Lun-Ven 8:30-13:00 e 15:30-19:00 · Sab 8:30-12:30 · Dom chiuso
+    Sito proprio: NON esiste (verificato sul web il 28/08/2026)
+
+  DA CONFERMARE: come funziona davvero la consegna (zona, tempi,
+  se è solo per officine), le marche trattate e la P.IVA.
+-->
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Santilli Ricambi — Ricambi auto e veicoli industriali a Isernia</title>
+<meta name="description" content="Santilli Ricambi Auto e Veicoli Industriali, Via Casale 1/A a Isernia. Ricambi per auto, furgoni e camion, con consegna. Chiama lo 0865 413518.">
+<meta name="theme-color" content="#2B2E33">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;800&display=swap">
+<style>
+  :root{--grafite:#2B2E33;--grafite2:#3A3E45;--chiaro:#F4F5F6;--bianco:#fff;
+    --ink:#1E2126;--ink2:#565C64;--riga:#DEE1E4;--rosso:#A62B1F;--rosso2:#831F15;--wa:#128C4A}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--chiaro);color:var(--ink);font:17px/1.62 "Figtree",system-ui,sans-serif;
+    -webkit-font-smoothing:antialiased;padding-bottom:74px}
+  .w{max-width:800px;margin:0 auto;padding:0 22px}
+  h1,h2,h3{margin:0;line-height:1.1;letter-spacing:-.02em}
+  h1{font-size:clamp(1.85rem,5.4vw,2.7rem);font-weight:800}
+  h2{font-size:clamp(1.25rem,3.4vw,1.7rem);font-weight:700}
+  h3{font-size:1.02rem;font-weight:600}
+  p{margin:0 0 13px}
+  .testa{background:var(--grafite);color:#EBEDEF;padding:40px 0 34px}
+  .testa .et{font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:#A8B0B8;font-weight:600;margin-bottom:12px}
+  .testa h1{color:#fff}
+  .testa p{color:#AEB5BC;max-width:44ch;margin:14px 0 0}
+  .tag{display:inline-block;background:var(--rosso);color:#fff;font-weight:600;font-size:.9rem;
+    padding:7px 14px;border-radius:3px;margin-top:18px}
+  /* il blocco della richiesta: il cuore */
+  .richiesta{background:var(--bianco);border:2px solid var(--grafite);border-radius:6px;
+    padding:28px;margin-top:-26px;position:relative;z-index:2;box-shadow:0 12px 30px -22px rgba(0,0,0,.5)}
+  .richiesta h2{margin-bottom:8px}
+  .richiesta p{color:var(--ink2);font-size:.98rem}
+  .serve{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:18px 0 22px}
+  .serve div{background:var(--chiaro);border:1px solid var(--riga);border-radius:4px;padding:13px 15px}
+  .serve b{display:block;font-size:.95rem}
+  .serve span{font-size:.85rem;color:var(--ink2)}
+  .azioni{display:flex;gap:10px;flex-wrap:wrap}
+  .btn{display:inline-flex;align-items:center;justify-content:center;padding:15px 26px;text-decoration:none;
+    font-weight:600;border-radius:4px;min-height:54px}
+  .b1{background:var(--rosso);color:#fff}.b1:hover{background:var(--rosso2)}
+  section{padding:42px 0}
+  .consegna{background:var(--grafite2);color:#fff;padding:26px;border-radius:6px;margin-top:26px;
+    display:flex;gap:20px;align-items:center;flex-wrap:wrap;justify-content:space-between}
+  .consegna b{font-size:1.12rem}
+  .consegna span{display:block;color:#B6BDC4;font-size:.94rem;margin-top:4px;max-width:46ch}
+  .sv{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:13px;margin-top:18px}
+  .sv div{background:var(--bianco);border:1px solid var(--riga);border-left:4px solid var(--rosso);
+    border-radius:4px;padding:18px 19px}
+  .sv h3{margin-bottom:5px}.sv p{margin:0;font-size:.93rem;color:var(--ink2)}
+  .griglia{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:26px;margin-top:18px;align-items:start}
+  .num{color:var(--rosso);font-weight:800;font-size:1.4rem;text-decoration:none}
+  .orari{width:100%;border-collapse:collapse;margin-top:14px}
+  .orari td{padding:10px 0;border-bottom:1px solid var(--riga);font-size:.95rem}
+  .orari td:last-child{text-align:right;font-weight:600;font-variant-numeric:tabular-nums}
+  .voto{display:flex;gap:14px;align-items:center;margin-top:18px}
+  .voto b{font-size:2.1rem;color:var(--rosso);font-weight:800;line-height:1}
+  .voto span{color:var(--ink2);font-size:.94rem}
+  .mappa{border:0;width:100%;height:240px;border-radius:5px;filter:grayscale(.4)}
+  footer{background:var(--grafite);color:#98A0A8;padding:26px 0;font-size:.88rem}
+  footer a{color:#fff}
+  .barra{position:fixed;left:0;right:0;bottom:0;display:none;z-index:50;padding:9px 12px;
+    background:var(--bianco);border-top:1px solid var(--riga)}
+  .barra .btn{flex:1;padding:13px 6px;min-height:48px}
+  @media(max-width:760px){.barra{display:flex}}
+  a:focus-visible{outline:3px solid var(--rosso);outline-offset:3px}
+</style>
+</head>
+<body>
+<header class="testa">
+  <div class="w">
+    <div class="et">Ricambi auto e veicoli industriali · Isernia</div>
+    <h1>Santilli Ricambi</h1>
+    <p>Auto, furgoni e camion. Se hai il mezzo fermo, il pezzo lo cerchiamo noi.</p>
+    <div class="tag">Consegniamo</div>
+  </div>
+</header>
+
+<div class="w">
+  <div class="richiesta">
+    <h2>Cerchi un pezzo? Chiedi</h2>
+    <p>Chiamaci e dicci cosa ti serve: se ce l'abbiamo lo trovi pronto, altrimenti ti diciamo subito in quanto arriva.</p>
+    <div class="serve">
+      <div><b>Marca e modello</b><span>Anche solo approssimativi</span></div>
+      <div><b>Anno</b><span>O gli estremi del libretto</span></div>
+      <div><b>Targa</b><span>Il modo più rapido</span></div>
+    </div>
+    <div class="azioni">
+      <a class="btn b1" href="tel:0865413518">Chiama 0865 413518</a>
+    </div>
+  </div>
+</div>
+
+<section>
+  <div class="w">
+    <h2>Per chi lavora con i mezzi</h2>
+    <!-- GENERICI: le marche trattate non sono dichiarate sulla scheda.
+         Da confermare col titolare, insieme ai dettagli della consegna. -->
+    <div class="sv">
+      <div><h3>Ricambi auto</h3><p>Per la manutenzione ordinaria e per le riparazioni.</p></div>
+      <div><h3>Veicoli industriali</h3><p>Furgoni e camion: chi lavora col mezzo non può stare fermo.</p></div>
+      <div><h3>Officine e artigiani</h3><p>Se ripari per mestiere, ti diciamo subito disponibilità e tempi.</p></div>
+    </div>
+    <div class="consegna">
+      <div><b>Consegniamo noi</b><span>Se hai il mezzo fermo o il cantiere aperto, il pezzo può arrivarti senza che tu ti muova. Chiama e ci accordiamo.</span></div>
+      <a class="btn b1" href="tel:0865413518">Chiama</a>
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--bianco);border-top:1px solid var(--riga)">
+  <div class="w">
+    <h2>Dove siamo</h2>
+    <div class="griglia">
+      <div>
+        <p style="font-weight:600;font-size:1.06rem">Via Casale, 1/A<br>86170 Isernia (IS)</p>
+        <a class="num" href="tel:0865413518">0865 413518</a>
+        <table class="orari">
+          <tr><td>Lunedì – Venerdì</td><td>8:30–13:00 · 15:30–19:00</td></tr>
+          <tr><td>Sabato</td><td>8:30–12:30</td></tr>
+          <tr><td>Domenica</td><td>Chiuso</td></tr>
+        </table>
+        <div class="voto"><b>4,7</b><span>su <strong>44 recensioni</strong> su Google.</span></div>
+      </div>
+      <div><iframe class="mappa" loading="lazy" title="Dove siamo: Via Casale 1/A, Isernia"
+        src="https://maps.google.com/maps?q=Via%20Casale%201,%2086170%20Isernia&output=embed"></iframe></div>
+    </div>
+  </div>
+</section>
+
+<footer><div class="w"><strong style="color:#fff">Santilli Ricambi Auto e Veicoli Industriali</strong><br>
+  Via Casale 1/A, 86170 Isernia (IS) · <a href="tel:0865413518">0865 413518</a></div></footer>
+
+<nav class="barra" aria-label="Contatti rapidi">
+  <a class="btn b1" href="tel:0865413518">Chiama ora</a>
+</nav>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"AutoPartsStore","name":"Santilli Ricambi Auto e Veicoli Industriali",
+"telephone":"+390865413518","address":{"@type":"PostalAddress","streetAddress":"Via Casale, 1/A",
+"postalCode":"86170","addressLocality":"Isernia","addressRegion":"IS","addressCountry":"IT"},
+"areaServed":"Isernia e provincia"}
+</script>
+</body>
+</html>

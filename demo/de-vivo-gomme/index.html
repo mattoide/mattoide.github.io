@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<!--
+  DEMO PER: De Vivo Gomme Isernia — Isernia (IS) · 28/08/2026
+  IMPOSTAZIONE: la categoria Google è "Tire shop", quindi gommista è
+  un dato certo e non un'ipotesi. Per un gommista il cliente arriva
+  due volte l'anno, nelle stesse settimane, tutti insieme.
+  La pagina è costruita sui DUE MOMENTI dell'anno — estate e inverno —
+  e sul messaggio che conta: prenota prima che si riempia.
+
+  Aprono anche il sabato pomeriggio (fino alle 17), cosa che quasi
+  nessun gommista fa: è in evidenza perché è un vantaggio vero.
+
+  DATI VERIFICATI (scheda Google):
+    Via XXIV Maggio 36, 86170 Isernia IS · 0865 26782
+    4,8 su 50 recensioni · categoria: Tire shop (gommista)
+    Lun-Ven 8:00-13:00 e 15:00-19:00 · Sab 8:00-13:00 e 15:00-17:00
+    Sito proprio: NON esiste (verificato sul web il 28/08/2026)
+    Ha una pagina Facebook: secondo canale di contatto
+
+  DA CONFERMARE: se fanno anche custodia del treno smontato e
+  riparazioni (tipico dei gommisti ma non dichiarato), e la P.IVA.
+  La pagina NON cita date di obbligo di legge: le finestre le fissano
+  gli enti che gestiscono le strade e cambiano per zona.
+-->
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>De Vivo Gomme — Gommista a Isernia</title>
+<meta name="description" content="De Vivo Gomme Isernia, Via XXIV Maggio 36. Cambio gomme estate e inverno, aperti anche il sabato pomeriggio. Chiama lo 0865 26782.">
+<meta name="theme-color" content="#12314F">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap">
+<style>
+  :root{--navy:#12314F;--navy2:#1B4269;--chiaro:#F2F5F8;--bianco:#fff;
+    --ink:#101C29;--ink2:#4A5B6C;--riga:#D9E1E8;--arancio:#E8721C;--arancio2:#BC5710;--wa:#128C4A}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--chiaro);color:var(--ink);font:17px/1.6 "Sora",system-ui,sans-serif;
+    -webkit-font-smoothing:antialiased;padding-bottom:74px}
+  .w{max-width:820px;margin:0 auto;padding:0 22px}
+  h1,h2,h3{margin:0;line-height:1.1;letter-spacing:-.03em}
+  h1{font-size:clamp(1.9rem,5.6vw,2.9rem);font-weight:700}
+  h2{font-size:clamp(1.25rem,3.4vw,1.7rem);font-weight:600}
+  h3{font-size:1.02rem;font-weight:600}
+  p{margin:0 0 13px}
+  .testa{background:var(--navy);color:#E7EEF5;padding:40px 0 34px}
+  .testa .et{font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--arancio);font-weight:600;margin-bottom:12px}
+  .testa h1{color:#fff}
+  .testa p{color:#9FB3C6;max-width:42ch;margin:14px 0 0}
+  .azioni{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+  .btn{display:inline-flex;align-items:center;justify-content:center;padding:15px 26px;text-decoration:none;
+    font-weight:600;border-radius:5px;min-height:54px}
+  .b1{background:var(--arancio);color:#fff}.b1:hover{background:var(--arancio2)}
+  /* i due momenti dell'anno */
+  .stagioni{display:grid;grid-template-columns:1fr 1fr;gap:2px;background:var(--navy)}
+  @media(max-width:620px){.stagioni{grid-template-columns:1fr}}
+  .st{padding:32px 24px;color:#fff}
+  .st.inv{background:var(--navy2)}
+  .st.est{background:var(--arancio)}
+  .st .q{font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;opacity:.85;font-weight:600}
+  .st h2{margin:10px 0 8px;color:#fff}
+  .st p{margin:0;font-size:.95rem;opacity:.92}
+  section{padding:42px 0}
+  .alt{background:var(--bianco);border-top:1px solid var(--riga);border-bottom:1px solid var(--riga)}
+  .sv{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:13px;margin-top:18px}
+  .sv div{border:1px solid var(--riga);border-radius:5px;padding:18px 19px;background:var(--chiaro)}
+  .sv h3{margin-bottom:5px;color:var(--navy)}.sv p{margin:0;font-size:.93rem;color:var(--ink2)}
+  .sabato{background:var(--navy);color:#fff;padding:22px 24px;margin-top:20px;border-radius:5px;
+    display:flex;gap:18px;align-items:center;flex-wrap:wrap;justify-content:space-between}
+  .sabato b{font-size:1.15rem}
+  .sabato span{color:#9FB3C6;font-size:.95rem;display:block;margin-top:3px}
+  .griglia{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:26px;margin-top:18px;align-items:start}
+  .num{color:var(--arancio2);font-weight:700;font-size:1.4rem;text-decoration:none}
+  .orari{width:100%;border-collapse:collapse;margin-top:14px}
+  .orari td{padding:10px 0;border-bottom:1px solid var(--riga);font-size:.95rem}
+  .orari td:last-child{text-align:right;font-weight:600;font-variant-numeric:tabular-nums}
+  .voto{display:flex;gap:14px;align-items:center;margin-top:20px}
+  .voto b{font-size:2.2rem;color:var(--arancio2);font-weight:700;line-height:1}
+  .voto span{color:var(--ink2);font-size:.95rem}
+  .mappa{border:0;width:100%;height:240px;border-radius:5px;filter:grayscale(.35)}
+  footer{background:var(--navy);color:#8DA2B6;padding:26px 0;font-size:.88rem}
+  footer a{color:var(--arancio)}
+  .barra{position:fixed;left:0;right:0;bottom:0;display:none;z-index:50;padding:9px 12px;
+    background:var(--bianco);border-top:1px solid var(--riga)}
+  .barra .btn{flex:1;padding:13px 6px;min-height:48px}
+  @media(max-width:760px){.barra{display:flex}}
+  a:focus-visible{outline:3px solid var(--arancio);outline-offset:3px}
+</style>
+</head>
+<body>
+<header class="testa">
+  <div class="w">
+    <div class="et">Gommista · Isernia</div>
+    <h1>De Vivo Gomme</h1>
+    <p>In Via XXIV Maggio, a Isernia. Gomme montate, equilibrate e controllate: due volte l'anno, fatte bene.</p>
+    <div class="azioni"><a class="btn b1" href="tel:086526782">Chiama 0865 26782</a></div>
+  </div>
+</header>
+
+<div class="stagioni">
+  <div class="st inv">
+    <div class="q">Da autunno</div>
+    <h2>Gomme invernali</h2>
+    <p>Nelle settimane del cambio si riempie tutto in pochi giorni. Chiama prima e ti teniamo il posto.</p>
+  </div>
+  <div class="st est">
+    <div class="q">Da primavera</div>
+    <h2>Gomme estive</h2>
+    <p>Rimontaggio, equilibratura e controllo dell'usura prima di ripartire per l'estate.</p>
+  </div>
+</div>
+
+<section class="alt">
+  <div class="w">
+    <h2>Cosa facciamo</h2>
+    <!-- Gommista è confermato dalla categoria Google "Tire shop".
+         Le voci restano ampie: custodia e riparazioni da confermare col titolare. -->
+    <div class="sv">
+      <div><h3>Montaggio ed equilibratura</h3><p>Il treno completo o la singola gomma, con controllo della pressione.</p></div>
+      <div><h3>Cambio stagionale</h3><p>Il passaggio estate-inverno e viceversa, su appuntamento.</p></div>
+      <div><h3>Controllo usura</h3><p>Ti diciamo quanto ti resta prima che diventi un problema.</p></div>
+    </div>
+    <div class="sabato">
+      <div><b>Aperti anche il sabato pomeriggio</b><span>Fino alle 17: se lavori tutta la settimana, il cambio gomme lo fai comunque.</span></div>
+      <a class="btn b1" href="tel:086526782">Chiama</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="w">
+    <h2>Dove siamo</h2>
+    <div class="griglia">
+      <div>
+        <p style="font-weight:600;font-size:1.06rem">Via XXIV Maggio, 36<br>86170 Isernia (IS)</p>
+        <a class="num" href="tel:086526782">0865 26782</a>
+        <table class="orari">
+          <tr><td>Lunedì – Venerdì</td><td>8:00–13:00 · 15:00–19:00</td></tr>
+          <tr><td>Sabato</td><td>8:00–13:00 · 15:00–17:00</td></tr>
+          <tr><td>Domenica</td><td>Chiuso</td></tr>
+        </table>
+        <div class="voto"><b>4,8</b><span>su <strong>50 recensioni</strong> su Google.</span></div>
+      </div>
+      <div><iframe class="mappa" loading="lazy" title="Dove siamo: Via XXIV Maggio 36, Isernia"
+        src="https://maps.google.com/maps?q=Via%20XXIV%20Maggio%2036,%2086170%20Isernia&output=embed"></iframe></div>
+    </div>
+  </div>
+</section>
+
+<footer><div class="w"><strong style="color:#fff">De Vivo Gomme Isernia</strong> — Via XXIV Maggio 36,
+  86170 Isernia (IS) · <a href="tel:086526782">0865 26782</a></div></footer>
+
+<nav class="barra" aria-label="Contatti rapidi">
+  <a class="btn b1" href="tel:086526782">Chiama ora</a>
+</nav>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"TireShop","name":"De Vivo Gomme Isernia",
+"telephone":"+39086526782","address":{"@type":"PostalAddress","streetAddress":"Via XXIV Maggio, 36",
+"postalCode":"86170","addressLocality":"Isernia","addressRegion":"IS","addressCountry":"IT"},
+"areaServed":"Isernia e provincia"}
+</script>
+</body>
+</html>

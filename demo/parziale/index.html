@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<!--
+  DEMO PER: AUTOFFICINA PARZIALE — Campobasso (CB) · 28/08/2026
+
+  ATTENZIONE, LEGGI PRIMA DI MANDARE IL LINK.
+  La scheda Google li dà CHIUSI il venerdì, il sabato e la domenica,
+  e aperti solo da lunedì a giovedì. A fine agosto è molto probabile
+  che sia una chiusura per ferie lasciata impostata e mai tolta.
+  Se è così, stanno perdendo tutte le chiamate del venerdì.
+
+  È il miglior aggancio che hai con loro, e vale più del sito:
+  "la vostra scheda dice che siete chiusi il venerdì, è giusto?"
+  Sistemarlo è gratis e dimostra che hai guardato davvero.
+
+  PER QUESTO la pagina è costruita sugli ORARI: sono l'elemento
+  più grande, con i giorni di apertura in evidenza. Se il titolare
+  conferma che il venerdì è aperto, si aggiorna la riga e basta.
+  NON pubblicare questi orari come definitivi senza conferma.
+
+  DATI VERIFICATI (scheda Google):
+    Via Giambattista Vico 75, 86100 Campobasso CB · 0874 60719
+    4,8 su 66 recensioni · Auto repair shop
+    Sito proprio: NON esiste (verificato sul web il 28/08/2026)
+
+  DA CONFERMARE: gli orari (vedi sopra), i servizi e la P.IVA.
+-->
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Autofficina Parziale — Officina a Campobasso</title>
+<meta name="description" content="Autofficina Parziale, Via Giambattista Vico 75 a Campobasso. 4,8 su 66 recensioni Google. Chiama lo 0874 60719.">
+<meta name="theme-color" content="#111111">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;800&display=swap">
+<style>
+  :root{--nero:#111111;--nero2:#1D1D1D;--bianco:#fff;--chiaro:#F5F5F4;
+    --ink:#111;--ink2:#555;--riga:#E0DFDC;--rosso:#D22B2B;--rosso2:#A81F1F;--wa:#128C4A}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--chiaro);color:var(--ink);font:17px/1.62 "Work Sans",system-ui,sans-serif;
+    -webkit-font-smoothing:antialiased;padding-bottom:74px}
+  .w{max-width:780px;margin:0 auto;padding:0 22px}
+  h1,h2,h3{margin:0;line-height:1.08;letter-spacing:-.02em}
+  h1{font-size:clamp(2rem,6.2vw,3.1rem);font-weight:800;text-transform:uppercase}
+  h2{font-size:clamp(1.3rem,3.6vw,1.8rem);font-weight:600}
+  h3{font-size:1.05rem;font-weight:600}
+  p{margin:0 0 13px}
+  .testa{background:var(--nero);color:#EDEDEB;padding:42px 0 34px}
+  .testa .et{font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--rosso);font-weight:600;margin-bottom:12px}
+  .testa h1{color:#fff}
+  .testa p{color:#A9A9A5;max-width:40ch;margin:14px 0 0}
+  .azioni{margin-top:24px}
+  .btn{display:inline-flex;align-items:center;justify-content:center;padding:15px 28px;text-decoration:none;
+    font-weight:600;border-radius:3px;min-height:54px}
+  .b1{background:var(--rosso);color:#fff}.b1:hover{background:var(--rosso2)}
+  /* gli orari sono il pezzo forte */
+  .quando{padding:44px 0}
+  .settimana{margin-top:20px;display:grid;grid-template-columns:repeat(auto-fit,minmax(96px,1fr));gap:8px}
+  .g{background:var(--bianco);border:1px solid var(--riga);border-radius:4px;padding:14px 10px;text-align:center}
+  .g.aperto{border-color:var(--nero);border-width:2px}
+  .g .gg{font-size:12px;letter-spacing:.12em;text-transform:uppercase;font-weight:600;color:var(--ink2)}
+  .g.aperto .gg{color:var(--nero)}
+  .g .st{font-weight:800;font-size:1.02rem;margin-top:6px}
+  .g.aperto .st{color:var(--rosso)}
+  .g.chiuso .st{color:#B0AFAB;font-weight:600}
+  .g .or{font-size:.78rem;color:var(--ink2);margin-top:4px;line-height:1.35}
+  .avviso{background:var(--nero);color:#fff;padding:20px 22px;margin-top:20px;border-left:5px solid var(--rosso)}
+  .avviso p{margin:0;font-size:.98rem;color:#D6D6D3}
+  section{padding:44px 0}
+  .alt{background:var(--bianco);border-top:1px solid var(--riga);border-bottom:1px solid var(--riga)}
+  .sv{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:14px;margin-top:20px}
+  .sv div{border:1px solid var(--riga);border-radius:4px;padding:19px 20px;background:var(--chiaro)}
+  .sv h3{margin-bottom:5px}.sv p{margin:0;font-size:.94rem;color:var(--ink2)}
+  .voto{display:flex;gap:14px;align-items:center;margin-top:22px}
+  .voto b{font-size:2.2rem;color:var(--rosso);font-weight:800;line-height:1}
+  .voto span{color:var(--ink2);font-size:.95rem}
+  .griglia{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:26px;margin-top:18px;align-items:start}
+  .num{color:var(--nero);font-weight:800;font-size:1.4rem;text-decoration:none;border-bottom:3px solid var(--rosso)}
+  .mappa{border:0;width:100%;height:240px;filter:grayscale(.4)}
+  footer{background:var(--nero);color:#8E8E8A;padding:26px 0;font-size:.89rem}
+  footer a{color:var(--rosso)}
+  .barra{position:fixed;left:0;right:0;bottom:0;display:none;z-index:50;padding:9px 12px;
+    background:var(--bianco);border-top:1px solid var(--riga)}
+  .barra .btn{flex:1;padding:13px 6px;min-height:48px}
+  @media(max-width:760px){.barra{display:flex}}
+  a:focus-visible{outline:3px solid var(--rosso);outline-offset:3px}
+</style>
+</head>
+<body>
+<header class="testa">
+  <div class="w">
+    <div class="et">Officina meccanica · Campobasso</div>
+    <h1>Autofficina Parziale</h1>
+    <p>In Via Giambattista Vico, a Campobasso. 4,8 su 66 recensioni: la macchina la lasci a chi la tratta bene.</p>
+    <div class="azioni"><a class="btn b1" href="tel:087460719">Chiama 0874 60719</a></div>
+  </div>
+</header>
+
+<section class="quando">
+  <div class="w">
+    <h2>Quando siamo aperti</h2>
+    <!-- ORARI DA CONFERMARE: Google li dà chiusi ven/sab/dom, probabile
+         impostazione di ferie mai tolta. Vedi nota in cima al file. -->
+    <div class="settimana">
+      <div class="g aperto"><div class="gg">Lun</div><div class="st">Aperto</div><div class="or">9–13<br>16–19</div></div>
+      <div class="g aperto"><div class="gg">Mar</div><div class="st">Aperto</div><div class="or">9–13:30<br>16–19</div></div>
+      <div class="g aperto"><div class="gg">Mer</div><div class="st">Aperto</div><div class="or">9–13<br>16–19</div></div>
+      <div class="g aperto"><div class="gg">Gio</div><div class="st">Aperto</div><div class="or">9–13:30<br>15:30–19</div></div>
+      <div class="g chiuso"><div class="gg">Ven</div><div class="st">Chiuso</div><div class="or">&nbsp;</div></div>
+      <div class="g chiuso"><div class="gg">Sab</div><div class="st">Chiuso</div><div class="or">&nbsp;</div></div>
+      <div class="g chiuso"><div class="gg">Dom</div><div class="st">Chiuso</div><div class="or">&nbsp;</div></div>
+    </div>
+    <div class="avviso"><p>Gli orari sono quelli pubblicati sulla nostra scheda Google. Se stai leggendo di venerdì e ti serve l'officina, chiama lo stesso: ti diciamo subito com'è messa la settimana.</p></div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="w">
+    <h2>Di cosa ci occupiamo</h2>
+    <!-- GENERICI: la scheda Google non specifica i servizi. Da confermare col titolare. -->
+    <div class="sv">
+      <div><h3>Riparazioni</h3><p>Meccanica dell'auto, dai piccoli guasti agli interventi più lunghi.</p></div>
+      <div><h3>Tagliandi</h3><p>La manutenzione periodica, senza rimandare finché si rompe.</p></div>
+      <div><h3>Diagnosi</h3><p>Prima capiamo cos'ha, poi ti diciamo quanto costa.</p></div>
+    </div>
+    <div class="voto"><b>4,8</b><span>su <strong>66 recensioni</strong> lasciate su Google dai nostri clienti.</span></div>
+  </div>
+</section>
+
+<section>
+  <div class="w">
+    <h2>Dove siamo</h2>
+    <div class="griglia">
+      <div>
+        <p style="font-weight:600;font-size:1.08rem">Via Giambattista Vico, 75<br>86100 Campobasso (CB)</p>
+        <a class="num" href="tel:087460719">0874 60719</a>
+      </div>
+      <div><iframe class="mappa" loading="lazy" title="Dove siamo: Via Giambattista Vico 75, Campobasso"
+        src="https://maps.google.com/maps?q=Via%20Giambattista%20Vico%2075,%2086100%20Campobasso&output=embed"></iframe></div>
+    </div>
+  </div>
+</section>
+
+<footer><div class="w"><strong style="color:#fff">Autofficina Parziale</strong> — Via Giambattista Vico 75,
+  86100 Campobasso (CB) · <a href="tel:087460719">0874 60719</a></div></footer>
+
+<nav class="barra" aria-label="Contatti rapidi">
+  <a class="btn b1" href="tel:087460719">Chiama ora</a>
+</nav>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"AutoRepair","name":"Autofficina Parziale",
+"telephone":"+39087460719","address":{"@type":"PostalAddress","streetAddress":"Via Giambattista Vico, 75",
+"postalCode":"86100","addressLocality":"Campobasso","addressRegion":"CB","addressCountry":"IT"},
+"areaServed":"Campobasso e provincia"}
+</script>
+</body>
+</html>

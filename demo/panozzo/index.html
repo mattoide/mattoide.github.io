@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<!--
+  DEMO PER: AUTO P di Panozzo Michele — Thiene (VI) · 28/08/2026
+  IMPOSTAZIONE: 76 recensioni è il numero più alto di tutte le 140
+  attività della lista. Non è un dettaglio: è IL patrimonio.
+  Quindi la pagina è costruita attorno al numero — il 76 è l'elemento
+  più grande dell'intestazione, prima ancora del nome.
+
+  DATI VERIFICATI (scheda Google):
+    Via Val Posina 19, 36016 Thiene VI · 0445 365347
+    4,8 su 76 recensioni · Auto repair shop
+    Lun-Ven 8:00-12:30 e 14:00-18:30 · Sab 8:00-12:30 · Dom chiuso
+    Sito proprio: NON esiste (verificato sul web il 28/08/2026)
+
+  DA CONFERMARE: i servizi (la scheda non li specifica) e la P.IVA.
+  Numero fisso: per contattarlo serve la pagina Facebook o il telefono.
+-->
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>AUTO P di Panozzo Michele — Officina a Thiene</title>
+<meta name="description" content="AUTO P di Panozzo Michele, Via Val Posina 19 a Thiene. 4,8 su 76 recensioni Google. Chiama lo 0445 365347.">
+<meta name="theme-color" content="#16202B">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;800&display=swap">
+<style>
+  :root{--blu:#16202B;--blu2:#1F2C3A;--chiaro:#F4F6F8;--bianco:#fff;
+    --ink:#141B22;--ink2:#4B5764;--riga:#DCE1E6;--giallo:#F0B429;--wa:#128C4A}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--chiaro);color:var(--ink);font:17px/1.62 "Outfit",system-ui,sans-serif;
+    -webkit-font-smoothing:antialiased;padding-bottom:74px}
+  .w{max-width:780px;margin:0 auto;padding:0 22px}
+  h1,h2,h3{margin:0;line-height:1.08;letter-spacing:-.025em}
+  h1{font-size:clamp(1.9rem,5.6vw,2.8rem);font-weight:800}
+  h2{font-size:clamp(1.3rem,3.6vw,1.8rem);font-weight:600}
+  h3{font-size:1.05rem;font-weight:600}
+  p{margin:0 0 13px}
+  .testa{background:var(--blu);color:#EAF0F5;padding:40px 0 36px;text-align:center}
+  .testa .et{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--giallo);font-weight:600}
+  .cifrone{font-size:clamp(4.5rem,18vw,7.5rem);font-weight:800;color:var(--giallo);line-height:.9;
+    letter-spacing:-.05em;margin:14px 0 2px}
+  .testa .sotto-num{font-size:1.02rem;color:#9EAEBD;margin-bottom:22px}
+  .testa h1{color:#fff;margin-bottom:8px}
+  .testa .ind{color:#9EAEBD;font-size:.98rem}
+  .azioni{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:24px}
+  .btn{display:inline-flex;align-items:center;justify-content:center;padding:15px 26px;text-decoration:none;
+    font-weight:600;border-radius:5px;min-height:54px}
+  .b1{background:var(--giallo);color:#2A1E00}.b1:hover{background:#D69C1E}
+  .b2{background:var(--wa);color:#fff}.b2:hover{filter:brightness(.93)}
+  section{padding:44px 0}
+  .sv{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:14px;margin-top:20px}
+  .sv div{background:var(--bianco);border:1px solid var(--riga);border-radius:5px;padding:19px 20px}
+  .sv h3{margin-bottom:5px}.sv p{margin:0;font-size:.94rem;color:var(--ink2)}
+  .dove{background:var(--bianco);border-top:1px solid var(--riga);border-bottom:1px solid var(--riga)}
+  .griglia{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:26px;margin-top:18px;align-items:start}
+  .num{color:var(--blu);font-weight:800;font-size:1.4rem;text-decoration:none}
+  .orari{width:100%;border-collapse:collapse;margin-top:14px}
+  .orari td{padding:10px 0;border-bottom:1px solid var(--riga);font-size:.96rem}
+  .orari td:last-child{text-align:right;font-weight:600;font-variant-numeric:tabular-nums}
+  .mappa{border:0;width:100%;height:240px;border-radius:5px;filter:grayscale(.35)}
+  footer{background:var(--blu);color:#8CA0B2;padding:26px 0;font-size:.89rem;text-align:center}
+  footer a{color:var(--giallo)}
+  .barra{position:fixed;left:0;right:0;bottom:0;display:none;z-index:50;gap:8px;padding:9px 12px;
+    background:var(--bianco);border-top:1px solid var(--riga)}
+  .barra .btn{flex:1;padding:13px 6px;min-height:48px}
+  @media(max-width:760px){.barra{display:flex}}
+  a:focus-visible{outline:3px solid var(--giallo);outline-offset:3px}
+</style>
+</head>
+<body>
+<header class="testa">
+  <div class="w">
+    <div class="et">Officina meccanica · Thiene</div>
+    <div class="cifrone">76</div>
+    <div class="sotto-num">recensioni su Google, con la media di 4,8</div>
+    <h1>AUTO P di Panozzo Michele</h1>
+    <p class="ind">Via Val Posina 19, Thiene (VI)</p>
+    <div class="azioni">
+      <a class="btn b1" href="tel:0445365347">Chiama 0445 365347</a>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="w">
+    <h2>Di cosa ci occupiamo</h2>
+    <!-- GENERICI: la scheda Google non specifica i servizi. Da confermare col titolare. -->
+    <div class="sv">
+      <div><h3>Riparazioni</h3><p>Dai piccoli guasti agli interventi più impegnativi sulla meccanica.</p></div>
+      <div><h3>Tagliandi</h3><p>La manutenzione periodica, per non trovarsi fermi quando serve l'auto.</p></div>
+      <div><h3>Diagnosi</h3><p>Prima capiamo il problema, poi si parla di preventivo.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="dove">
+  <div class="w">
+    <h2>Dove siamo</h2>
+    <div class="griglia">
+      <div>
+        <p style="font-weight:600;font-size:1.08rem">Via Val Posina, 19<br>36016 Thiene (VI)</p>
+        <a class="num" href="tel:0445365347">0445 365347</a>
+        <table class="orari">
+          <tr><td>Lunedì – Venerdì</td><td>8:00–12:30 · 14:00–18:30</td></tr>
+          <tr><td>Sabato</td><td>8:00–12:30</td></tr>
+          <tr><td>Domenica</td><td>Chiuso</td></tr>
+        </table>
+      </div>
+      <div><iframe class="mappa" loading="lazy" title="Dove siamo: Via Val Posina 19, Thiene"
+        src="https://maps.google.com/maps?q=Via%20Val%20Posina%2019,%2036016%20Thiene%20VI&output=embed"></iframe></div>
+    </div>
+  </div>
+</section>
+
+<footer><div class="w"><strong style="color:#fff">AUTO P di Panozzo Michele</strong><br>
+  Via Val Posina 19, 36016 Thiene (VI) · <a href="tel:0445365347">0445 365347</a></div></footer>
+
+<nav class="barra" aria-label="Contatti rapidi">
+  <a class="btn b1" href="tel:0445365347">Chiama ora</a>
+</nav>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"AutoRepair","name":"AUTO P di Panozzo Michele",
+"telephone":"+390445365347","address":{"@type":"PostalAddress","streetAddress":"Via Val Posina, 19",
+"postalCode":"36016","addressLocality":"Thiene","addressRegion":"VI","addressCountry":"IT"},
+"areaServed":"Thiene e Alto Vicentino"}
+</script>
+</body>
+</html>

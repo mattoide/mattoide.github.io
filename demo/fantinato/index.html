@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<!--
+  DEMO PER: Autofficina Fantinato — Bassano del Grappa (VI) · 28/08/2026
+  IMPOSTAZIONE: orario lunghissimo (fino alle 19:15) e sabato mattina
+  aperto. Per chi lavora è la cosa che decide dove porta l'auto.
+  Quindi la pagina è costruita sulla DISPONIBILITÀ: gli orari sono il
+  contenuto principale, non una riga in fondo.
+
+  DATI VERIFICATI (scheda Google):
+    Via Cà Baroncello 32, 36061 Bassano del Grappa VI · 0424 512606
+    4,7 su 66 recensioni · Auto repair shop
+    Lun-Ven 8:30-12:45 e 14:30-19:15 · Sab 8:30-12:15 · Dom chiuso
+    Sito proprio: NON esiste (verificato sul web il 28/08/2026)
+
+  DA CONFERMARE: i servizi (la scheda non li specifica) e la P.IVA.
+  Numero fisso: canale Facebook o telefono.
+-->
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Autofficina Fantinato — Officina a Bassano del Grappa</title>
+<meta name="description" content="Autofficina Fantinato, Via Cà Baroncello 32 a Bassano del Grappa. Aperti fino alle 19:15 e il sabato mattina. Chiama lo 0424 512606.">
+<meta name="theme-color" content="#241F1D">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap">
+<style>
+  :root{--scuro:#241F1D;--scuro2:#332B28;--crema:#F7F4F1;--bianco:#fff;
+    --ink:#211C1A;--ink2:#5A514C;--riga:#E2DAD4;--rame:#B5643C;--rame2:#8E4A28;--wa:#128C4A}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--crema);color:var(--ink);font:17px/1.62 "Rubik",system-ui,sans-serif;
+    -webkit-font-smoothing:antialiased;padding-bottom:74px}
+  .w{max-width:780px;margin:0 auto;padding:0 22px}
+  h1,h2,h3{margin:0;line-height:1.1;letter-spacing:-.02em}
+  h1{font-size:clamp(2rem,6vw,3rem);font-weight:700}
+  h2{font-size:clamp(1.3rem,3.6vw,1.75rem);font-weight:600}
+  h3{font-size:1.05rem;font-weight:600}
+  p{margin:0 0 13px}
+  .testa{background:var(--scuro);color:#F0E9E5;padding:42px 0 36px}
+  .testa .et{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--rame);
+    font-weight:600;margin-bottom:12px}
+  .testa h1{color:#fff}
+  .testa p{color:#B8ABA4;max-width:42ch;margin:14px 0 0}
+  .azioni{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px}
+  .btn{display:inline-flex;align-items:center;justify-content:center;padding:15px 26px;text-decoration:none;
+    font-weight:600;border-radius:4px;min-height:54px}
+  .b1{background:var(--rame);color:#fff}.b1:hover{background:var(--rame2)}
+  .b2{background:var(--wa);color:#fff}.b2:hover{filter:brightness(.93)}
+
+  /* gli orari sono il contenuto principale */
+  .disponibilita{padding:44px 0}
+  .cal{margin-top:20px;border:2px solid var(--scuro);background:var(--bianco)}
+  .cal .r{display:grid;grid-template-columns:1fr auto;gap:14px;padding:16px 20px;border-bottom:1px solid var(--riga)}
+  .cal .r:last-child{border-bottom:0}
+  .cal .r.forte{background:var(--scuro);color:#fff}
+  .cal .r.forte .o{color:var(--rame)}
+  .cal .g{font-weight:600}
+  .cal .o{font-weight:600;font-variant-numeric:tabular-nums;text-align:right}
+  .cal .r.chiuso{color:var(--ink2)}
+  .nota{background:var(--rame);color:#fff;padding:18px 22px;margin-top:18px}
+  .nota p{margin:0;font-weight:500}
+
+  section{padding:44px 0}
+  .alt{background:var(--bianco);border-top:1px solid var(--riga);border-bottom:1px solid var(--riga)}
+  .sv{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:14px;margin-top:20px}
+  .sv div{border:1px solid var(--riga);border-radius:4px;padding:19px 20px;background:var(--crema)}
+  .sv h3{margin-bottom:5px;color:var(--rame2)}.sv p{margin:0;font-size:.94rem;color:var(--ink2)}
+  .griglia{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:26px;margin-top:18px;align-items:start}
+  .num{color:var(--rame2);font-weight:700;font-size:1.4rem;text-decoration:none}
+  .voto{display:flex;gap:14px;align-items:center;margin-top:22px}
+  .voto b{font-size:2.2rem;color:var(--rame2);font-weight:700;line-height:1}
+  .voto span{color:var(--ink2);font-size:.95rem}
+  .mappa{border:0;width:100%;height:240px;filter:grayscale(.35)}
+  footer{background:var(--scuro);color:#9E918A;padding:26px 0;font-size:.89rem}
+  footer a{color:var(--rame)}
+  .barra{position:fixed;left:0;right:0;bottom:0;display:none;z-index:50;gap:8px;padding:9px 12px;
+    background:var(--bianco);border-top:1px solid var(--riga)}
+  .barra .btn{flex:1;padding:13px 6px;min-height:48px}
+  @media(max-width:760px){.barra{display:flex}}
+  a:focus-visible{outline:3px solid var(--rame);outline-offset:3px}
+</style>
+</head>
+<body>
+<header class="testa">
+  <div class="w">
+    <div class="et">Officina meccanica · Bassano del Grappa</div>
+    <h1>Autofficina Fantinato</h1>
+    <p>Siamo aperti fino alle 19:15, e anche il sabato mattina. Se lavori tutto il giorno, l'auto puoi portarla lo stesso.</p>
+    <div class="azioni">
+      <a class="btn b1" href="tel:0424512606">Chiama 0424 512606</a>
+    </div>
+  </div>
+</header>
+
+<section class="disponibilita">
+  <div class="w">
+    <h2>Quando puoi venire</h2>
+    <div class="cal">
+      <div class="r forte"><span class="g">Lunedì – Venerdì</span><span class="o">8:30–12:45 · 14:30–19:15</span></div>
+      <div class="r"><span class="g">Sabato</span><span class="o">8:30–12:15</span></div>
+      <div class="r chiuso"><span class="g">Domenica</span><span class="o">Chiuso</span></div>
+    </div>
+    <div class="nota"><p>Chiusura alle 19:15: c'è tempo di passare dopo il lavoro senza chiedere un permesso.</p></div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="w">
+    <h2>Di cosa ci occupiamo</h2>
+    <!-- GENERICI: la scheda Google non specifica i servizi. Da confermare col titolare. -->
+    <div class="sv">
+      <div><h3>Riparazioni</h3><p>Dai piccoli guasti agli interventi più impegnativi sulla meccanica.</p></div>
+      <div><h3>Tagliandi</h3><p>Manutenzione periodica, fatta quando serve.</p></div>
+      <div><h3>Diagnosi</h3><p>Prima capiamo il problema, poi si parla di preventivo.</p></div>
+    </div>
+    <div class="voto"><b>4,7</b><span>su <strong>66 recensioni</strong> lasciate su Google dai nostri clienti.</span></div>
+  </div>
+</section>
+
+<section>
+  <div class="w">
+    <h2>Dove siamo</h2>
+    <div class="griglia">
+      <div>
+        <p style="font-weight:600;font-size:1.08rem">Via Cà Baroncello, 32<br>36061 Bassano del Grappa (VI)</p>
+        <a class="num" href="tel:0424512606">0424 512606</a>
+      </div>
+      <div><iframe class="mappa" loading="lazy" title="Dove siamo: Via Cà Baroncello 32, Bassano del Grappa"
+        src="https://maps.google.com/maps?q=Via%20Ca%20Baroncello%2032,%2036061%20Bassano%20del%20Grappa&output=embed"></iframe></div>
+    </div>
+  </div>
+</section>
+
+<footer><div class="w"><strong style="color:#fff">Autofficina Fantinato</strong> — Via Cà Baroncello 32,
+  36061 Bassano del Grappa (VI) · <a href="tel:0424512606">0424 512606</a></div></footer>
+
+<nav class="barra" aria-label="Contatti rapidi">
+  <a class="btn b1" href="tel:0424512606">Chiama ora</a>
+</nav>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"AutoRepair","name":"Autofficina Fantinato",
+"telephone":"+390424512606","address":{"@type":"PostalAddress","streetAddress":"Via Cà Baroncello, 32",
+"postalCode":"36061","addressLocality":"Bassano del Grappa","addressRegion":"VI","addressCountry":"IT"},
+"openingHoursSpecification":[
+{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"08:30","closes":"12:45"},
+{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"14:30","closes":"19:15"},
+{"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"08:30","closes":"12:15"}],
+"areaServed":"Bassano del Grappa e provincia di Vicenza"}
+</script>
+</body>
+</html>
