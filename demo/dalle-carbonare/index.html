@@ -2,40 +2,42 @@
 <!--
   ============================================================
   DEMO PER: Dalle Carbonare Auto — Autofficina Gommista, Thiene (VI)
-  Preparato il 28/08/2026 · da mostrare, non ancora ufficiale.
+  Preparato il 28/08/2026 · anteprima, non ancora ufficiale.
 
-  IDENTITÀ VISIVA: gommista.
-  Nero gomma e giallo da segnaletica pneumatici, con una fascia
-  di battistrada disegnata in CSS sotto l'intestazione. Il
-  gommista è il loro elemento distintivo: la grafica lo dice
-  prima del testo.
+  IMPOSTAZIONE: qui il cliente non arriva con un guasto, arriva
+  con una scadenza — il cambio gomme. E l'attività fa DUE
+  mestieri sotto lo stesso tetto, che è il suo vero vantaggio
+  sulle officine vicine.
+  Per questo la pagina non ha una timeline né una griglia di
+  servizi: ha un'intestazione DIVISA IN DUE (gomme | meccanica)
+  e una fascia stagionale che dà un motivo per chiamare adesso.
+  Impaginazione da manifesto: maiuscolo, blocchi pieni, poco testo.
 
   DATI VERIFICATI sulla scheda Google:
     Via dell'Eva 59, 36016 Thiene VI
     340 752 6237 · 4,7 su 18 recensioni
-    Email dallecarbonareauto@gmail.com — CONFERMATA: è pubblicata
-    sulla loro pagina Facebook con lo stesso telefono e indirizzo
+    Email dallecarbonareauto@gmail.com — CONFERMATA: pubblicata
+    sulla loro pagina Facebook con stesso telefono e indirizzo
     Sito proprio: NON esiste (verificato sul web il 28/08/2026)
-    Servizi confermati dal nome stesso: officina + gommista
+    Officina + gommista: confermati dal nome stesso dell'attività
 
   DA CONFERMARE prima di pubblicare:
     1. Gli orari. Su Maps si legge solo "chiude 12:30, riapre
-       13:00"; quelli completi qui sotto vengono dal riquadro AI
-       di Google, che NON è una fonte dell'attività. Falli
-       confermare a voce.
+       13:00"; quelli completi vengono dal riquadro AI di Google,
+       che NON è una fonte dell'attività. Da confermare a voce.
     2. Il civico 57 o 59: le due schede riportano numeri diversi.
-    3. Se la vendita auto è ancora attiva.
+    3. La fascia stagionale parla di "prenota prima della fila",
+       NON cita date di obbligo di legge: le finestre le fissano
+       gli enti che gestiscono le strade e cambiano per zona.
+       Se vuoi metterci le date, fattele confermare da loro.
 
   DUE ARGOMENTI DI VENDITA per la conversazione:
-
-    A) Hanno DUE schede Google con lo stesso numero:
-       "Dalle Carbonare Auto Autofficina Gommista" (4,7 · 18) e
-       "DALLE CARBONARE AUTO", concessionaria (5,0 · 3).
-       Le recensioni si dividono invece di sommarsi e chi cerca
-       l'officina può finire sulla scheda sbagliata. Sistemarlo
-       è gratis e vale più del sito: dillo per primo, dimostra
-       che hai guardato davvero.
-
+    A) Hanno DUE schede Google con lo stesso numero: l'officina
+       (4,7 · 18 recensioni) e "DALLE CARBONARE AUTO"
+       concessionaria (5,0 · 3). Le recensioni si dividono invece
+       di sommarsi e chi cerca l'officina può finire sulla scheda
+       sbagliata. Sistemarlo è gratis e vale più del sito: dillo
+       per primo, dimostra che hai guardato davvero.
     B) Vendono auto usate senza avere dove mostrarle. Una pagina
        "le nostre auto" è il primo upsell naturale.
   ============================================================
@@ -46,153 +48,153 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- Anteprima non autorizzata dal titolare: NON deve finire su Google. Togliere solo dopo il sì. -->
 <meta name="robots" content="noindex, nofollow">
-<title>Dalle Carbonare Auto — Officina e gommista a Thiene</title>
-<meta name="description" content="Dalle Carbonare Auto, autofficina e gommista in Via dell'Eva 59 a Thiene (VI). 4,7 stelle su 18 recensioni Google. Chiama il 340 752 6237 o scrivici su WhatsApp.">
-<meta name="theme-color" content="#101012">
+<title>Dalle Carbonare Auto — Gommista e officina a Thiene</title>
+<meta name="description" content="Dalle Carbonare Auto, gommista e officina in Via dell'Eva a Thiene (VI). Cambio gomme e meccanica nello stesso posto. Chiama il 340 752 6237.">
+<meta name="theme-color" content="#0D0D0F">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@400;500;600&display=swap">
 <style>
   :root{
-    --gomma:#101012; --gomma-2:#1B1B1F; --carta:#F5F4F1; --bianco:#FFF;
-    --ink:#131315; --ink-2:#4D4D52; --muted:#7E7E85; --rule:#E0DED8;
-    --giallo:#F2C200; --giallo-scuro:#C29B00; --verde:#128C4A;
+    --nero:#0D0D0F; --nero-2:#18181C; --bianco:#fff; --carta:#F2F1EE; --riga:#DEDCD6;
+    --ink:#111113; --ink-2:#4A4A50; --giallo:#F5C518; --verde:#128C4A;
   }
   *{box-sizing:border-box}
-  html{scroll-behavior:smooth}
   body{margin:0;background:var(--carta);color:var(--ink);
-    font:17px/1.62 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
-    -webkit-font-smoothing:antialiased;padding-bottom:78px}
-  .w{max-width:900px;margin:0 auto;padding:0 20px}
-  h1,h2,h3{margin:0;line-height:1.1;letter-spacing:-.025em}
-  h1{font-size:clamp(2.1rem,6.6vw,3.5rem);font-weight:800;text-transform:uppercase}
-  h2{font-size:clamp(1.4rem,4vw,2rem);font-weight:800;margin-bottom:16px}
-  h3{font-size:1.05rem;font-weight:700}
+    font:17px/1.62 "Archivo",system-ui,sans-serif;-webkit-font-smoothing:antialiased;padding-bottom:74px}
+  .w{max-width:1000px;margin:0 auto;padding:0 22px}
+  h1,h2,h3,.disp{font-family:"Archivo Black","Archivo",sans-serif;margin:0;line-height:.98;
+    text-transform:uppercase;letter-spacing:-.01em}
+  h1{font-size:clamp(2.4rem,8.5vw,4.6rem)}
+  h2{font-size:clamp(1.5rem,4.4vw,2.3rem)}
+  h3{font-size:1.3rem}
   p{margin:0 0 14px}
 
-  .occhiello{display:inline-block;font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;
-    font-weight:800;color:var(--ink);background:var(--giallo);padding:4px 9px;margin-bottom:15px}
+  .cappello{background:var(--nero);color:#fff;padding:34px 0 30px}
+  .cappello .luogo{font-size:12px;letter-spacing:.26em;color:var(--giallo);font-weight:600;
+    text-transform:uppercase;margin-bottom:14px}
+  .cappello h1{color:#fff}
+  .cappello p{color:#A9A9B2;max-width:42ch;margin:16px 0 0}
 
-  header.hero{background:var(--gomma);color:#F2F2F3;padding:52px 0 44px}
-  header.hero .tag{display:inline-block;font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;
-    color:var(--giallo);font-weight:700;margin-bottom:16px}
-  header.hero h1{color:#fff}
-  header.hero h1 span{color:var(--giallo)}
-  header.hero .claim{font-size:1.14rem;color:#B4B4BA;max-width:44ch;margin:18px 0 28px}
-  .azioni{display:flex;gap:11px;flex-wrap:wrap}
-  .btn{display:inline-flex;align-items:center;justify-content:center;
-    padding:15px 26px;font-size:1.02rem;font-weight:800;text-decoration:none;
-    border-radius:2px;min-height:54px;text-transform:uppercase;letter-spacing:.03em;font-size:.95rem}
-  .b-chiama{background:var(--giallo);color:#131315}
-  .b-chiama:hover{background:var(--giallo-scuro)}
-  .b-wa{background:var(--verde);color:#fff}
-  .b-wa:hover{filter:brightness(.92)}
-  .btn:focus-visible{outline:3px solid var(--giallo);outline-offset:3px}
+  /* i due mestieri, uno accanto all'altro: è il loro vantaggio */
+  .duemestieri{display:grid;grid-template-columns:1fr 1fr;gap:3px;background:var(--nero)}
+  @media(max-width:640px){.duemestieri{grid-template-columns:1fr}}
+  .mest{padding:38px 26px;background:var(--nero-2);color:#fff}
+  .mest.g{background:var(--giallo);color:var(--nero)}
+  .mest .n{font-family:"Archivo Black",sans-serif;font-size:.85rem;letter-spacing:.2em;opacity:.7}
+  .mest h2{margin:10px 0 12px}
+  .mest p{font-size:.98rem;margin:0;opacity:.9}
 
-  /* battistrada: blocchi sfalsati come il disegno di un pneumatico */
-  .battistrada{height:26px;background:var(--gomma);position:relative;overflow:hidden}
-  .battistrada::before,.battistrada::after{content:"";position:absolute;left:-20px;right:-20px;height:11px;
-    background:repeating-linear-gradient(90deg,var(--giallo) 0 22px,transparent 22px 40px)}
-  .battistrada::before{top:1px}
-  .battistrada::after{bottom:1px;transform:translateX(20px)}
+  .stagione{background:var(--giallo);color:var(--nero);padding:26px 0}
+  .stagione .w{display:flex;gap:22px;align-items:center;flex-wrap:wrap;justify-content:space-between}
+  .stagione .testo{max-width:52ch}
+  .stagione .disp{font-size:clamp(1.3rem,3.6vw,1.8rem);margin-bottom:6px}
+  .stagione p{margin:0;font-size:.99rem}
+  .cta-nera{background:var(--nero);color:#fff;text-decoration:none;padding:16px 30px;
+    font-family:"Archivo Black",sans-serif;text-transform:uppercase;font-size:.95rem;white-space:nowrap}
+  .cta-nera:hover{background:var(--nero-2)}
 
-  section{padding:48px 0;border-bottom:1px solid var(--rule)}
-  .griglia{display:grid;grid-template-columns:repeat(auto-fit,minmax(226px,1fr));gap:14px;margin-top:20px}
-  .card{background:var(--bianco);border:1px solid var(--rule);border-top:4px solid var(--giallo);
-    border-radius:2px;padding:20px}
-  .card p{margin:6px 0 0;font-size:.94rem;color:var(--ink-2)}
-  .card.big{border-top-color:var(--gomma)}
+  .blocco{padding:52px 0}
+  .lista{margin-top:24px;border-top:3px solid var(--nero)}
+  .lista .r{display:flex;gap:18px;align-items:baseline;padding:20px 0;border-bottom:1px solid var(--riga)}
+  .lista .r .idx{font-family:"Archivo Black",sans-serif;color:var(--giallo);font-size:1.1rem;
+    -webkit-text-stroke:1px var(--nero)}
+  .lista .r p{margin:6px 0 0;color:var(--ink-2);font-size:.97rem}
 
-  .voti{background:var(--gomma);color:#F2F2F3;text-align:center;border:0}
-  .voti .n{font-size:3.4rem;font-weight:800;line-height:1;letter-spacing:-.04em;color:var(--giallo)}
-  .voti .stelle{color:var(--giallo);font-size:1.5rem;letter-spacing:4px;margin-top:4px}
-  .voti p{color:#B4B4BA;margin:12px 0 0}
+  .timbro{display:flex;align-items:center;gap:20px;flex-wrap:wrap;background:var(--nero);color:#fff;
+    padding:26px;margin-top:34px}
+  .timbro .v{font-family:"Archivo Black",sans-serif;font-size:3rem;color:var(--giallo);line-height:1}
+  .timbro p{margin:0;color:#A9A9B2}
 
-  .contatti{display:grid;grid-template-columns:repeat(auto-fit,minmax(255px,1fr));gap:24px;align-items:start}
-  .indirizzo{font-size:1.08rem;font-weight:700;margin-bottom:6px}
-  .tel-grande{color:var(--ink);font-weight:800;font-size:1.35rem;text-decoration:none;
-    border-bottom:3px solid var(--giallo)}
-  table.orari{width:100%;border-collapse:collapse;margin-top:8px}
-  table.orari td{padding:9px 0;border-bottom:1px solid var(--rule);font-size:.96rem}
-  table.orari td:last-child{text-align:right;font-weight:700;font-variant-numeric:tabular-nums}
-  .mappa{border:0;width:100%;height:290px;border-radius:2px;filter:grayscale(.3)}
+  .fondo{background:var(--nero);color:#fff;padding:52px 0}
+  .fondo h2{color:var(--giallo);margin-bottom:22px}
+  .fondo-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:30px}
+  .fondo a{color:#fff}
+  .num{font-family:"Archivo Black",sans-serif;font-size:1.9rem;color:var(--giallo);
+    text-decoration:none;display:inline-block;margin:6px 0 18px}
+  .orari{width:100%;border-collapse:collapse}
+  .orari td{padding:10px 0;border-bottom:1px solid #2A2A30;color:#C9C9D0;font-size:.96rem}
+  .orari td:last-child{text-align:right;color:#fff;font-weight:600;font-variant-numeric:tabular-nums}
+  .mappa{border:0;width:100%;height:250px;filter:grayscale(1) invert(.9) contrast(.85)}
 
-  footer{background:var(--gomma);color:#8A8A91;padding:30px 0;font-size:.89rem}
+  footer{background:var(--nero-2);color:#8A8A93;padding:24px 0;font-size:.89rem}
   footer a{color:var(--giallo)}
 
-  .barra{position:fixed;left:0;right:0;bottom:0;display:none;z-index:50;gap:9px;
-    background:var(--bianco);border-top:1px solid var(--rule);padding:9px 12px}
-  .barra .btn{flex:1;padding:13px 6px;min-height:48px}
+  .barra{position:fixed;left:0;right:0;bottom:0;display:none;z-index:50}
+  .barra a{flex:1;text-align:center;padding:16px 6px;text-decoration:none;
+    font-family:"Archivo Black",sans-serif;font-size:.95rem;text-transform:uppercase}
+  .barra .c{background:var(--giallo);color:var(--nero)}
+  .barra .w2{background:var(--verde);color:#fff}
   @media(max-width:760px){.barra{display:flex}}
-  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  a:focus-visible{outline:3px solid var(--giallo);outline-offset:2px}
 </style>
 </head>
 <body>
 
-<header class="hero">
+<header class="cappello">
   <div class="w">
-    <span class="tag">Officina e gommista · Thiene (VI)</span>
-    <h1>Dalle Carbonare <span>Auto</span></h1>
-    <p class="claim">Meccanica e gomme nello stesso posto, in Via dell'Eva a Thiene. Una telefonata e sappiamo dirti quando possiamo prenderti.</p>
-    <div class="azioni">
-      <a class="btn b-chiama" href="tel:3407526237">Chiama 340 752 6237</a>
-      <a class="btn b-wa" href="https://wa.me/393407526237?text=Buongiorno,%20vorrei%20un%20preventivo%20per">WhatsApp</a>
-    </div>
+    <div class="luogo">Thiene · Via dell'Eva</div>
+    <h1>Dalle Carbonare Auto</h1>
+    <p>Gomme e meccanica sotto lo stesso tetto. Un appuntamento invece di due.</p>
   </div>
 </header>
-<div class="battistrada" aria-hidden="true"></div>
 
-<section>
+<div class="duemestieri">
+  <div class="mest g">
+    <div class="n">01 — Gommista</div>
+    <h2>Cambio<br>gomme</h2>
+    <p>Sostituzione, equilibratura e cambio stagionale. Il gommista è qui: non ti mandiamo da nessun'altra parte.</p>
+  </div>
+  <div class="mest">
+    <div class="n">02 — Officina</div>
+    <h2>Meccanica<br>e tagliandi</h2>
+    <p>Riparazioni e manutenzione periodica. La stessa auto, le stesse mani, lo stesso piazzale.</p>
+  </div>
+</div>
+
+<div class="stagione">
   <div class="w">
-    <span class="occhiello">Cosa facciamo</span>
-    <h2>Gomme e meccanica, sotto lo stesso tetto</h2>
-    <!-- Officina e gommista sono confermati dal nome dell'attività.
-         Le voci restano volutamente ampie: da precisare col titolare. -->
-    <div class="griglia">
-      <div class="card"><h3>Gomme</h3>
-        <p>Cambio, equilibratura e cambio stagionale. Il gommista è qui, non da mandarti altrove.</p></div>
-      <div class="card"><h3>Riparazioni meccaniche</h3>
-        <p>Dalla piccola riparazione all'intervento più impegnativo, sulla tua auto.</p></div>
-      <div class="card"><h3>Manutenzione periodica</h3>
-        <p>Tagliandi e controlli per arrivare in fondo all'anno senza sorprese.</p></div>
+    <div class="testo">
+      <div class="disp">Cambio stagionale: chiama prima della fila</div>
+      <p>Nelle settimane del cambio gomme si riempie tutto in pochi giorni. Un colpo di telefono adesso e ti teniamo il posto.</p>
     </div>
+    <a class="cta-nera" href="tel:3407526237">340 752 6237</a>
   </div>
-</section>
+</div>
 
-<section>
-  <div class="w">
-    <span class="occhiello">Perché qui</span>
-    <h2>Un appuntamento invece di due</h2>
-    <div class="griglia">
-      <div class="card big"><h3>Officina e gomme insieme</h3>
-        <p>Un posto solo per il tagliando e per il cambio gomme: risparmi un giro e una mattinata.</p></div>
-      <div class="card big"><h3>Preventivo prima dell'intervento</h3>
-        <p>Sai cosa serve e quanto costa prima che iniziamo a lavorare.</p></div>
-      <div class="card big"><h3>Siamo a Thiene</h3>
-        <p>In Via dell'Eva, comodi da raggiungere e con parcheggio davanti.</p></div>
-    </div>
+<div class="w blocco">
+  <h2>Cosa facciamo</h2>
+  <!-- Officina e gommista sono confermati dal nome dell'attività.
+       Le voci restano ampie: da precisare col titolare. -->
+  <div class="lista">
+    <div class="r"><span class="idx">01</span><div><h3>Gomme</h3>
+      <p>Montaggio, equilibratura, cambio stagionale e custodia del treno smontato.</p></div></div>
+    <div class="r"><span class="idx">02</span><div><h3>Riparazioni</h3>
+      <p>Dalla piccola riparazione all'intervento più impegnativo sulla meccanica.</p></div></div>
+    <div class="r"><span class="idx">03</span><div><h3>Tagliandi</h3>
+      <p>Manutenzione periodica per arrivare in fondo all'anno senza fermi.</p></div></div>
   </div>
-</section>
 
-<section class="voti">
-  <div class="w">
-    <div class="n">4,7</div>
-    <div class="stelle" aria-hidden="true">★★★★★</div>
-    <p>Su <strong style="color:#fff">18 recensioni</strong> lasciate dai nostri clienti su Google.</p>
+  <div class="timbro">
+    <div class="v">4,7</div>
+    <p><strong style="color:#fff">18 recensioni su Google.</strong> Il piazzale è in Via dell'Eva, con parcheggio davanti.</p>
   </div>
-</section>
+</div>
 
-<section>
+<div class="fondo">
   <div class="w">
-    <span class="occhiello">Dove siamo</span>
-    <h2>Via dell'Eva, Thiene</h2>
-    <div class="contatti">
+    <h2>Contatti</h2>
+    <div class="fondo-grid">
       <div>
-        <p class="indirizzo">Via dell'Eva, 59<br>36016 Thiene (VI)</p>
-        <p><a class="tel-grande" href="tel:3407526237">340 752 6237</a></p>
+        <p style="color:#C9C9D0;margin:0">Via dell'Eva, 59<br>36016 Thiene (VI)</p>
+        <a class="num" href="tel:3407526237">340 752 6237</a>
         <!-- ORARI DA CONFERMARE A VOCE: vedi nota in cima al file -->
         <table class="orari">
-          <tr><td>Da lunedì a venerdì</td><td>8:00–12:30 · 13:00–19:00</td></tr>
+          <tr><td>Lunedì – Venerdì</td><td>8:00–12:30 · 13:00–19:00</td></tr>
           <tr><td>Sabato</td><td>8:00–12:30 · 13:00–14:00</td></tr>
           <tr><td>Domenica</td><td>Chiuso</td></tr>
         </table>
+        <p style="margin-top:16px"><a href="mailto:dallecarbonareauto@gmail.com">dallecarbonareauto@gmail.com</a></p>
       </div>
       <div>
         <iframe class="mappa" loading="lazy" title="Dove siamo: Via dell'Eva 59, Thiene"
@@ -200,20 +202,19 @@
       </div>
     </div>
   </div>
-</section>
+</div>
 
 <footer>
   <div class="w">
-    <strong style="color:#fff">Dalle Carbonare Auto</strong> — Via dell'Eva 59, 36016 Thiene (VI)<br>
-    Tel. <a href="tel:3407526237">340 752 6237</a> ·
-    <a href="mailto:dallecarbonareauto@gmail.com">dallecarbonareauto@gmail.com</a>
+    <strong style="color:#fff">Dalle Carbonare Auto</strong> — Via dell'Eva 59, 36016 Thiene (VI) ·
+    <a href="tel:3407526237">340 752 6237</a>
     <!-- aggiungere la partita IVA quando il titolare la comunica -->
   </div>
 </footer>
 
 <nav class="barra" aria-label="Contatti rapidi">
-  <a class="btn b-chiama" href="tel:3407526237">Chiama</a>
-  <a class="btn b-wa" href="https://wa.me/393407526237?text=Buongiorno,%20vorrei%20un%20preventivo%20per">WhatsApp</a>
+  <a class="c" href="tel:3407526237">Chiama</a>
+  <a class="w2" href="https://wa.me/393407526237?text=Buongiorno,%20vorrei%20un%20preventivo%20per">WhatsApp</a>
 </nav>
 
 <script type="application/ld+json">

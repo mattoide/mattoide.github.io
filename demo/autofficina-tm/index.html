@@ -2,30 +2,30 @@
 <!--
   ============================================================
   DEMO PER: Autofficina TM — Bassano del Grappa (VI)
-  Preparato il 28/08/2026 · da mostrare, non ancora ufficiale.
+  Preparato il 28/08/2026 · anteprima, non ancora ufficiale.
 
-  IDENTITÀ VISIVA: officina meccanica.
-  Blu acciaio e arancio da segnaletica, fascia diagonale di
-  nastro da lavorazione. Deve sapere di officina, non di studio
-  grafico.
+  IMPOSTAZIONE: la paura del cliente di un'officina non è "che
+  sito hanno", è "quanto mi costa, e me lo dicono prima?".
+  Per questo la pagina è costruita attorno a una SEQUENZA di
+  fiducia (porti l'auto → guardiamo → ti chiamiamo col prezzo →
+  ripariamo solo se dici sì), non attorno a una griglia di
+  servizi. Niente card: timeline verticale, elenco con filetti,
+  numero di telefono grande come un'insegna.
 
-  DATI VERIFICATI sulla scheda Google (non toccare, sono giusti):
+  DATI VERIFICATI sulla scheda Google:
     Via Sarson 187, 36061 Bassano del Grappa VI
     346 081 0475 · 4,8 su 24 recensioni
     Lun-Ven 8:00-12:30 e 14:00-19:00 · Sab 8:00-12:30 · Dom chiuso
     Sito proprio: NON esiste (verificato sul web il 28/08/2026)
 
   DA FAR CONFERMARE AL TITOLARE:
-    1. I tre servizi: sulla scheda Google non sono specificati,
-       li ho tenuti volutamente generici. Se fa anche gommista,
-       revisioni o auto sostitutiva vanno aggiunti: sono le voci
-       che portano più ricerche.
-    2. Che il numero sia anche WhatsApp (è un cellulare).
-    3. La partita IVA per il footer.
-
-  I tre punti di "Perché ci scelgono" nascono dai temi ricorrenti
-  nelle recensioni Google, non da frasi inventate. Non ho copiato
-  il testo di nessuna recensione.
+    1. Che la sequenza "preventivo prima di riparare" sia come
+       lavora davvero. Se non lo è va cambiata: è il cuore della
+       pagina, non un dettaglio.
+    2. I servizi elencati: la scheda non li specifica, li ho
+       tenuti generici. Se fa gommista, revisioni o auto
+       sostitutiva vanno aggiunti: portano molte ricerche.
+    3. Che il numero sia anche WhatsApp (è un cellulare).
   ============================================================
 -->
 <html lang="it">
@@ -35,148 +35,154 @@
 <!-- Anteprima non autorizzata dal titolare: NON deve finire su Google. Togliere solo dopo il sì. -->
 <meta name="robots" content="noindex, nofollow">
 <title>Autofficina TM — Officina meccanica a Bassano del Grappa</title>
-<meta name="description" content="Autofficina TM, officina meccanica in Via Sarson 187 a Bassano del Grappa. 4,8 stelle su 24 recensioni Google. Chiama il 346 081 0475 o scrivici su WhatsApp.">
-<meta name="theme-color" content="#16293A">
+<meta name="description" content="Autofficina TM, officina meccanica in Via Sarson 187 a Bassano del Grappa. Preventivo prima di riparare. Chiama il 346 081 0475.">
+<meta name="theme-color" content="#1C1A17">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600&display=swap">
 <style>
   :root{
-    --acciaio:#16293A; --carta:#F4F2EE; --bianco:#FFF;
-    --ink:#151A1F; --ink-2:#4A555F; --muted:#7B858F; --rule:#DFDAD2;
-    --arancio:#D2551F; --arancio-scuro:#A8400F; --verde:#128C4A;
+    --nero:#1C1A17; --nero-2:#2A2723; --carta:#FBFAF8; --carta-2:#F3F0EA; --riga:#E4E0D8;
+    --ink:#1C1A17; --ink-2:#57524B; --muted:#8B857C;
+    --olio:#B4762A; --verde:#128C4A;
   }
   *{box-sizing:border-box}
-  html{scroll-behavior:smooth}
   body{margin:0;background:var(--carta);color:var(--ink);
-    font:17px/1.62 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
-    -webkit-font-smoothing:antialiased;padding-bottom:78px}
-  .w{max-width:900px;margin:0 auto;padding:0 20px}
-  h1,h2,h3{margin:0;line-height:1.12;letter-spacing:-.02em}
-  h1{font-size:clamp(2.1rem,6.4vw,3.3rem);font-weight:800}
-  h2{font-size:clamp(1.4rem,4vw,2rem);font-weight:800;margin-bottom:16px}
-  h3{font-size:1.06rem;font-weight:700}
+    font:17px/1.7 "Barlow",system-ui,sans-serif;-webkit-font-smoothing:antialiased;padding-bottom:76px}
+  .w{max-width:820px;margin:0 auto;padding:0 22px}
+  h1,h2,h3{font-family:"Barlow Semi Condensed","Barlow",sans-serif;margin:0;line-height:1.05}
+  h1{font-size:clamp(2.6rem,8vw,4.4rem);font-weight:700;text-transform:uppercase}
+  h2{font-size:clamp(1.5rem,4vw,2.1rem);font-weight:700;text-transform:uppercase;letter-spacing:.01em}
+  h3{font-size:1.15rem;font-weight:600}
   p{margin:0 0 14px}
 
-  .occhiello{display:inline-block;font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;
-    font-weight:700;color:var(--arancio);margin-bottom:14px}
+  .testata{background:var(--nero);color:#F6F3EE;padding:46px 0 0}
+  .testata .luogo{font-family:"Barlow Semi Condensed",sans-serif;font-size:14px;letter-spacing:.24em;
+    text-transform:uppercase;color:var(--olio);font-weight:600;margin-bottom:12px}
+  .testata h1{color:#fff}
+  .testata .sotto{color:#B8B0A5;max-width:44ch;margin:16px 0 0;font-size:1.1rem}
+  .insegna{margin-top:34px;border-top:1px solid #3A3630;display:flex;flex-wrap:wrap}
+  .insegna a{flex:1 1 240px;padding:22px 0;text-decoration:none;display:block;border-right:1px solid #3A3630}
+  .insegna a:last-child{border-right:0}
+  .insegna .et{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#8B857C;display:block}
+  .insegna .val{font-family:"Barlow Semi Condensed",sans-serif;font-size:2rem;font-weight:700;
+    color:#fff;line-height:1.2;display:block;margin-top:2px}
+  .insegna a:hover .val{color:var(--olio)}
+  .insegna .val.verde{color:#5FD397}
 
-  header.hero{background:var(--acciaio);color:#EEF2F5;padding:52px 0 0}
-  header.hero .tag{display:inline-block;font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;
-    color:#90A2B2;border:1px solid #2E4257;padding:5px 11px;margin-bottom:18px}
-  header.hero h1{color:#fff}
-  header.hero .claim{font-size:1.14rem;color:#B7C4D0;max-width:44ch;margin:16px 0 28px}
-  .azioni{display:flex;gap:11px;flex-wrap:wrap;padding-bottom:44px}
-  .btn{display:inline-flex;align-items:center;justify-content:center;
-    padding:15px 26px;font-size:1.02rem;font-weight:700;text-decoration:none;
-    border-radius:3px;min-height:54px}
-  .b-chiama{background:var(--arancio);color:#fff}
-  .b-chiama:hover{background:var(--arancio-scuro)}
-  .b-wa{background:var(--verde);color:#fff}
-  .b-wa:hover{filter:brightness(.92)}
-  .btn:focus-visible{outline:3px solid #fff;outline-offset:3px}
+  .sequenza{padding:56px 0}
+  .passo{display:grid;grid-template-columns:56px 1fr;gap:20px;padding-bottom:30px;position:relative}
+  .passo:not(:last-of-type)::before{content:"";position:absolute;left:27px;top:56px;bottom:0;
+    width:2px;background:var(--riga)}
+  .passo .cerchio{width:56px;height:56px;border-radius:50%;background:var(--nero);color:#fff;
+    display:grid;place-items:center;font-family:"Barlow Semi Condensed",sans-serif;
+    font-size:1.5rem;font-weight:700;position:relative;z-index:1}
+  .passo.chiave .cerchio{background:var(--olio)}
+  .passo h3{margin-bottom:4px}
+  .passo p{margin:0;color:var(--ink-2)}
 
-  /* nastro da lavorazione: dettaglio da officina, usato una volta sola */
-  .nastro{height:14px;background:repeating-linear-gradient(-45deg,
-    var(--arancio) 0 16px, var(--acciaio) 16px 32px)}
+  .elenco{border-top:2px solid var(--nero)}
+  .voce{padding:18px 0;border-bottom:1px solid var(--riga)}
+  .voce h3{font-size:1.25rem;text-transform:uppercase}
+  .voce p{margin:4px 0 0;color:var(--ink-2);font-size:.97rem}
 
-  section{padding:48px 0;border-bottom:1px solid var(--rule)}
-  .griglia{display:grid;grid-template-columns:repeat(auto-fit,minmax(226px,1fr));gap:14px;margin-top:20px}
-  .card{background:var(--bianco);border:1px solid var(--rule);border-left:3px solid var(--arancio);
-    border-radius:3px;padding:19px 20px}
-  .card p{margin:6px 0 0;font-size:.94rem;color:var(--ink-2)}
+  .fascia{background:var(--nero-2);color:#EDE8E0;padding:34px 0}
+  .fascia .w{display:flex;gap:26px;align-items:center;flex-wrap:wrap}
+  .fascia .voto{font-family:"Barlow Semi Condensed",sans-serif;font-size:3.4rem;font-weight:700;
+    color:var(--olio);line-height:1}
+  .fascia p{margin:0;color:#B8B0A5;max-width:40ch}
 
-  .forze{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px;margin-top:20px}
-  .forza .n{font-size:2rem;font-weight:800;color:var(--arancio);line-height:1;letter-spacing:-.04em}
-  .forza h3{margin:8px 0 4px}
-  .forza p{margin:0;font-size:.94rem;color:var(--ink-2)}
+  .info{padding:52px 0;background:var(--carta-2);border-top:1px solid var(--riga)}
+  .info-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:30px;margin-top:22px}
+  .orari{width:100%;border-collapse:collapse}
+  .orari td{padding:11px 0;border-bottom:1px solid var(--riga)}
+  .orari td:last-child{text-align:right;font-weight:600;font-variant-numeric:tabular-nums;
+    font-family:"Barlow Semi Condensed",sans-serif;font-size:1.1rem}
+  .mappa{border:0;width:100%;height:250px;filter:grayscale(.4) contrast(1.05)}
 
-  .voti{background:var(--acciaio);color:#EEF2F5;text-align:center;border:0}
-  .voti .n{font-size:3.4rem;font-weight:800;line-height:1;letter-spacing:-.04em;color:#fff}
-  .voti .stelle{color:var(--arancio);font-size:1.5rem;letter-spacing:4px;margin-top:4px}
-  .voti p{color:#B7C4D0;margin:12px 0 0}
-  .voti a{color:#fff}
+  footer{background:var(--nero);color:#8B857C;padding:30px 0;font-size:.9rem}
+  footer a{color:var(--olio)}
 
-  .contatti{display:grid;grid-template-columns:repeat(auto-fit,minmax(255px,1fr));gap:24px;align-items:start}
-  .indirizzo{font-size:1.08rem;font-weight:700;margin-bottom:6px}
-  .tel-grande{color:var(--arancio);font-weight:800;font-size:1.3rem;text-decoration:none}
-  table.orari{width:100%;border-collapse:collapse;margin-top:8px}
-  table.orari td{padding:9px 0;border-bottom:1px solid var(--rule);font-size:.97rem}
-  table.orari td:last-child{text-align:right;font-weight:700;font-variant-numeric:tabular-nums}
-  .mappa{border:0;width:100%;height:290px;border-radius:3px;filter:grayscale(.25)}
-
-  footer{background:var(--acciaio);color:#90A2B2;padding:30px 0;font-size:.89rem}
-  footer a{color:#fff}
-
-  .barra{position:fixed;left:0;right:0;bottom:0;display:none;z-index:50;gap:9px;
-    background:var(--bianco);border-top:1px solid var(--rule);padding:9px 12px}
-  .barra .btn{flex:1;padding:13px 8px;font-size:1rem;min-height:48px}
+  .barra{position:fixed;left:0;right:0;bottom:0;display:none;z-index:50;
+    background:var(--nero);border-top:2px solid var(--olio)}
+  .barra a{flex:1;text-align:center;padding:16px 6px;color:#fff;text-decoration:none;
+    font-family:"Barlow Semi Condensed",sans-serif;font-size:1.05rem;font-weight:700;text-transform:uppercase}
+  .barra a+a{border-left:1px solid #3A3630}
+  .barra a.wa{background:var(--verde)}
   @media(max-width:760px){.barra{display:flex}}
-  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  a:focus-visible{outline:3px solid var(--olio);outline-offset:2px}
 </style>
 </head>
 <body>
 
-<header class="hero">
+<header class="testata">
   <div class="w">
-    <span class="tag">Officina meccanica · Bassano del Grappa (VI)</span>
+    <div class="luogo">Officina meccanica · Bassano del Grappa</div>
     <h1>Autofficina TM</h1>
-    <p class="claim">La tua auto in mano a chi il problema lo trova subito. Siamo in Via Sarson 187, a Bassano del Grappa.</p>
-    <div class="azioni">
-      <a class="btn b-chiama" href="tel:3460810475">Chiama 346 081 0475</a>
-      <a class="btn b-wa" href="https://wa.me/393460810475?text=Buongiorno,%20vorrei%20un%20preventivo%20per">Scrivici su WhatsApp</a>
+    <p class="sotto">Ti diciamo cosa serve e quanto costa <strong style="color:#fff">prima</strong> di mettere mano alla macchina.</p>
+    <div class="insegna">
+      <a href="tel:3460810475"><span class="et">Chiama</span><span class="val">346 081 0475</span></a>
+      <a href="https://wa.me/393460810475?text=Buongiorno,%20vorrei%20un%20preventivo%20per"><span class="et">Oppure scrivi</span><span class="val verde">WhatsApp</span></a>
     </div>
   </div>
 </header>
-<div class="nastro"></div>
 
-<section>
-  <div class="w">
-    <span class="occhiello">In officina</span>
-    <h2>Cosa facciamo</h2>
-    <!-- GENERICI DI PROPOSITO: da sostituire con i servizi reali dopo il sì del titolare -->
-    <div class="griglia">
-      <div class="card"><h3>Riparazioni meccaniche</h3>
-        <p>Interventi sulla meccanica dell'auto, dai piccoli guasti alle riparazioni più impegnative.</p></div>
-      <div class="card"><h3>Manutenzione periodica</h3>
-        <p>Tagliandi e controlli per tenere la macchina in ordine ed evitare i fermi imprevisti.</p></div>
-      <div class="card"><h3>Diagnosi del guasto</h3>
-        <p>Capiamo da dove arriva il problema prima di mettere mano al portafoglio.</p></div>
-    </div>
+<div class="w sequenza">
+  <h2>Come funziona da noi</h2>
+  <div style="height:26px"></div>
+
+  <div class="passo">
+    <div class="cerchio">1</div>
+    <div><h3>Porti l'auto, o chiami e ci accordiamo</h3>
+      <p>Bastano due parole su cosa senti: un rumore, una spia accesa, un tagliando da fare.</p></div>
   </div>
-</section>
-
-<section>
-  <div class="w">
-    <span class="occhiello">Perché tornano</span>
-    <h2>Quello che dicono i clienti</h2>
-    <div class="forze">
-      <div class="forza"><div class="n">01</div><h3>Il problema lo troviamo</h3>
-        <p>Chi ci lascia una recensione parla soprattutto di questo: capiamo il guasto senza farti girare a vuoto.</p></div>
-      <div class="forza"><div class="n">02</div><h3>Prezzi che stanno in piedi</h3>
-        <p>Ti diciamo cosa serve e quanto costa prima di iniziare. Niente sorprese al ritiro.</p></div>
-      <div class="forza"><div class="n">03</div><h3>Disponibilità vera</h3>
-        <p>Una telefonata basta per sapere se possiamo prenderti in giornata.</p></div>
-    </div>
+  <div class="passo">
+    <div class="cerchio">2</div>
+    <div><h3>Guardiamo e capiamo il problema</h3>
+      <p>Chi ci lascia una recensione parla soprattutto di questo: il guasto lo troviamo, senza farti girare a vuoto.</p></div>
   </div>
-</section>
-
-<section class="voti">
-  <div class="w">
-    <div class="n">4,8</div>
-    <div class="stelle" aria-hidden="true">★★★★★</div>
-    <p>Su <strong style="color:#fff">24 recensioni</strong> lasciate dai nostri clienti su Google.<br>
-      <a href="https://www.google.com/maps/place/Autofficina+TM/@45.7877159,11.7207546,17z" target="_blank" rel="noopener">Leggile tutte</a></p>
+  <div class="passo chiave">
+    <div class="cerchio">3</div>
+    <div><h3>Ti chiamiamo e ti diciamo quanto costa</h3>
+      <p>Prima di ordinare un pezzo e prima di iniziare a lavorare. Se il preventivo non ti convince, non se ne fa niente.</p></div>
   </div>
-</section>
+  <div class="passo">
+    <div class="cerchio">4</div>
+    <div><h3>Ripariamo e ti diciamo quando è pronta</h3>
+      <p>Niente sorprese al ritiro: il conto è quello che ti abbiamo detto al telefono.</p></div>
+  </div>
+</div>
 
-<section>
+<div class="fascia">
   <div class="w">
-    <span class="occhiello">Dove e quando</span>
-    <h2>Passa a trovarci</h2>
-    <div class="contatti">
+    <div class="voto">4,8</div>
+    <p><strong style="color:#fff">24 recensioni su Google.</strong> Parlano quasi tutte della stessa cosa: prezzi onesti e disponibilità.</p>
+  </div>
+</div>
+
+<div class="w" style="padding:52px 0">
+  <h2>Di cosa ci occupiamo</h2>
+  <div style="height:22px"></div>
+  <!-- GENERICI DI PROPOSITO: la scheda Google non specifica i servizi.
+       Da precisare col titolare: gommista, revisioni, auto sostitutiva. -->
+  <div class="elenco">
+    <div class="voce"><h3>Riparazioni meccaniche</h3>
+      <p>Dai piccoli guasti agli interventi più impegnativi, sulla meccanica dell'auto.</p></div>
+    <div class="voce"><h3>Tagliandi e manutenzione</h3>
+      <p>I controlli periodici per evitare che un problema piccolo diventi un fermo macchina.</p></div>
+    <div class="voce"><h3>Diagnosi del guasto</h3>
+      <p>Capiamo da dove arriva il problema prima di mettere mano al portafoglio.</p></div>
+  </div>
+</div>
+
+<div class="info">
+  <div class="w">
+    <h2>Dove siamo e quando</h2>
+    <div class="info-grid">
       <div>
-        <p class="indirizzo">Via Sarson, 187<br>36061 Bassano del Grappa (VI)</p>
-        <p><a class="tel-grande" href="tel:3460810475">346 081 0475</a></p>
+        <p style="font-size:1.15rem;font-weight:600;margin-bottom:16px">Via Sarson, 187<br>36061 Bassano del Grappa (VI)</p>
         <table class="orari">
-          <tr><td>Da lunedì a venerdì</td><td>8:00–12:30 · 14:00–19:00</td></tr>
+          <tr><td>Lunedì – Venerdì</td><td>8:00–12:30 · 14:00–19:00</td></tr>
           <tr><td>Sabato</td><td>8:00–12:30</td></tr>
           <tr><td>Domenica</td><td>Chiuso</td></tr>
         </table>
@@ -187,19 +193,19 @@
       </div>
     </div>
   </div>
-</section>
+</div>
 
 <footer>
   <div class="w">
-    <strong style="color:#fff">Autofficina TM</strong> — Via Sarson 187, 36061 Bassano del Grappa (VI)<br>
-    Tel. <a href="tel:3460810475">346 081 0475</a>
+    <strong style="color:#fff">Autofficina TM</strong> — Via Sarson 187, 36061 Bassano del Grappa (VI) ·
+    <a href="tel:3460810475">346 081 0475</a>
     <!-- aggiungere la partita IVA quando il titolare la comunica -->
   </div>
 </footer>
 
 <nav class="barra" aria-label="Contatti rapidi">
-  <a class="btn b-chiama" href="tel:3460810475">Chiama</a>
-  <a class="btn b-wa" href="https://wa.me/393460810475?text=Buongiorno,%20vorrei%20un%20preventivo%20per">WhatsApp</a>
+  <a href="tel:3460810475">Chiama</a>
+  <a class="wa" href="https://wa.me/393460810475?text=Buongiorno,%20vorrei%20un%20preventivo%20per">WhatsApp</a>
 </nav>
 
 <script type="application/ld+json">
