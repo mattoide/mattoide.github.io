@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<!--
+  DEMO PER: Autofficina Da Stefano — Rovigo (RO) · 28/08/2026
+
+  DUE COSE DA SAPERE PRIMA DI SCRIVERGLI.
+
+  1. LA SCHEDA GOOGLE NON È RIVENDICATA: compare ancora "Claim this
+     business". Il titolare non controlla la propria scheda e NON PUÒ
+     RISPONDERE ALLE RECENSIONI. È l'aggancio più forte che hai con
+     lui, è gratis e si fa in dieci minuti.
+
+  2. Tra le recensioni pubbliche ce n'è una negativa che contesta il
+     prezzo di un intervento e la mancata fattura. Non è stata mai
+     replicata — perché, appunto, non può. Non citarla nel messaggio:
+     nessuno ama sentirsi ricordare la recensione brutta da uno
+     sconosciuto. Ma è il motivo per cui questa pagina è costruita
+     sulla TRASPARENZA DEL PREZZO: preventivo prima, conto uguale al
+     preventivo, fattura sempre. Se lui lavora già così, la pagina
+     glielo mette per iscritto e gli toglie il problema.
+     Se NON lavora così, quelle tre righe vanno tolte: non si promette
+     al posto del cliente.
+
+  IL DATO OPERATIVO CHE VALE: aperto 8:00-19:00 CONTINUATO, sabato
+  compreso. È l'orario più esteso dei demo fatti finora e spiega
+  perché nelle recensioni lo trova chi resta a piedi in viaggio.
+
+  DATI VERIFICATI (scheda Google):
+    Viale delle Industrie 17b, 45100 Rovigo RO · 328 866 2283
+    4,7 su 41 recensioni · Auto repair shop
+    Lun-Sab 8:00-19:00 continuato · Domenica chiuso
+    Sito proprio: NON esiste (verificato sul web il 28/08/2026)
+
+  DA CONFERMARE: i servizi, il modo di lavorare sui preventivi
+  (vedi punto 2), e la partita IVA.
+-->
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Autofficina Da Stefano — Officina a Rovigo, aperta 8–19</title>
+<meta name="description" content="Autofficina Da Stefano, Viale delle Industrie 17b a Rovigo. Aperti 8:00–19:00 continuato, sabato compreso. Chiama il 328 866 2283.">
+<meta name="theme-color" content="#0D3B66">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap">
+<style>
+  :root{--blu:#0D3B66;--blu2:#12508C;--chiaro:#F3F6FA;--bianco:#fff;
+    --ink:#0C1B2A;--ink2:#4A5B6D;--riga:#D8E1EA;--verde:#128C4A;--acqua:#2E9BC9}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--chiaro);color:var(--ink);
+    font:17px/1.64 "Instrument Sans",system-ui,sans-serif;-webkit-font-smoothing:antialiased;padding-bottom:74px}
+  .w{max-width:760px;margin:0 auto;padding:0 22px}
+  h1,h2,h3{margin:0;line-height:1.1;letter-spacing:-.025em}
+  h1{font-size:clamp(2rem,5.8vw,2.9rem);font-weight:700}
+  h2{font-size:clamp(1.25rem,3.4vw,1.7rem);font-weight:700}
+  h3{font-size:1.02rem;font-weight:600}
+  p{margin:0 0 13px}
+  .testa{background:var(--blu);color:#E7EFF7;padding:42px 0 36px}
+  .testa .et{font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--acqua);font-weight:600;margin-bottom:12px}
+  .testa h1{color:#fff}
+  /* il dato forte: orario continuato */
+  .orario-forte{display:inline-block;background:var(--acqua);color:#04283A;font-weight:700;
+    padding:10px 18px;border-radius:5px;margin-top:18px;font-size:1.05rem}
+  .testa p{color:#A9C0D6;max-width:42ch;margin:16px 0 0}
+  .azioni{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+  .btn{display:inline-flex;align-items:center;justify-content:center;padding:15px 26px;text-decoration:none;
+    font-weight:600;border-radius:5px;min-height:54px}
+  .b1{background:var(--acqua);color:#04283A}.b1:hover{background:#2385AD}
+  .b2{background:var(--verde);color:#fff}.b2:hover{filter:brightness(.93)}
+  section{padding:42px 0}
+  /* trasparenza sul prezzo: il cuore della pagina */
+  .patti{display:grid;gap:12px;margin-top:18px}
+  .patto{background:var(--bianco);border:1px solid var(--riga);border-left:5px solid var(--blu2);
+    border-radius:5px;padding:19px 21px}
+  .patto h3{color:var(--blu);margin-bottom:4px}
+  .patto p{margin:0;font-size:.95rem;color:var(--ink2)}
+  .alt{background:var(--bianco);border-top:1px solid var(--riga);border-bottom:1px solid var(--riga)}
+  .sv{display:grid;grid-template-columns:repeat(auto-fit,minmax(205px,1fr));gap:13px;margin-top:18px}
+  .sv div{border:1px solid var(--riga);border-radius:5px;padding:18px 19px;background:var(--chiaro)}
+  .sv h3{margin-bottom:5px;color:var(--blu2)}.sv p{margin:0;font-size:.93rem;color:var(--ink2)}
+  .griglia{display:grid;grid-template-columns:repeat(auto-fit,minmax(235px,1fr));gap:26px;margin-top:18px;align-items:start}
+  .num{color:var(--blu);font-weight:700;font-size:1.4rem;text-decoration:none;border-bottom:3px solid var(--acqua)}
+  .orari{width:100%;border-collapse:collapse;margin-top:14px}
+  .orari td{padding:11px 0;border-bottom:1px solid var(--riga);font-size:.96rem}
+  .orari td:last-child{text-align:right;font-weight:600;font-variant-numeric:tabular-nums}
+  .orari tr.ev td{color:var(--blu2);font-weight:700}
+  .voto{display:flex;gap:14px;align-items:center;margin-top:20px}
+  .voto b{font-size:2.1rem;color:var(--blu2);font-weight:700;line-height:1}
+  .voto span{color:var(--ink2);font-size:.94rem}
+  .mappa{border:0;width:100%;height:235px;border-radius:5px;filter:grayscale(.35)}
+  footer{background:var(--blu);color:#8FA9C1;padding:26px 0;font-size:.88rem}
+  footer a{color:var(--acqua)}
+  .barra{position:fixed;left:0;right:0;bottom:0;display:none;z-index:50;gap:8px;padding:9px 12px;
+    background:var(--bianco);border-top:1px solid var(--riga)}
+  .barra .btn{flex:1;padding:13px 6px;min-height:48px}
+  @media(max-width:760px){.barra{display:flex}}
+  a:focus-visible{outline:3px solid var(--acqua);outline-offset:3px}
+</style>
+</head>
+<body>
+<header class="testa">
+  <div class="w">
+    <div class="et">Autofficina · Rovigo</div>
+    <h1>Autofficina Da Stefano</h1>
+    <div class="orario-forte">Aperti 8:00 – 19:00, sabato compreso</div>
+    <p>Niente pausa pranzo e niente sabato chiuso. In Viale delle Industrie, a Rovigo.</p>
+    <div class="azioni">
+      <a class="btn b1" href="tel:3288662283">Chiama 328 866 2283</a>
+      <a class="btn b2" href="https://wa.me/393288662283?text=Buongiorno,%20avrei%20un%20problema%20con%20l%27auto">WhatsApp</a>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="w">
+    <h2>Come lavoriamo sui prezzi</h2>
+    <!-- DA CONFERMARE COL TITOLARE: queste tre righe sono impegni,
+         non descrizioni. Se non lavora già così, vanno tolte.
+         Vedi nota 2 in cima al file. -->
+    <div class="patti">
+      <div class="patto"><h3>Prima il preventivo, poi il lavoro</h3>
+        <p>Guardiamo l'auto e ti diciamo cosa serve e quanto costa. Se non ti convince, non se ne fa niente.</p></div>
+      <div class="patto"><h3>Il conto è quello del preventivo</h3>
+        <p>Se salta fuori qualcos'altro mentre lavoriamo, ti chiamiamo prima di procedere. Mai sorprese al ritiro.</p></div>
+      <div class="patto"><h3>Fattura sempre</h3>
+        <p>Per ogni intervento, senza doverla chiedere.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="w">
+    <h2>Di cosa ci occupiamo</h2>
+    <!-- GENERICI: la scheda Google non specifica i servizi. Da confermare col titolare. -->
+    <div class="sv">
+      <div><h3>Riparazioni</h3><p>Dai piccoli guasti agli interventi più impegnativi sulla meccanica.</p></div>
+      <div><h3>Tagliandi</h3><p>La manutenzione periodica, fatta quando serve.</p></div>
+      <div><h3>Guasti improvvisi</h3><p>Se ti fermi e sei di passaggio, chiama: ti diciamo subito se possiamo prenderti.</p></div>
+    </div>
+    <div class="voto"><b>4,7</b><span>su <strong>41 recensioni</strong> lasciate su Google.</span></div>
+  </div>
+</section>
+
+<section>
+  <div class="w">
+    <h2>Dove siamo e quando</h2>
+    <div class="griglia">
+      <div>
+        <p style="font-weight:600;font-size:1.06rem">Viale delle Industrie, 17b<br>45100 Rovigo (RO)</p>
+        <a class="num" href="tel:3288662283">328 866 2283</a>
+        <table class="orari">
+          <tr class="ev"><td>Lunedì – Sabato</td><td>8:00 – 19:00</td></tr>
+          <tr><td>Domenica</td><td>Chiuso</td></tr>
+        </table>
+        <p style="font-size:.9rem;color:var(--ink2);margin-top:12px">Orario continuato: puoi passare anche a mezzogiorno.</p>
+      </div>
+      <div><iframe class="mappa" loading="lazy" title="Dove siamo: Viale delle Industrie 17b, Rovigo"
+        src="https://maps.google.com/maps?q=Viale%20delle%20Industrie%2017,%2045100%20Rovigo&output=embed"></iframe></div>
+    </div>
+  </div>
+</section>
+
+<footer><div class="w"><strong style="color:#fff">Autofficina Da Stefano</strong> — Viale delle Industrie 17b,
+  45100 Rovigo (RO) · <a href="tel:3288662283">328 866 2283</a></div></footer>
+
+<nav class="barra" aria-label="Contatti rapidi">
+  <a class="btn b1" href="tel:3288662283">Chiama</a>
+  <a class="btn b2" href="https://wa.me/393288662283?text=Buongiorno,%20avrei%20un%20problema%20con%20l%27auto">WhatsApp</a>
+</nav>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"AutoRepair","name":"Autofficina Da Stefano",
+"telephone":"+393288662283","address":{"@type":"PostalAddress","streetAddress":"Viale delle Industrie, 17b",
+"postalCode":"45100","addressLocality":"Rovigo","addressRegion":"RO","addressCountry":"IT"},
+"openingHoursSpecification":[
+{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"08:00","closes":"19:00"}],
+"areaServed":"Rovigo e provincia"}
+</script>
+</body>
+</html>
