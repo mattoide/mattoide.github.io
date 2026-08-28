@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<!--
+  ============================================================
+  DEMO PER: Dalle Carbonare Auto — Autofficina Gommista, Thiene (VI)
+  Preparato il 28/08/2026 · da mostrare, non ancora ufficiale.
+
+  IDENTITÀ VISIVA: gommista.
+  Nero gomma e giallo da segnaletica pneumatici, con una fascia
+  di battistrada disegnata in CSS sotto l'intestazione. Il
+  gommista è il loro elemento distintivo: la grafica lo dice
+  prima del testo.
+
+  DATI VERIFICATI sulla scheda Google:
+    Via dell'Eva 59, 36016 Thiene VI
+    340 752 6237 · 4,7 su 18 recensioni
+    Email dallecarbonareauto@gmail.com — CONFERMATA: è pubblicata
+    sulla loro pagina Facebook con lo stesso telefono e indirizzo
+    Sito proprio: NON esiste (verificato sul web il 28/08/2026)
+    Servizi confermati dal nome stesso: officina + gommista
+
+  DA CONFERMARE prima di pubblicare:
+    1. Gli orari. Su Maps si legge solo "chiude 12:30, riapre
+       13:00"; quelli completi qui sotto vengono dal riquadro AI
+       di Google, che NON è una fonte dell'attività. Falli
+       confermare a voce.
+    2. Il civico 57 o 59: le due schede riportano numeri diversi.
+    3. Se la vendita auto è ancora attiva.
+
+  DUE ARGOMENTI DI VENDITA per la conversazione:
+
+    A) Hanno DUE schede Google con lo stesso numero:
+       "Dalle Carbonare Auto Autofficina Gommista" (4,7 · 18) e
+       "DALLE CARBONARE AUTO", concessionaria (5,0 · 3).
+       Le recensioni si dividono invece di sommarsi e chi cerca
+       l'officina può finire sulla scheda sbagliata. Sistemarlo
+       è gratis e vale più del sito: dillo per primo, dimostra
+       che hai guardato davvero.
+
+    B) Vendono auto usate senza avere dove mostrarle. Una pagina
+       "le nostre auto" è il primo upsell naturale.
+  ============================================================
+-->
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Anteprima non autorizzata dal titolare: NON deve finire su Google. Togliere solo dopo il sì. -->
+<meta name="robots" content="noindex, nofollow">
+<title>Dalle Carbonare Auto — Officina e gommista a Thiene</title>
+<meta name="description" content="Dalle Carbonare Auto, autofficina e gommista in Via dell'Eva 59 a Thiene (VI). 4,7 stelle su 18 recensioni Google. Chiama il 340 752 6237 o scrivici su WhatsApp.">
+<meta name="theme-color" content="#101012">
+<style>
+  :root{
+    --gomma:#101012; --gomma-2:#1B1B1F; --carta:#F5F4F1; --bianco:#FFF;
+    --ink:#131315; --ink-2:#4D4D52; --muted:#7E7E85; --rule:#E0DED8;
+    --giallo:#F2C200; --giallo-scuro:#C29B00; --verde:#128C4A;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--carta);color:var(--ink);
+    font:17px/1.62 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+    -webkit-font-smoothing:antialiased;padding-bottom:78px}
+  .w{max-width:900px;margin:0 auto;padding:0 20px}
+  h1,h2,h3{margin:0;line-height:1.1;letter-spacing:-.025em}
+  h1{font-size:clamp(2.1rem,6.6vw,3.5rem);font-weight:800;text-transform:uppercase}
+  h2{font-size:clamp(1.4rem,4vw,2rem);font-weight:800;margin-bottom:16px}
+  h3{font-size:1.05rem;font-weight:700}
+  p{margin:0 0 14px}
+
+  .occhiello{display:inline-block;font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;
+    font-weight:800;color:var(--ink);background:var(--giallo);padding:4px 9px;margin-bottom:15px}
+
+  header.hero{background:var(--gomma);color:#F2F2F3;padding:52px 0 44px}
+  header.hero .tag{display:inline-block;font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;
+    color:var(--giallo);font-weight:700;margin-bottom:16px}
+  header.hero h1{color:#fff}
+  header.hero h1 span{color:var(--giallo)}
+  header.hero .claim{font-size:1.14rem;color:#B4B4BA;max-width:44ch;margin:18px 0 28px}
+  .azioni{display:flex;gap:11px;flex-wrap:wrap}
+  .btn{display:inline-flex;align-items:center;justify-content:center;
+    padding:15px 26px;font-size:1.02rem;font-weight:800;text-decoration:none;
+    border-radius:2px;min-height:54px;text-transform:uppercase;letter-spacing:.03em;font-size:.95rem}
+  .b-chiama{background:var(--giallo);color:#131315}
+  .b-chiama:hover{background:var(--giallo-scuro)}
+  .b-wa{background:var(--verde);color:#fff}
+  .b-wa:hover{filter:brightness(.92)}
+  .btn:focus-visible{outline:3px solid var(--giallo);outline-offset:3px}
+
+  /* battistrada: blocchi sfalsati come il disegno di un pneumatico */
+  .battistrada{height:26px;background:var(--gomma);position:relative;overflow:hidden}
+  .battistrada::before,.battistrada::after{content:"";position:absolute;left:-20px;right:-20px;height:11px;
+    background:repeating-linear-gradient(90deg,var(--giallo) 0 22px,transparent 22px 40px)}
+  .battistrada::before{top:1px}
+  .battistrada::after{bottom:1px;transform:translateX(20px)}
+
+  section{padding:48px 0;border-bottom:1px solid var(--rule)}
+  .griglia{display:grid;grid-template-columns:repeat(auto-fit,minmax(226px,1fr));gap:14px;margin-top:20px}
+  .card{background:var(--bianco);border:1px solid var(--rule);border-top:4px solid var(--giallo);
+    border-radius:2px;padding:20px}
+  .card p{margin:6px 0 0;font-size:.94rem;color:var(--ink-2)}
+  .card.big{border-top-color:var(--gomma)}
+
+  .voti{background:var(--gomma);color:#F2F2F3;text-align:center;border:0}
+  .voti .n{font-size:3.4rem;font-weight:800;line-height:1;letter-spacing:-.04em;color:var(--giallo)}
+  .voti .stelle{color:var(--giallo);font-size:1.5rem;letter-spacing:4px;margin-top:4px}
+  .voti p{color:#B4B4BA;margin:12px 0 0}
+
+  .contatti{display:grid;grid-template-columns:repeat(auto-fit,minmax(255px,1fr));gap:24px;align-items:start}
+  .indirizzo{font-size:1.08rem;font-weight:700;margin-bottom:6px}
+  .tel-grande{color:var(--ink);font-weight:800;font-size:1.35rem;text-decoration:none;
+    border-bottom:3px solid var(--giallo)}
+  table.orari{width:100%;border-collapse:collapse;margin-top:8px}
+  table.orari td{padding:9px 0;border-bottom:1px solid var(--rule);font-size:.96rem}
+  table.orari td:last-child{text-align:right;font-weight:700;font-variant-numeric:tabular-nums}
+  .mappa{border:0;width:100%;height:290px;border-radius:2px;filter:grayscale(.3)}
+
+  footer{background:var(--gomma);color:#8A8A91;padding:30px 0;font-size:.89rem}
+  footer a{color:var(--giallo)}
+
+  .barra{position:fixed;left:0;right:0;bottom:0;display:none;z-index:50;gap:9px;
+    background:var(--bianco);border-top:1px solid var(--rule);padding:9px 12px}
+  .barra .btn{flex:1;padding:13px 6px;min-height:48px}
+  @media(max-width:760px){.barra{display:flex}}
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="w">
+    <span class="tag">Officina e gommista · Thiene (VI)</span>
+    <h1>Dalle Carbonare <span>Auto</span></h1>
+    <p class="claim">Meccanica e gomme nello stesso posto, in Via dell'Eva a Thiene. Una telefonata e sappiamo dirti quando possiamo prenderti.</p>
+    <div class="azioni">
+      <a class="btn b-chiama" href="tel:3407526237">Chiama 340 752 6237</a>
+      <a class="btn b-wa" href="https://wa.me/393407526237?text=Buongiorno,%20vorrei%20un%20preventivo%20per">WhatsApp</a>
+    </div>
+  </div>
+</header>
+<div class="battistrada" aria-hidden="true"></div>
+
+<section>
+  <div class="w">
+    <span class="occhiello">Cosa facciamo</span>
+    <h2>Gomme e meccanica, sotto lo stesso tetto</h2>
+    <!-- Officina e gommista sono confermati dal nome dell'attività.
+         Le voci restano volutamente ampie: da precisare col titolare. -->
+    <div class="griglia">
+      <div class="card"><h3>Gomme</h3>
+        <p>Cambio, equilibratura e cambio stagionale. Il gommista è qui, non da mandarti altrove.</p></div>
+      <div class="card"><h3>Riparazioni meccaniche</h3>
+        <p>Dalla piccola riparazione all'intervento più impegnativo, sulla tua auto.</p></div>
+      <div class="card"><h3>Manutenzione periodica</h3>
+        <p>Tagliandi e controlli per arrivare in fondo all'anno senza sorprese.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="w">
+    <span class="occhiello">Perché qui</span>
+    <h2>Un appuntamento invece di due</h2>
+    <div class="griglia">
+      <div class="card big"><h3>Officina e gomme insieme</h3>
+        <p>Un posto solo per il tagliando e per il cambio gomme: risparmi un giro e una mattinata.</p></div>
+      <div class="card big"><h3>Preventivo prima dell'intervento</h3>
+        <p>Sai cosa serve e quanto costa prima che iniziamo a lavorare.</p></div>
+      <div class="card big"><h3>Siamo a Thiene</h3>
+        <p>In Via dell'Eva, comodi da raggiungere e con parcheggio davanti.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="voti">
+  <div class="w">
+    <div class="n">4,7</div>
+    <div class="stelle" aria-hidden="true">★★★★★</div>
+    <p>Su <strong style="color:#fff">18 recensioni</strong> lasciate dai nostri clienti su Google.</p>
+  </div>
+</section>
+
+<section>
+  <div class="w">
+    <span class="occhiello">Dove siamo</span>
+    <h2>Via dell'Eva, Thiene</h2>
+    <div class="contatti">
+      <div>
+        <p class="indirizzo">Via dell'Eva, 59<br>36016 Thiene (VI)</p>
+        <p><a class="tel-grande" href="tel:3407526237">340 752 6237</a></p>
+        <!-- ORARI DA CONFERMARE A VOCE: vedi nota in cima al file -->
+        <table class="orari">
+          <tr><td>Da lunedì a venerdì</td><td>8:00–12:30 · 13:00–19:00</td></tr>
+          <tr><td>Sabato</td><td>8:00–12:30 · 13:00–14:00</td></tr>
+          <tr><td>Domenica</td><td>Chiuso</td></tr>
+        </table>
+      </div>
+      <div>
+        <iframe class="mappa" loading="lazy" title="Dove siamo: Via dell'Eva 59, Thiene"
+          src="https://maps.google.com/maps?q=Via%20dell%27Eva%2059,%2036016%20Thiene%20VI&output=embed"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="w">
+    <strong style="color:#fff">Dalle Carbonare Auto</strong> — Via dell'Eva 59, 36016 Thiene (VI)<br>
+    Tel. <a href="tel:3407526237">340 752 6237</a> ·
+    <a href="mailto:dallecarbonareauto@gmail.com">dallecarbonareauto@gmail.com</a>
+    <!-- aggiungere la partita IVA quando il titolare la comunica -->
+  </div>
+</footer>
+
+<nav class="barra" aria-label="Contatti rapidi">
+  <a class="btn b-chiama" href="tel:3407526237">Chiama</a>
+  <a class="btn b-wa" href="https://wa.me/393407526237?text=Buongiorno,%20vorrei%20un%20preventivo%20per">WhatsApp</a>
+</nav>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org","@type":"AutoRepair",
+  "name":"Dalle Carbonare Auto — Autofficina Gommista",
+  "telephone":"+393407526237","email":"dallecarbonareauto@gmail.com",
+  "address":{"@type":"PostalAddress","streetAddress":"Via dell'Eva, 59","postalCode":"36016",
+    "addressLocality":"Thiene","addressRegion":"VI","addressCountry":"IT"},
+  "areaServed":"Thiene e Alto Vicentino"
+}
+</script>
+
+</body>
+</html>

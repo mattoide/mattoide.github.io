@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<!--
+  ============================================================
+  DEMO PER: Sames Sinergie Elettriche — Bassano del Grappa (VI)
+  Preparato il 28/08/2026 · da mostrare, non ancora ufficiale.
+
+  IDENTITÀ VISIVA: elettricista.
+  Blu notte e giallo elettrico da cartello di pericolo, con una
+  linea a zigzag che richiama la corrente. Il messaggio non è
+  "che bel sito": è "se è saltato qualcosa, chiama questo numero".
+
+  DATI VERIFICATI sulla scheda Google:
+    Via Sicilia, 36061 Bassano del Grappa VI
+    349 295 0186 · 5,0 su 8 recensioni
+    Categoria Google: installazione impianti elettrici
+    Sito proprio: NON esiste (verificato sul web il 28/08/2026)
+
+  DA CONFERMARE prima di pubblicare:
+    1. Il NOME esatto. Sulla scheda Google è scritto tutto
+       attaccato, "Samessinergieelettriche". Qui l'ho reso
+       leggibile come "Sames Sinergie Elettriche": fallo
+       confermare, e se la ragione sociale è diversa usa quella.
+    2. Il numero civico di Via Sicilia: su Google non compare.
+    3. Gli orari veri (vedi punto A qui sotto).
+    4. I tre servizi: la scheda non li specifica.
+
+  TRE ARGOMENTI DI VENDITA, in ordine di forza:
+
+    A) La scheda Google dice "Aperto 24 ore su 24". Quasi
+       sicuramente è un'impostazione lasciata di default. Il danno
+       è doppio: chi cerca alle 23 chiama e non risponde nessuno,
+       e chi legge capisce che la scheda non è curata. Sistemarlo
+       costa zero ed è la cosa da dire per prima.
+       ATTENZIONE: se invece fanno davvero pronto intervento h24,
+       è il loro asset più forte e va messo grande nell'intestazione.
+
+    B) Il nome scritto tutto attaccato. Su Google si cerca
+       "elettricista Bassano", non "Samessinergieelettriche".
+
+    C) Hanno 5,0 pieno su 8 recensioni e nessun posto dove mostrarlo.
+
+  Il sito qui sotto NON scrive "aperto 24 ore": dice "reperibile
+  su chiamata", che è vero in ogni caso.
+  ============================================================
+-->
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Anteprima non autorizzata dal titolare: NON deve finire su Google. Togliere solo dopo il sì. -->
+<meta name="robots" content="noindex, nofollow">
+<title>Sames Sinergie Elettriche — Elettricista a Bassano del Grappa</title>
+<meta name="description" content="Sames Sinergie Elettriche, impianti elettrici a Bassano del Grappa (VI). 5,0 stelle su Google. Chiama il 349 295 0186 o scrivici su WhatsApp.">
+<meta name="theme-color" content="#0E1B33">
+<style>
+  :root{
+    --notte:#0E1B33; --notte-2:#162643; --carta:#F3F5F8; --bianco:#FFF;
+    --ink:#101724; --ink-2:#465267; --muted:#77839A; --rule:#D9DFE8;
+    --giallo:#FFD400; --giallo-scuro:#C9A700; --verde:#128C4A;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--carta);color:var(--ink);
+    font:17px/1.62 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+    -webkit-font-smoothing:antialiased;padding-bottom:78px}
+  .w{max-width:900px;margin:0 auto;padding:0 20px}
+  h1,h2,h3{margin:0;line-height:1.1;letter-spacing:-.025em}
+  h1{font-size:clamp(2rem,6vw,3.2rem);font-weight:800}
+  h2{font-size:clamp(1.4rem,4vw,2rem);font-weight:800;margin-bottom:16px}
+  h3{font-size:1.05rem;font-weight:700}
+  p{margin:0 0 14px}
+
+  .occhiello{display:inline-block;font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;
+    font-weight:800;color:var(--notte);border-bottom:3px solid var(--giallo);padding-bottom:4px;margin-bottom:16px}
+
+  header.hero{background:var(--notte);color:#EDF1F7;padding:52px 0 46px}
+  header.hero .tag{display:inline-block;font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;
+    color:var(--notte);background:var(--giallo);font-weight:800;padding:5px 10px;margin-bottom:18px}
+  header.hero h1{color:#fff}
+  header.hero .claim{font-size:1.14rem;color:#AEBACD;max-width:44ch;margin:18px 0 28px}
+  .azioni{display:flex;gap:11px;flex-wrap:wrap}
+  .btn{display:inline-flex;align-items:center;justify-content:center;
+    padding:15px 26px;font-size:1.02rem;font-weight:700;text-decoration:none;
+    border-radius:3px;min-height:54px}
+  .b-chiama{background:var(--giallo);color:#101724;font-weight:800}
+  .b-chiama:hover{background:var(--giallo-scuro)}
+  .b-wa{background:var(--verde);color:#fff}
+  .b-wa:hover{filter:brightness(.92)}
+  .btn:focus-visible{outline:3px solid var(--giallo);outline-offset:3px}
+
+  /* linea di corrente: zigzag giallo su fondo notte */
+  .corrente{height:20px;background-color:var(--notte);
+    background-image:
+      linear-gradient(135deg,var(--giallo) 25%,transparent 25%),
+      linear-gradient(225deg,var(--giallo) 25%,transparent 25%);
+    background-size:22px 22px;background-position:0 0}
+
+  section{padding:48px 0;border-bottom:1px solid var(--rule)}
+  .urgenza{background:var(--giallo);border-bottom:0}
+  .urgenza h2{color:var(--notte);margin-bottom:10px}
+  .urgenza p{color:#3D3200;max-width:56ch;margin:0;font-size:1.06rem}
+
+  .griglia{display:grid;grid-template-columns:repeat(auto-fit,minmax(226px,1fr));gap:14px;margin-top:20px}
+  .card{background:var(--bianco);border:1px solid var(--rule);border-radius:3px;padding:20px;
+    box-shadow:0 1px 2px rgba(16,23,36,.04)}
+  .card h3{color:var(--notte)}
+  .card p{margin:6px 0 0;font-size:.94rem;color:var(--ink-2)}
+
+  .voti{background:var(--notte);color:#EDF1F7;text-align:center;border:0}
+  .voti .n{font-size:3.4rem;font-weight:800;line-height:1;letter-spacing:-.04em;color:var(--giallo)}
+  .voti .stelle{color:var(--giallo);font-size:1.5rem;letter-spacing:4px;margin-top:4px}
+  .voti p{color:#AEBACD;margin:12px 0 0}
+
+  .contatti{display:grid;grid-template-columns:repeat(auto-fit,minmax(255px,1fr));gap:24px;align-items:start}
+  .indirizzo{font-size:1.08rem;font-weight:700;margin-bottom:6px}
+  .tel-grande{color:var(--notte);font-weight:800;font-size:1.35rem;text-decoration:none;
+    border-bottom:3px solid var(--giallo)}
+  .nota{background:var(--bianco);border-left:4px solid var(--giallo);padding:16px 20px;margin-top:18px;
+    border-radius:0 3px 3px 0;border-top:1px solid var(--rule);border-right:1px solid var(--rule);
+    border-bottom:1px solid var(--rule)}
+  .nota p{margin:0;font-size:.96rem;color:var(--ink-2)}
+  .mappa{border:0;width:100%;height:290px;border-radius:3px;filter:grayscale(.25)}
+
+  footer{background:var(--notte);color:#8B98AE;padding:30px 0;font-size:.89rem}
+  footer a{color:var(--giallo)}
+
+  .barra{position:fixed;left:0;right:0;bottom:0;display:none;z-index:50;gap:9px;
+    background:var(--bianco);border-top:1px solid var(--rule);padding:9px 12px}
+  .barra .btn{flex:1;padding:13px 8px;font-size:1rem;min-height:48px}
+  @media(max-width:760px){.barra{display:flex}}
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="w">
+    <span class="tag">Impianti elettrici · Bassano del Grappa</span>
+    <h1>Sames Sinergie Elettriche</h1>
+    <p class="claim">Impianti elettrici a Bassano del Grappa e dintorni. Se è saltato qualcosa, la cosa più veloce è chiamarci.</p>
+    <div class="azioni">
+      <a class="btn b-chiama" href="tel:3492950186">Chiama 349 295 0186</a>
+      <a class="btn b-wa" href="https://wa.me/393492950186?text=Buongiorno,%20avrei%20bisogno%20di%20un%20elettricista%20per">Scrivici su WhatsApp</a>
+    </div>
+  </div>
+</header>
+<div class="corrente" aria-hidden="true"></div>
+
+<section class="urgenza">
+  <div class="w">
+    <h2>È saltata la corrente?</h2>
+    <p>Chiama il <strong>349 295 0186</strong>. Ti diciamo subito se possiamo passare oggi.</p>
+  </div>
+</section>
+
+<section>
+  <div class="w">
+    <span class="occhiello">Cosa facciamo</span>
+    <h2>Impianti, rifacimenti, guasti</h2>
+    <!-- La scheda Google indica solo "installazione impianti elettrici":
+         voci volutamente ampie, da precisare col titolare. -->
+    <div class="griglia">
+      <div class="card"><h3>Impianti nuovi</h3>
+        <p>Realizzazione dell'impianto elettrico per case, appartamenti e locali.</p></div>
+      <div class="card"><h3>Rifacimenti e adeguamenti</h3>
+        <p>Impianti vecchi messi a norma, quadri e linee rifatti dove serve.</p></div>
+      <div class="card"><h3>Guasti e riparazioni</h3>
+        <p>Quando salta la corrente o una linea non tiene, veniamo a vedere.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="w">
+    <span class="occhiello">Perché noi</span>
+    <h2>Otto clienti, otto volte cinque stelle</h2>
+    <div class="griglia">
+      <div class="card"><h3>Rispondiamo</h3>
+        <p>Un problema elettrico non aspetta: chiami e sai subito quando possiamo passare.</p></div>
+      <div class="card"><h3>Lavoro fatto a regola</h3>
+        <p>Chi ci ha valutato su Google ci ha dato cinque stelle. È il nostro biglietto da visita.</p></div>
+      <div class="card"><h3>Siamo della zona</h3>
+        <p>Bassano del Grappa e i comuni vicini: arriviamo in fretta perché siamo qui.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="voti">
+  <div class="w">
+    <div class="n">5,0</div>
+    <div class="stelle" aria-hidden="true">★★★★★</div>
+    <p>Su <strong style="color:#fff">8 recensioni</strong> lasciate dai nostri clienti su Google.</p>
+  </div>
+</section>
+
+<section>
+  <div class="w">
+    <span class="occhiello">Contatti</span>
+    <h2>Dove trovarci</h2>
+    <div class="contatti">
+      <div>
+        <p class="indirizzo">Via Sicilia<br>36061 Bassano del Grappa (VI)</p>
+        <p><a class="tel-grande" href="tel:3492950186">349 295 0186</a></p>
+        <div class="nota">
+          <!-- DELIBERATO: non scriviamo "aperto 24 ore" finché il titolare non conferma
+               che fa davvero pronto intervento. Vedi nota A in cima al file. -->
+          <p><strong>Reperibile su chiamata.</strong> Per un preventivo o un intervento il modo più rapido è telefonare o scrivere su WhatsApp: rispondiamo appena possiamo.</p>
+        </div>
+      </div>
+      <div>
+        <iframe class="mappa" loading="lazy" title="Dove siamo: Via Sicilia, Bassano del Grappa"
+          src="https://maps.google.com/maps?q=Via%20Sicilia,%2036061%20Bassano%20del%20Grappa%20VI&output=embed"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="w">
+    <strong style="color:#fff">Sames Sinergie Elettriche</strong> — Via Sicilia, 36061 Bassano del Grappa (VI)<br>
+    Tel. <a href="tel:3492950186">349 295 0186</a>
+    <!-- aggiungere ragione sociale completa e partita IVA quando il titolare le comunica -->
+  </div>
+</footer>
+
+<nav class="barra" aria-label="Contatti rapidi">
+  <a class="btn b-chiama" href="tel:3492950186">Chiama</a>
+  <a class="btn b-wa" href="https://wa.me/393492950186?text=Buongiorno,%20avrei%20bisogno%20di%20un%20elettricista%20per">WhatsApp</a>
+</nav>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org","@type":"Electrician",
+  "name":"Sames Sinergie Elettriche","telephone":"+393492950186",
+  "address":{"@type":"PostalAddress","streetAddress":"Via Sicilia","postalCode":"36061",
+    "addressLocality":"Bassano del Grappa","addressRegion":"VI","addressCountry":"IT"},
+  "areaServed":"Bassano del Grappa e provincia di Vicenza"
+}
+</script>
+
+</body>
+</html>
