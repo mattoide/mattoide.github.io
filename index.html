@@ -4,26 +4,33 @@
   SITO DI PRESENTAZIONE — Mattia Bellotti
   Creato il 28/08/2026. Sostituisce la vecchia index.html.
 
-  Contatti gia' inseriti il 28/08/2026:
-     366 314 3578  ·  wa.me/393663143578  ·  mattiabellotti.dev@gmail.com
-  Se cambi numero o email, sono ripetuti in piu' punti: cercali tutti.
+  Contatti: 366 314 3578 (solo WhatsApp) · mattiabellotti.dev@gmail.com
+  Non c'e' nessun link "tel:" in pagina: scelta voluta, non fai
+  assistenza telefonica. I canali sono WhatsApp ed email.
+
+  PERIMETRO DICHIARATO (sezione "Cosa non faccio"):
+  fai il sito e gli aggiornamenti; NON gestisci la scheda Google,
+  NON fai assistenza, NON gestisci i social.
+
+  PREZZI: setup 390 euro + 29/mese, oppure 0 oggi e 65/mese per
+  12 mesi e poi 29. Dal secondo anno entrambe le formule costano
+  29: un canone che scende da' un motivo per restare.
 
   DA CONTROLLARE:
 
   1. La vecchia index.html era la PRIVACY POLICY dell'app
-     DisisRadio (Associazione Tracce ETS). L'ho salvata in due
-     copie: index-backup-2026-08-28.html e privacy-disisradio.html.
-     Quella pagina resta raggiungibile su
+     DisisRadio (Associazione Tracce ETS). E' salvata in
+     index-backup-2026-08-28.html e privacy-disisradio.html.
+     Il link nel footer e' stato rimosso su tua richiesta, quindi
+     alla policy si arriva SOLO conoscendo l'indirizzo:
      https://mattoide.github.io/privacy-disisradio.html
-     e c'e' un link nel footer qui sotto.
-     SE quell'URL e' registrato sul Play Store o dentro l'app
-     come indirizzo della privacy policy, VA AGGIORNATO al nuovo
-     indirizzo, altrimenti l'app risulta senza policy valida.
+     SE quell'URL e' dichiarato sul Play Store, VA AGGIORNATO.
 
-  2. Non ho messo nessun cliente e nessuna testimonianza:
-     non ne hai ancora, e inventarli e' il modo piu' veloce per
-     perdere credibilita' proprio con chi sa controllare.
-     Quando chiudi il primo, chiedigli una riga e mettila qui.
+  2. Nessun cliente e nessuna testimonianza: non ne hai ancora.
+     Il telefono nel mockup dell'hero e' un ESEMPIO inventato ed
+     e' etichettato come tale: non e' un lavoro fatto.
+     Quando chiudi il primo cliente, chiedigli una riga e
+     sostituisci il mockup con il suo sito vero.
   ============================================================
 -->
 <html lang="it">
@@ -32,133 +39,280 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Mattia Bellotti — Siti web per officine e artigiani</title>
 <meta name="description" content="Faccio siti web semplici e veloci per officine, impiantisti e piccole attività. Una pagina sola, fatta per farti arrivare più telefonate. Isernia e tutta Italia.">
-<meta name="theme-color" content="#16191B">
+<meta name="theme-color" content="#14161A">
 <meta property="og:title" content="Mattia Bellotti — Siti web per officine e artigiani">
 <meta property="og:description" content="Il sito te lo faccio prima, poi decidi. Una pagina, veloce, con il pulsante per chiamarti sempre in vista.">
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600;700&display=swap">
 <style>
   :root{
-    --ground:#F2F1EE; --surface:#FFFFFF; --surface2:#E9E7E2;
-    --ink:#16191B; --ink2:#4A5157; --muted:#7C858B; --rule:#DEDCD7;
-    --accent:#C24A18; --accent-scuro:#9E3A11; --wa:#128C4A;
-    --ombra:0 1px 2px rgba(22,25,27,.05), 0 12px 30px -22px rgba(22,25,27,.5);
+    --grafite:#14161A;
+    --grafite-2:#1E222A;
+    --carta:#F4F3F0;
+    --carta-2:#EAE8E3;
+    --bianco:#FFFFFF;
+    --ink:#14161A;
+    --ink-2:#4C545E;
+    --muted:#7E8791;
+    --rule:#DFDCD5;
+    --ambra:#E8A317;
+    --ambra-scura:#B87F0C;
+    --verde:#128C4A;
+    --verde-scuro:#0E6E3A;
+    --ombra:0 1px 2px rgba(20,22,26,.04), 0 14px 34px -26px rgba(20,22,26,.55);
   }
   @media (prefers-color-scheme:dark){
     :root:not([data-theme="light"]){
-      --ground:#14171A; --surface:#1C2126; --surface2:#232A30;
-      --ink:#ECEFF1; --ink2:#C3CBD1; --muted:#8B959C; --rule:#2C3339;
-      --accent:#F0763A; --accent-scuro:#D45E24; --wa:#2FA76A;
-      --ombra:0 1px 2px rgba(0,0,0,.4), 0 12px 30px -22px rgba(0,0,0,.9);
+      --grafite:#0C0E11;
+      --grafite-2:#161A20;
+      --carta:#14171B;
+      --carta-2:#1B1F25;
+      --bianco:#1B1F25;
+      --ink:#ECEEF1;
+      --ink-2:#BFC6CE;
+      --muted:#89929B;
+      --rule:#282E36;
+      --ambra:#F5B733;
+      --ambra-scura:#C8901A;
+      --verde:#2AA269;
+      --verde-scuro:#1E8355;
+      --ombra:0 1px 2px rgba(0,0,0,.4), 0 14px 34px -26px rgba(0,0,0,.9);
     }
   }
+
   *{box-sizing:border-box}
   html{scroll-behavior:smooth}
   body{
-    margin:0;background:var(--ground);color:var(--ink);
+    margin:0;background:var(--carta);color:var(--ink);
     font:17px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
-    -webkit-font-smoothing:antialiased;padding-bottom:78px;
+    -webkit-font-smoothing:antialiased;padding-bottom:80px;
   }
-  .w{max-width:880px;margin:0 auto;padding:0 22px}
-  h1,h2,h3{font-family:"Familjen Grotesk",system-ui,sans-serif;line-height:1.1;margin:0;letter-spacing:-.02em;text-wrap:balance}
-  h1{font-size:clamp(2.2rem,7vw,3.6rem);font-weight:700}
-  h2{font-size:clamp(1.5rem,4vw,2.1rem);font-weight:700;margin-bottom:14px}
-  h3{font-size:1.08rem;font-weight:600}
+  .w{max-width:1020px;margin:0 auto;padding:0 22px}
+  h1,h2,h3,.num,.cifra{font-family:"Familjen Grotesk",system-ui,sans-serif}
+  h1,h2,h3{line-height:1.08;margin:0;letter-spacing:-.025em;text-wrap:balance}
+  h1{font-size:clamp(2.3rem,6.4vw,4rem);font-weight:700}
+  h2{font-size:clamp(1.6rem,4vw,2.4rem);font-weight:700}
+  h3{font-size:1.06rem;font-weight:600;letter-spacing:-.01em}
   p{margin:0 0 15px;max-width:62ch}
-  a{color:var(--accent)}
+  a{color:var(--ambra-scura)}
 
-  /* HERO */
-  .hero{padding:64px 0 52px;border-bottom:1px solid var(--rule)}
-  .occhiello{
-    font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);
-    font-weight:600;margin-bottom:20px;display:block;
+  /* etichetta di sezione: filo ambra + testo piccolo */
+  .eyebrow{
+    display:flex;align-items:center;gap:10px;
+    font-size:12px;letter-spacing:.18em;text-transform:uppercase;
+    font-weight:600;color:var(--muted);margin-bottom:14px;
   }
-  .hero h1 span{color:var(--accent)}
-  .hero .sotto{font-size:1.2rem;color:var(--ink2);max-width:52ch;margin:20px 0 30px}
+  .eyebrow::before{content:"";width:26px;height:3px;background:var(--ambra);flex:none}
+
+  /* ---------- HERO ---------- */
+  .hero{background:var(--grafite);color:#F3F5F7;padding:56px 0 60px;position:relative;overflow:hidden}
+  .hero::after{
+    content:"";position:absolute;inset:0;pointer-events:none;opacity:.5;
+    background:
+      linear-gradient(90deg,rgba(232,163,23,.10) 1px,transparent 1px) 0 0/64px 64px,
+      linear-gradient(rgba(232,163,23,.10) 1px,transparent 1px) 0 0/64px 64px;
+    mask-image:radial-gradient(120% 80% at 78% 30%,#000 0%,transparent 70%);
+    -webkit-mask-image:radial-gradient(120% 80% at 78% 30%,#000 0%,transparent 70%);
+  }
+  .hero .w{position:relative;z-index:1}
+  .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:44px;align-items:center}
+  @media(max-width:860px){.hero-grid{grid-template-columns:1fr;gap:36px}}
+  .hero .eyebrow{color:#9AA5B1}
+  .hero h1 mark{background:none;color:var(--ambra)}
+  .hero .sotto{font-size:1.16rem;color:#C3CBD3;max-width:46ch;margin:22px 0 30px}
   .azioni{display:flex;gap:12px;flex-wrap:wrap}
   .btn{
-    display:inline-flex;align-items:center;justify-content:center;
-    padding:15px 28px;font-size:1.03rem;font-weight:600;text-decoration:none;
-    border-radius:3px;min-height:54px;font-family:"Familjen Grotesk",sans-serif;
+    display:inline-flex;align-items:center;justify-content:center;gap:8px;
+    padding:16px 28px;font-size:1.03rem;font-weight:600;text-decoration:none;
+    border-radius:4px;min-height:56px;font-family:"Familjen Grotesk",sans-serif;
+    transition:transform .12s ease, background .15s ease, border-color .15s ease;
   }
-  .btn-1{background:var(--accent);color:#fff}
-  .btn-1:hover{background:var(--accent-scuro)}
-  .btn-2{background:var(--wa);color:#fff}
-  .btn-2:hover{filter:brightness(.92)}
-  .btn-3{background:transparent;color:var(--ink);border:1px solid var(--rule)}
-  .btn-3:hover{border-color:var(--ink)}
-  .btn:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+  .btn:hover{transform:translateY(-1px)}
+  .btn-wa{background:var(--verde);color:#fff}
+  .btn-wa:hover{background:var(--verde-scuro)}
+  .btn-mail{background:transparent;color:#F3F5F7;border:1px solid rgba(255,255,255,.28)}
+  .btn-mail:hover{border-color:var(--ambra);color:var(--ambra)}
+  .btn-ambra{background:var(--ambra);color:#14161A}
+  .btn-ambra:hover{background:var(--ambra-scura);color:#fff}
+  .btn:focus-visible{outline:3px solid var(--ambra);outline-offset:3px}
 
-  section{padding:52px 0;border-bottom:1px solid var(--rule)}
-  .griglia{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:22px}
-  .card{background:var(--surface);border:1px solid var(--rule);border-radius:3px;padding:20px 22px}
-  .card p{margin:7px 0 0;font-size:.95rem;color:var(--ink2)}
+  /* ---------- MOCKUP TELEFONO ---------- */
+  .fake{justify-self:center;width:250px;max-width:78vw}
+  .fake-phone{
+    border:9px solid #262B33;border-radius:34px;background:#0E1013;
+    box-shadow:0 30px 60px -30px rgba(0,0,0,.9), 0 0 0 1px rgba(255,255,255,.05);
+    overflow:hidden;position:relative;
+  }
+  .fake-notch{height:20px;background:#262B33;display:flex;align-items:center;justify-content:center}
+  .fake-notch i{display:block;width:52px;height:5px;border-radius:3px;background:#0E1013}
+  .fake-screen{background:#fff;color:#14161A;font-size:9.5px;line-height:1.45}
+  .fs-top{background:#14161A;color:#fff;padding:16px 13px 15px}
+  .fs-top .cat{font-size:6.5px;letter-spacing:.14em;text-transform:uppercase;color:#8D97A2}
+  .fs-top .nome{font-family:"Familjen Grotesk",sans-serif;font-weight:700;font-size:16px;line-height:1.1;margin:5px 0 6px;letter-spacing:-.02em}
+  .fs-top .claim{color:#B9C1C9;font-size:8.5px;line-height:1.5}
+  .fs-body{padding:12px 13px 8px}
+  .fs-h{font-family:"Familjen Grotesk",sans-serif;font-weight:700;font-size:10px;margin-bottom:7px;letter-spacing:-.01em}
+  .fs-row{display:flex;gap:6px;margin-bottom:6px}
+  .fs-card{flex:1;border:1px solid #E4E2DD;border-radius:3px;padding:6px 7px;background:#FAF9F7}
+  .fs-card b{display:block;font-size:8.5px;margin-bottom:2px}
+  .fs-card span{color:#6E767F;font-size:7.5px;line-height:1.4}
+  .fs-orari{border-top:1px solid #E4E2DD;margin-top:8px;padding-top:8px}
+  .fs-orari div{display:flex;justify-content:space-between;font-size:8px;color:#4C545E;padding:2px 0}
+  .fs-bar{display:flex;gap:5px;padding:8px 10px 11px;border-top:1px solid #E4E2DD;background:#fff}
+  .fs-bar span{
+    flex:1;text-align:center;padding:8px 0;border-radius:3px;font-weight:700;font-size:8.5px;color:#fff;
+    font-family:"Familjen Grotesk",sans-serif;
+  }
+  .fs-bar .b1{background:#C8451A}
+  .fs-bar .b2{background:#128C4A}
+  .fake-cap{
+    text-align:center;font-size:11px;color:#8D97A2;margin-top:14px;letter-spacing:.04em;
+  }
 
-  ol.passi{counter-reset:p;list-style:none;padding:0;margin:24px 0 0;display:flex;flex-direction:column;gap:18px}
-  ol.passi li{counter-increment:p;padding-left:58px;position:relative}
+  /* ---------- SEZIONI ---------- */
+  section{padding:64px 0}
+  section.alt{background:var(--carta-2)}
+  section.scura{background:var(--grafite);color:#F0F2F4;border-top:3px solid var(--ambra);border-bottom:1px solid var(--grafite-2)}
+  section.scura h2{color:#fff}
+  section.scura p{color:#BFC6CE}
+  section.scura .eyebrow{color:#8D97A2}
+  .lead{font-size:1.12rem;color:var(--ink-2);max-width:58ch}
+
+  .griglia{display:grid;grid-template-columns:repeat(auto-fit,minmax(238px,1fr));gap:14px;margin-top:26px}
+  .card{
+    background:var(--bianco);border:1px solid var(--rule);border-radius:4px;padding:22px;
+    transition:transform .14s ease, box-shadow .14s ease, border-color .14s ease;
+  }
+  .card:hover{transform:translateY(-2px);box-shadow:var(--ombra);border-color:var(--ambra)}
+  .card h3{margin-bottom:7px}
+  .card p{margin:0;font-size:.95rem;color:var(--ink-2)}
+  section.scura .card{background:var(--grafite-2);border-color:#2C333C}
+  section.scura .card:hover{border-color:var(--ambra)}
+  section.scura .card p{color:#AEB6BF}
+  section.scura .card h3{color:#fff}
+
+  /* passi numerati */
+  ol.passi{counter-reset:p;list-style:none;padding:0;margin:28px 0 0;display:grid;gap:2px;background:var(--rule);border:1px solid var(--rule);border-radius:4px;overflow:hidden}
+  ol.passi li{counter-increment:p;background:var(--bianco);padding:22px 24px 22px 78px;position:relative}
   ol.passi li::before{
-    content:counter(p);position:absolute;left:0;top:-2px;width:38px;height:38px;
-    background:var(--ink);color:var(--ground);display:grid;place-items:center;
-    font-family:"Familjen Grotesk",sans-serif;font-weight:700;font-size:1.05rem;border-radius:50%;
+    content:counter(p,decimal-leading-zero);position:absolute;left:24px;top:20px;
+    font-family:"Familjen Grotesk",sans-serif;font-weight:700;font-size:1.5rem;
+    color:var(--ambra);letter-spacing:-.03em;
   }
-  ol.passi h3{margin-bottom:4px}
-  ol.passi p{margin:0;color:var(--ink2);font-size:.97rem}
+  ol.passi h3{margin-bottom:5px}
+  ol.passi p{margin:0;color:var(--ink-2);font-size:.97rem;max-width:64ch}
 
-  .prezzi{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin-top:22px}
-  .prezzo{background:var(--surface);border:1px solid var(--rule);border-radius:3px;padding:24px}
-  .prezzo.evid{border-color:var(--accent);border-width:2px}
-  .prezzo .et{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:600}
-  .prezzo .cifra{font-family:"Familjen Grotesk",sans-serif;font-size:2.4rem;font-weight:700;line-height:1.1;margin:8px 0 2px}
-  .prezzo .cifra small{font-size:1rem;font-weight:500;color:var(--muted)}
-  .prezzo ul{margin:14px 0 0;padding-left:20px;font-size:.94rem;color:var(--ink2)}
-  .prezzo li{margin-bottom:5px}
+  /* prezzi */
+  .prezzi{display:grid;grid-template-columns:repeat(auto-fit,minmax(272px,1fr));gap:16px;margin-top:26px}
+  .prezzo{background:var(--bianco);border:1px solid var(--rule);border-radius:4px;padding:26px;display:flex;flex-direction:column}
+  .prezzo.evid{border-color:var(--ambra);box-shadow:0 0 0 1px var(--ambra)}
+  .prezzo .et{font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:600}
+  .cifra{font-size:3rem;font-weight:700;line-height:1;letter-spacing:-.035em;margin:14px 0 0}
+  .cifra small{font-size:.95rem;font-weight:500;color:var(--muted);letter-spacing:0}
+  .cifra.piccola{font-size:1.7rem;margin-top:6px}
+  .prezzo ul{margin:18px 0 0;padding-left:0;list-style:none;font-size:.95rem;color:var(--ink-2)}
+  .prezzo li{margin-bottom:8px;padding-left:22px;position:relative}
+  .prezzo li::before{content:"";position:absolute;left:0;top:.55em;width:11px;height:2px;background:var(--ambra)}
+  .striscia{
+    margin-top:18px;background:var(--grafite);color:#F0F2F4;border-radius:4px;
+    padding:18px 22px;display:flex;gap:14px;align-items:baseline;flex-wrap:wrap;
+  }
+  .striscia b{font-family:"Familjen Grotesk",sans-serif;font-size:1.15rem;color:var(--ambra)}
+  .striscia span{font-size:.97rem;color:#BFC6CE}
 
-  .nota{background:var(--surface2);border-left:3px solid var(--accent);padding:16px 20px;margin-top:24px;border-radius:0 3px 3px 0}
-  .nota p{margin:0;font-size:.97rem;color:var(--ink2)}
+  .nota{background:var(--bianco);border-left:3px solid var(--ambra);padding:18px 22px;margin-top:22px;border-radius:0 4px 4px 0;border-top:1px solid var(--rule);border-right:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+  .nota p{margin:0;font-size:.97rem;color:var(--ink-2);max-width:70ch}
+  section.scura .nota{background:var(--grafite-2);border-top-color:#2C333C;border-right-color:#2C333C;border-bottom-color:#2C333C}
+  section.scura .nota p{color:#BFC6CE}
 
-  .contatti-box{background:var(--surface);border:1px solid var(--rule);border-radius:3px;padding:26px;margin-top:22px}
-  .contatti-box .riga{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-top:16px}
-  .contatti-box a.diretto{font-family:"Familjen Grotesk",sans-serif;font-size:1.3rem;font-weight:700;text-decoration:none}
+  /* contatti */
+  .contatti-box{background:var(--bianco);border:1px solid var(--rule);border-radius:4px;padding:28px;margin-top:24px;box-shadow:var(--ombra)}
+  .diretto{font-family:"Familjen Grotesk",sans-serif;font-size:1.45rem;font-weight:700;text-decoration:none;color:var(--ink);letter-spacing:-.02em}
+  .diretto:hover{color:var(--ambra-scura)}
+  .riga{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}
 
   .barra{
     position:fixed;left:0;right:0;bottom:0;display:none;z-index:60;gap:9px;
-    background:var(--surface);border-top:1px solid var(--rule);padding:9px 12px;
+    background:var(--bianco);border-top:1px solid var(--rule);padding:10px 12px;
+    box-shadow:0 -8px 24px -18px rgba(0,0,0,.5);
   }
-  .barra .btn{flex:1;padding:13px 8px;font-size:1rem;min-height:48px}
+  .barra .btn{flex:1;padding:13px 8px;font-size:1rem;min-height:50px}
   @media(max-width:720px){.barra{display:flex}}
 
-  footer{padding:34px 0 40px;font-size:.88rem;color:var(--muted)}
-  footer a{color:var(--ink2)}
+  footer{padding:38px 0 44px;font-size:.89rem;color:var(--muted);background:var(--carta-2);border-top:1px solid var(--rule)}
+  footer a{color:var(--ink-2)}
   footer p{max-width:70ch}
-  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+  @media (prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto}
+    *{transition:none!important}
+    .btn:hover,.card:hover{transform:none}
+  }
 </style>
 </head>
 <body>
 
 <header class="hero">
   <div class="w">
-    <span class="occhiello">Mattia Bellotti · Isernia · lavoro in tutta Italia</span>
-    <h1>Faccio siti per chi<br>lavora <span>con le mani</span>.</h1>
-    <p class="sotto">Officine, impiantisti, elettricisti, piccole attività. Una pagina sola, che si apre veloce dal telefono e ha il pulsante per chiamarti sempre in vista. Niente di più, perché non serve niente di più.</p>
-    <div class="azioni">
-      <a class="btn btn-2" href="https://wa.me/393663143578?text=Buongiorno%20Mattia,%20vorrei%20informazioni%20sul%20sito">Scrivimi su WhatsApp</a>
-      <a class="btn btn-3" href="tel:3663143578">Chiama 366 314 3578</a>
+    <div class="hero-grid">
+      <div>
+        <span class="eyebrow">Mattia Bellotti · Isernia · lavoro in tutta Italia</span>
+        <h1>Faccio siti per chi lavora <mark>con le mani</mark>.</h1>
+        <p class="sotto">Officine, impiantisti, elettricisti, piccole attività. Una pagina sola, che si apre veloce dal telefono e ha il pulsante per chiamarti sempre in vista. Niente di più, perché non serve niente di più.</p>
+        <div class="azioni">
+          <a class="btn btn-wa" href="https://wa.me/393663143578?text=Buongiorno%20Mattia,%20vorrei%20informazioni%20sul%20sito">Scrivimi su WhatsApp</a>
+          <a class="btn btn-mail" href="mailto:mattiabellotti.dev@gmail.com?subject=Informazioni%20sul%20sito">Scrivimi una email</a>
+        </div>
+      </div>
+
+      <!-- Mockup: è un esempio inventato, non un lavoro fatto. Vedi nota in cima al file. -->
+      <div class="fake">
+        <div class="fake-phone">
+          <div class="fake-notch"><i></i></div>
+          <div class="fake-screen" aria-hidden="true">
+            <div class="fs-top">
+              <div class="cat">Officina meccanica · Isernia</div>
+              <div class="nome">Officina Rossi</div>
+              <div class="claim">Meccanica e gomme nello stesso posto. Una telefonata e sappiamo dirti quando passare.</div>
+            </div>
+            <div class="fs-body">
+              <div class="fs-h">Cosa facciamo</div>
+              <div class="fs-row">
+                <div class="fs-card"><b>Gomme</b><span>Cambio ed equilibratura</span></div>
+                <div class="fs-card"><b>Tagliandi</b><span>Manutenzione periodica</span></div>
+              </div>
+              <div class="fs-row">
+                <div class="fs-card"><b>Diagnosi</b><span>Troviamo il guasto</span></div>
+                <div class="fs-card"><b>Revisioni</b><span>Su appuntamento</span></div>
+              </div>
+              <div class="fs-orari">
+                <div><span>Lun–Ven</span><span>8:00–19:00</span></div>
+                <div><span>Sabato</span><span>8:00–12:30</span></div>
+              </div>
+            </div>
+            <div class="fs-bar"><span class="b1">Chiama</span><span class="b2">WhatsApp</span></div>
+          </div>
+        </div>
+        <p class="fake-cap">Esempio di pagina, non un cliente reale</p>
+      </div>
     </div>
   </div>
 </header>
 
 <section>
   <div class="w">
+    <span class="eyebrow">Il punto</span>
     <h2>Il problema non è che non hai un sito</h2>
-    <p>È che quando qualcuno ha bisogno di te tira fuori il telefono, scrive <em>“officina” più il nome del paese</em>, e trova una mappa con tre nomi sopra il tuo. Se clicca il tuo, non c'è niente da leggere: nessun orario, nessun servizio, nessun modo di scriverti in due secondi. Allora chiama quello sotto.</p>
-    <p>Un sito da una pagina non ti rende famoso. Fa una cosa sola: trasforma quella ricerca in una telefonata.</p>
+    <p class="lead" style="margin-top:16px">È che quando qualcuno ha bisogno di te tira fuori il telefono, scrive <em>“officina” più il nome del paese</em>, e trova una mappa con tre nomi sopra il tuo. Se clicca il tuo, non c'è niente da leggere: nessun orario, nessun servizio, nessun modo di scriverti in due secondi. Allora chiama quello sotto.</p>
+    <p class="lead">Un sito da una pagina non ti rende famoso. Fa una cosa sola: trasforma quella ricerca in una telefonata.</p>
   </div>
 </section>
 
-<section>
+<section class="alt">
   <div class="w">
+    <span class="eyebrow">Cosa ricevi</span>
     <h2>Cosa ti do</h2>
     <div class="griglia">
       <div class="card">
@@ -174,16 +328,16 @@
         <p>Un indirizzo tuo, non un indirizzo gratuito con un nome strano attaccato. Intestato a te.</p>
       </div>
       <div class="card">
-        <h3>La scheda Google sistemata</h3>
-        <p>Orari giusti, servizi, categorie, foto. È la parte che porta più telefonate del sito stesso, e quasi nessuno la cura.</p>
+        <h3>Le modifiche le faccio io</h3>
+        <p>Cambi orario, chiudi per ferie, aggiungi un servizio: me lo scrivi e aggiorno la pagina. Non devi imparare niente e non devi toccare niente.</p>
       </div>
       <div class="card">
-        <h3>Le modifiche, fatte da me</h3>
-        <p>Cambi orario, chiudi per ferie, aggiungi un servizio: me lo scrivi e lo faccio io in giornata. Non devi imparare niente.</p>
+        <h3>Scritto a mano, non con un template</h3>
+        <p>Di mestiere scrivo codice. Il tuo sito è un file solo, senza impalcature inutili sotto: per questo si apre in un secondo anche con la linea del paese.</p>
       </div>
       <div class="card">
-        <h3>Il numero di chi ti ha chiamato</h3>
-        <p>Ogni mese ti mando quante persone hanno premuto “Chiama” dalla tua scheda. Così vedi se sto lavorando bene.</p>
+        <h3>Niente canoni a sorpresa</h3>
+        <p>Quello che paghi è scritto qui sotto. Non ci sono moduli aggiuntivi, plugin da rinnovare o pacchetti da sbloccare.</p>
       </div>
     </div>
   </div>
@@ -191,6 +345,7 @@
 
 <section>
   <div class="w">
+    <span class="eyebrow">Il metodo</span>
     <h2>Come funziona</h2>
     <ol class="passi">
       <li>
@@ -198,8 +353,8 @@
         <p>Non ti mando un preventivo da leggere. Prendo i dati che sono già pubblici sulla tua scheda Google, costruisco la pagina e te la mando fatta. Se non ti piace, non hai perso niente: il tempo l'ho messo io.</p>
       </li>
       <li>
-        <h3>Lo guardi e mi dici cosa è sbagliato</h3>
-        <p>Quasi sempre c'è qualcosa da correggere: un orario, un servizio che non fai più, uno che fai e non avevo capito. Sistemiamo insieme in cinque minuti al telefono.</p>
+        <h3>Lo guardi e mi scrivi cosa è sbagliato</h3>
+        <p>Quasi sempre c'è qualcosa da correggere: un orario, un servizio che non fai più, uno che fai e non avevo capito. Mi mandi la lista e la sistemo.</p>
       </li>
       <li>
         <h3>Decidi tu, e solo allora si paga</h3>
@@ -209,32 +364,37 @@
   </div>
 </section>
 
-<section>
+<section class="alt">
   <div class="w">
+    <span class="eyebrow">Prezzi</span>
     <h2>Quanto costa</h2>
-    <p>Due formule, scegli quella che ti torna meglio. Nessuna delle due ha costi nascosti.</p>
+    <p class="lead" style="margin-top:16px">Due formule, scegli quella che ti torna meglio. Cambia solo <em>come</em> paghi il lavoro iniziale.</p>
     <div class="prezzi">
       <div class="prezzo">
-        <span class="et">Formula A</span>
+        <span class="et">Formula A — paghi il lavoro subito</span>
         <div class="cifra">390 € <small>una volta sola</small></div>
-        <div class="cifra" style="font-size:1.5rem">+ 59 € <small>al mese</small></div>
+        <div class="cifra piccola">+ 29 € <small>al mese</small></div>
         <ul>
-          <li>Sito, dominio e messa online</li>
-          <li>Scheda Google sistemata</li>
+          <li>Sito scritto e messo online</li>
+          <li>Dominio intestato a te</li>
+          <li>Hosting e certificato di sicurezza</li>
           <li>Due modifiche al mese incluse</li>
-          <li>Report mensile delle chiamate</li>
         </ul>
       </div>
       <div class="prezzo evid">
-        <span class="et">Formula B — nessun anticipo</span>
+        <span class="et">Formula B — non anticipi niente</span>
         <div class="cifra">0 € <small>oggi</small></div>
-        <div class="cifra" style="font-size:1.5rem">99 € <small>al mese, 12 mesi</small></div>
+        <div class="cifra piccola">65 € <small>al mese per 12 mesi</small></div>
         <ul>
           <li>Tutto quello della formula A</li>
-          <li>Non anticipi niente</li>
-          <li>Paghi solo da quando il sito è online</li>
+          <li>Paghi da quando il sito è online, non prima</li>
+          <li>Dal tredicesimo mese scendi a 29 €</li>
         </ul>
       </div>
+    </div>
+    <div class="striscia">
+      <b>Dal secondo anno: 29 € al mese</b>
+      <span>in tutte e due le formule. È il prezzo di tenere il sito online, aggiornato e con il dominio pagato.</span>
     </div>
     <div class="nota">
       <p><strong>Il dominio è tuo, sempre.</strong> Lo registro a tuo nome, non al mio. Se un domani non vuoi più lavorare con me, te lo porti via e il sito resta tuo. Non tengo in ostaggio niente di nessuno.</p>
@@ -242,32 +402,58 @@
   </div>
 </section>
 
-<section>
+<section class="scura">
   <div class="w">
-    <h2>Chi sono</h2>
-    <p>Mi chiamo Mattia Bellotti, sono di Isernia. Costruisco siti per attività locali: mi occupo io di tutto, dalla pagina alla scheda Google, e rispondo io quando mi scrivi — non c'è un centralino e non c'è un account manager.</p>
-    <p>Lavoro anche a distanza, per attività di tutta Italia. Il sito lo faccio, lo pubblico e lo aggiorno da qui: per il lavoro non cambia niente, e se preferisci vederci di persona te lo dico subito se è possibile o no.</p>
-    <!-- SPAZIO PER TE: se vuoi aggiungere due righe sul tuo percorso, mettile qui.
-         Solo cose vere: chi compra da un fornitore piccolo controlla. -->
+    <span class="eyebrow">I limiti, detti prima</span>
+    <h2>Cosa non faccio</h2>
+    <p style="margin-top:16px;font-size:1.12rem;max-width:58ch">Lo scrivo qui, grande, invece di lasciartelo scoprire dopo. Preferisco perdere un cliente adesso che deluderlo fra due mesi.</p>
+    <div class="griglia">
+      <div class="card">
+        <h3>Non gestisco la tua scheda Google</h3>
+        <p>È importante e porta clienti, ma non me ne occupo io. Resta in mano tua, o di chi già te la segue.</p>
+      </div>
+      <div class="card">
+        <h3>Non faccio assistenza</h3>
+        <p>Non sono un centralino e non sono reperibile. Le richieste di modifica me le scrivi e le lavoro quando le lavoro, senza tempi garantiti.</p>
+      </div>
+      <div class="card">
+        <h3>Non gestisco i social</h3>
+        <p>Niente post, niente campagne, niente risposte ai messaggi al posto tuo. Faccio il sito, quello lo faccio bene.</p>
+      </div>
+    </div>
+    <div class="nota">
+      <p><strong>Se cerchi qualcuno che ti segua in tutto, non sono io</strong> — e ti conviene saperlo prima di spendere. Se invece ti serve solo una pagina fatta come si deve, che resti aggiornata e non ti dia pensieri, allora siamo a posto.</p>
+    </div>
   </div>
 </section>
 
 <section>
   <div class="w">
+    <span class="eyebrow">Chi trovi dall'altra parte</span>
+    <h2>Chi sono</h2>
+    <p class="lead" style="margin-top:16px">Mi chiamo Mattia Bellotti, sono di Isernia e di mestiere faccio il programmatore. I siti per le attività locali li costruisco perché è la stessa materia con cui lavoro tutti i giorni, solo applicata a un problema molto concreto: farti arrivare una telefonata in più.</p>
+    <p>Questo vuol dire due cose. La prima è che la pagina te la scrivo io riga per riga, non la assemblo con un template comprato: per questo pesa poco e si apre subito. La seconda è che faccio una cosa sola e la faccio bene — non ti vendo consulenza, gestione social o pacchetti che non saprei seguire.</p>
+    <p>Lavoro a distanza per attività di tutta Italia. Il sito lo costruisco, lo pubblico e lo tengo aggiornato da qui.</p>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="w">
+    <span class="eyebrow">Il primo passo</span>
     <h2>Parliamone</h2>
-    <p>Se mi scrivi il nome della tua attività, ti mando la pagina già fatta entro un paio di giorni. Poi decidi con calma.</p>
+    <p class="lead" style="margin-top:16px">Scrivimi il nome della tua attività e ti mando la pagina già fatta, così vedi il lavoro invece di leggere una proposta. Poi decidi con calma: finché non dici di sì non paghi niente.</p>
     <div class="contatti-box">
       <div>
-        <span class="occhiello" style="margin-bottom:6px">Telefono e WhatsApp</span>
-        <a class="diretto" href="tel:3663143578">366 314 3578</a>
+        <span class="eyebrow" style="margin-bottom:8px">WhatsApp</span>
+        <a class="diretto" href="https://wa.me/393663143578?text=Buongiorno%20Mattia,%20vorrei%20informazioni%20sul%20sito">366 314 3578</a>
       </div>
-      <div style="margin-top:18px">
-        <span class="occhiello" style="margin-bottom:6px">Email</span>
-        <a class="diretto" href="mailto:mattiabellotti.dev@gmail.com">mattiabellotti.dev@gmail.com</a>
+      <div style="margin-top:20px">
+        <span class="eyebrow" style="margin-bottom:8px">Email</span>
+        <a class="diretto" href="mailto:mattiabellotti.dev@gmail.com?subject=Informazioni%20sul%20sito">mattiabellotti.dev@gmail.com</a>
       </div>
       <div class="riga">
-        <a class="btn btn-2" href="https://wa.me/393663143578?text=Buongiorno%20Mattia,%20vorrei%20informazioni%20sul%20sito">Scrivimi su WhatsApp</a>
-        <a class="btn btn-1" href="tel:3663143578">Chiamami</a>
+        <a class="btn btn-wa" href="https://wa.me/393663143578?text=Buongiorno%20Mattia,%20vorrei%20informazioni%20sul%20sito">Scrivimi su WhatsApp</a>
+        <a class="btn btn-ambra" href="mailto:mattiabellotti.dev@gmail.com?subject=Informazioni%20sul%20sito">Scrivimi una email</a>
       </div>
     </div>
   </div>
@@ -275,17 +461,17 @@
 
 <footer>
   <div class="w">
-    <p><strong style="color:var(--ink2)">Mattia Bellotti</strong> — Siti web per attività locali · Isernia e tutta Italia</p>
-    <p style="margin-top:10px">
-      <a href="./privacy-disisradio.html">Privacy policy dell'app DisisRadio</a> ·
-      <a href="./iasmc/">IASMC</a>
+    <p><strong style="color:var(--ink-2)">Mattia Bellotti</strong> — Siti web per attività locali · Isernia e tutta Italia</p>
+    <p style="margin-top:8px">
+      <a href="https://wa.me/393663143578">WhatsApp</a> ·
+      <a href="mailto:mattiabellotti.dev@gmail.com">mattiabellotti.dev@gmail.com</a>
     </p>
   </div>
 </footer>
 
 <nav class="barra" aria-label="Contatti rapidi">
-  <a class="btn btn-2" href="https://wa.me/393663143578?text=Buongiorno%20Mattia,%20vorrei%20informazioni%20sul%20sito">WhatsApp</a>
-  <a class="btn btn-1" href="tel:3663143578">Chiama</a>
+  <a class="btn btn-wa" href="https://wa.me/393663143578?text=Buongiorno%20Mattia,%20vorrei%20informazioni%20sul%20sito">WhatsApp</a>
+  <a class="btn btn-ambra" href="mailto:mattiabellotti.dev@gmail.com?subject=Informazioni%20sul%20sito">Email</a>
 </nav>
 
 <script type="application/ld+json">
@@ -293,7 +479,7 @@
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
   "name": "Mattia Bellotti — Siti web per attività locali",
-  "description": "Realizzazione di siti web una pagina e gestione della scheda Google per officine, impiantisti e piccole attività.",
+  "description": "Realizzazione e aggiornamento di siti web una pagina per officine, impiantisti e piccole attività locali.",
   "areaServed": "IT",
   "address": { "@type": "PostalAddress", "addressLocality": "Isernia", "addressCountry": "IT" },
   "url": "https://mattoide.github.io/"
