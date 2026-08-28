@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<!--
+  ============================================================
+  DEMO PER: Autofficina Iannitto Motors — Campobasso (CB)
+  Preparato il 28/08/2026 · anteprima, non ancora ufficiale.
+
+  IMPOSTAZIONE: 4,9 su 28 recensioni è la valutazione più alta
+  di tutte le attività che ho guardato in Molise e in Veneto.
+  Il nome dice "Motors": impostazione tecnica, pulita, da scheda
+  tecnica. La pagina è costruita come una SCHEDA DATI — righe
+  etichetta/valore, numeri allineati, niente retorica — perché
+  chi sceglie un'officina con quel punteggio non ha bisogno di
+  essere convinto, ha bisogno di trovare i dati in due secondi.
+
+  DATI VERIFICATI sulla scheda Google:
+    V. Natale Molinari 109/b, 86100 Campobasso (CB)
+    388 770 6350 · 4,9 su 28 recensioni
+    Lun-Ven 8:30-13:30 e 15:00-18:30 · Sab 8:30-13:30 · Dom chiuso
+    Sito proprio: NON esiste (verificato sul web il 28/08/2026)
+    Ha una pagina Facebook: secondo canale se WhatsApp non risponde
+
+  DA FAR CONFERMARE AL TITOLARE:
+    1. I servizi: la scheda non li specifica, sono generici.
+       "Motors" spesso indica anche preparazione o vendita:
+       se è così va aggiunto, cambia parecchio il pubblico.
+    2. Che il numero sia anche WhatsApp (è un cellulare).
+    3. Il civico 109/b e la partita IVA.
+  ============================================================
+-->
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Anteprima non autorizzata dal titolare: NON deve finire su Google. Togliere solo dopo il sì. -->
+<meta name="robots" content="noindex, nofollow">
+<title>Iannitto Motors — Autofficina a Campobasso</title>
+<meta name="description" content="Autofficina Iannitto Motors, V. Natale Molinari 109/b a Campobasso. 4,9 su 28 recensioni Google. Chiama il 388 770 6350.">
+<meta name="theme-color" content="#0F1418">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<style>
+  :root{
+    --scuro:#0F1418; --scuro-2:#171E24; --chiaro:#F4F6F7; --bianco:#fff;
+    --ink:#0F1418; --ink-2:#4C5964; --riga:#DDE3E7;
+    --ciano:#1FA6C4; --ciano-2:#177E96; --wa:#128C4A;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--chiaro);color:var(--ink);
+    font:16.5px/1.6 "IBM Plex Sans",system-ui,sans-serif;
+    -webkit-font-smoothing:antialiased;padding-bottom:74px}
+  .w{max-width:760px;margin:0 auto;padding:0 22px}
+  h1,h2{margin:0;line-height:1.08;letter-spacing:-.02em}
+  h1{font-size:clamp(2rem,6vw,3rem);font-weight:600}
+  h2{font-size:1.35rem;font-weight:600}
+  .mono{font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums}
+  p{margin:0 0 13px}
+
+  .testa{background:var(--scuro);color:#E9EEF1;padding:40px 0 34px}
+  .testa .et{font-family:"IBM Plex Mono",monospace;font-size:11.5px;letter-spacing:.18em;
+    text-transform:uppercase;color:var(--ciano);margin-bottom:14px}
+  .testa h1{color:#fff}
+  .testa .riga{display:flex;gap:28px;align-items:flex-end;flex-wrap:wrap;margin-top:22px;
+    border-top:1px solid #263038;padding-top:20px}
+  .testa .voto{font-family:"IBM Plex Mono",monospace;font-size:3rem;font-weight:600;
+    color:var(--ciano);line-height:1}
+  .testa .voto small{display:block;font-size:11px;letter-spacing:.16em;text-transform:uppercase;
+    color:#7B8B96;font-weight:500;margin-bottom:4px;font-family:"IBM Plex Sans",sans-serif}
+  .testa .riga p{color:#9CACB8;margin:0;max-width:32ch;font-size:.95rem}
+
+  /* scheda dati: righe etichetta / valore */
+  .scheda{margin-top:0;background:var(--bianco);border-top:1px solid var(--riga)}
+  .rg{display:grid;grid-template-columns:150px 1fr;gap:18px;padding:17px 0;border-bottom:1px solid var(--riga)}
+  @media(max-width:560px){.rg{grid-template-columns:1fr;gap:3px}}
+  .rg dt{font-family:"IBM Plex Mono",monospace;font-size:11.5px;letter-spacing:.14em;
+    text-transform:uppercase;color:#77848E;padding-top:3px}
+  .rg dd{margin:0}
+  .rg dd b{font-weight:600}
+  .rg dd span{color:var(--ink-2);font-size:.95rem;display:block;margin-top:2px}
+  .rg a{color:var(--ciano-2);font-weight:600;text-decoration:none}
+  .val-num{font-family:"IBM Plex Mono",monospace;font-size:1.3rem;font-weight:600;color:var(--ink)}
+
+  .orari-in{display:grid;grid-template-columns:1fr auto;gap:6px 16px;font-size:.95rem}
+  .orari-in span:nth-child(even){font-family:"IBM Plex Mono",monospace;font-weight:600;text-align:right}
+
+  .azioni{display:flex;gap:11px;flex-wrap:wrap;padding:30px 0}
+  .btn{display:inline-flex;align-items:center;justify-content:center;padding:16px 28px;
+    text-decoration:none;font-weight:600;border-radius:4px;min-height:54px;font-size:1rem}
+  .b1{background:var(--ciano);color:#06222A}
+  .b1:hover{background:var(--ciano-2);color:#fff}
+  .b2{background:var(--wa);color:#fff}
+  .b2:hover{filter:brightness(.93)}
+
+  .mappa{border:0;width:100%;height:240px;filter:grayscale(.35);display:block;margin-top:8px}
+
+  footer{background:var(--scuro);color:#7B8B96;padding:26px 0;font-size:.88rem}
+  footer a{color:var(--ciano)}
+
+  .barra{position:fixed;left:0;right:0;bottom:0;display:none;z-index:50;gap:8px;padding:9px 12px;
+    background:var(--bianco);border-top:1px solid var(--riga)}
+  .barra .btn{flex:1;padding:13px 6px;min-height:48px}
+  @media(max-width:760px){.barra{display:flex}}
+  a:focus-visible{outline:3px solid var(--ciano);outline-offset:3px}
+</style>
+</head>
+<body>
+
+<header class="testa">
+  <div class="w">
+    <div class="et">Autofficina · Campobasso</div>
+    <h1>Iannitto Motors</h1>
+    <div class="riga">
+      <div class="voto"><small>Google</small>4,9</div>
+      <p>Su <b style="color:#fff">28 recensioni</b>. È la valutazione più alta tra le officine di Campobasso che si trovano su Google.</p>
+    </div>
+  </div>
+</header>
+
+<div class="w">
+  <dl class="scheda">
+    <div class="rg">
+      <dt>Telefono</dt>
+      <dd><a class="val-num" href="tel:3887706350">388 770 6350</a>
+        <span>Anche WhatsApp: scrivici quando non puoi chiamare.</span></dd>
+    </div>
+    <div class="rg">
+      <dt>Dove siamo</dt>
+      <dd><b>V. Natale Molinari, 109/b</b>
+        <span>86100 Campobasso (CB)</span></dd>
+    </div>
+    <div class="rg">
+      <dt>Orari</dt>
+      <dd>
+        <div class="orari-in">
+          <span>Lunedì – Venerdì</span><span>8:30–13:30 · 15:00–18:30</span>
+          <span>Sabato</span><span>8:30–13:30</span>
+          <span>Domenica</span><span>Chiuso</span>
+        </div>
+      </dd>
+    </div>
+    <div class="rg">
+      <dt>Cosa facciamo</dt>
+      <!-- GENERICI DI PROPOSITO: la scheda Google non specifica i servizi.
+           "Motors" può indicare anche preparazione o vendita: da chiedere. -->
+      <dd><b>Riparazioni meccaniche</b><span>Dai piccoli guasti agli interventi più impegnativi.</span>
+        <b style="display:block;margin-top:12px">Tagliandi e manutenzione</b><span>Controlli periodici, fatti quando servono.</span>
+        <b style="display:block;margin-top:12px">Diagnosi del guasto</b><span>Prima capiamo il problema, poi il preventivo.</span></dd>
+    </div>
+    <div class="rg">
+      <dt>Mappa</dt>
+      <dd><iframe class="mappa" loading="lazy" title="Dove siamo: V. Natale Molinari 109/b, Campobasso"
+        src="https://maps.google.com/maps?q=Via%20Natale%20Molinari%20109,%2086100%20Campobasso&output=embed"></iframe></dd>
+    </div>
+  </dl>
+
+  <div class="azioni">
+    <a class="btn b1" href="tel:3887706350">Chiama 388 770 6350</a>
+    <a class="btn b2" href="https://wa.me/393887706350?text=Buongiorno,%20vorrei%20un%20preventivo%20per">Scrivici su WhatsApp</a>
+  </div>
+</div>
+
+<footer>
+  <div class="w">
+    <b style="color:#fff">Autofficina Iannitto Motors</b> — V. Natale Molinari 109/b, 86100 Campobasso (CB) ·
+    <a href="tel:3887706350">388 770 6350</a>
+    <!-- aggiungere la partita IVA quando il titolare la comunica -->
+  </div>
+</footer>
+
+<nav class="barra" aria-label="Contatti rapidi">
+  <a class="btn b1" href="tel:3887706350">Chiama</a>
+  <a class="btn b2" href="https://wa.me/393887706350?text=Buongiorno,%20vorrei%20un%20preventivo%20per">WhatsApp</a>
+</nav>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org","@type":"AutoRepair",
+  "name":"Autofficina Iannitto Motors","telephone":"+393887706350",
+  "address":{"@type":"PostalAddress","streetAddress":"Via Natale Molinari, 109/b","postalCode":"86100",
+    "addressLocality":"Campobasso","addressRegion":"CB","addressCountry":"IT"},
+  "openingHoursSpecification":[
+    {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"08:30","closes":"13:30"},
+    {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"15:00","closes":"18:30"},
+    {"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"08:30","closes":"13:30"}],
+  "areaServed":"Campobasso e provincia"
+}
+</script>
+
+</body>
+</html>

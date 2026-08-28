@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<!--
+  ============================================================
+  DEMO PER: Autofficina Scarselli Gianluca — Isernia (IS)
+  Preparato il 28/08/2026 · anteprima, non ancora ufficiale.
+
+  IMPOSTAZIONE: 36 recensioni con media 4,8 in una città di
+  21.000 abitanti significa che in paese lo conoscono già tutti.
+  Il sito non deve convincere: deve mostrare la reputazione che
+  esiste già e rendere facile chiamare.
+  Per questo la reputazione sta IN CIMA, prima ancora dei
+  servizi, ed è l'unica delle sei pagine con l'intestazione
+  CHIARA invece che scura: aria, calma, niente da urlare.
+
+  DATI VERIFICATI sulla scheda Google:
+    Via S. Ippolito 4, 86170 Isernia (IS)
+    380 314 9531 · 4,8 su 36 recensioni
+    Lun-Ven 8:30-13:00 e 15:30-19:00 · Sab 8:30-13:00 · Dom chiuso
+    Sito proprio: NON esiste (verificato sul web il 28/08/2026)
+    Ha una pagina Facebook: secondo canale se WhatsApp non risponde
+
+  DA FAR CONFERMARE AL TITOLARE:
+    1. I servizi: la scheda non li specifica, sono generici.
+       Se fa gommista, revisioni o auto sostitutiva, aggiungerli.
+    2. Che il numero sia anche WhatsApp (è un cellulare).
+    3. La partita IVA per il fondo pagina.
+  ============================================================
+-->
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Anteprima non autorizzata dal titolare: NON deve finire su Google. Togliere solo dopo il sì. -->
+<meta name="robots" content="noindex, nofollow">
+<title>Autofficina Scarselli — Officina meccanica a Isernia</title>
+<meta name="description" content="Autofficina Scarselli Gianluca, Via S. Ippolito 4 a Isernia. 4,8 su 36 recensioni Google. Chiama il 380 314 9531.">
+<meta name="theme-color" content="#F7F4EC">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&display=swap">
+<style>
+  :root{
+    --crema:#F7F4EC; --crema-2:#EFEADC; --bianco:#fff;
+    --verde:#1B5E44; --verde-2:#134534; --ocra:#C4841C;
+    --ink:#1A1E1B; --ink-2:#4E5750; --riga:#DED8C7; --wa:#128C4A;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--crema);color:var(--ink);
+    font:17px/1.68 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+    -webkit-font-smoothing:antialiased;padding-bottom:74px}
+  .w{max-width:760px;margin:0 auto;padding:0 22px}
+  h1,h2,h3,.d{font-family:"Bricolage Grotesque",system-ui,sans-serif;margin:0;line-height:1.04;letter-spacing:-.025em}
+  h1{font-size:clamp(2.2rem,6.6vw,3.4rem);font-weight:800}
+  h2{font-size:clamp(1.35rem,3.6vw,1.8rem);font-weight:700}
+  h3{font-size:1.08rem;font-weight:700}
+  p{margin:0 0 14px}
+
+  /* intestazione CHIARA: l'unica delle sei */
+  .apertura{padding:44px 0 10px;text-align:center}
+  .apertura .luogo{font-size:12px;letter-spacing:.22em;text-transform:uppercase;
+    color:var(--ocra);font-weight:700;margin-bottom:14px}
+  .apertura h1{color:var(--verde)}
+  .apertura .sub{color:var(--ink-2);max-width:38ch;margin:14px auto 0}
+
+  /* la reputazione, in alto e grande */
+  .reputazione{margin:30px auto 0;background:var(--bianco);border:1px solid var(--riga);
+    border-radius:8px;padding:26px;display:flex;gap:24px;align-items:center;justify-content:center;
+    flex-wrap:wrap;text-align:left}
+  .reputazione .voto{font-family:"Bricolage Grotesque",sans-serif;font-size:3.6rem;font-weight:800;
+    color:var(--verde);line-height:1}
+  .reputazione .st{color:var(--ocra);font-size:1.2rem;letter-spacing:3px}
+  .reputazione p{margin:4px 0 0;color:var(--ink-2);max-width:26ch;font-size:.97rem}
+
+  .azioni{display:flex;gap:11px;margin-top:22px;flex-wrap:wrap;justify-content:center}
+  .btn{display:inline-flex;align-items:center;justify-content:center;padding:16px 28px;
+    text-decoration:none;font-weight:700;border-radius:6px;min-height:54px;font-size:1.02rem}
+  .b1{background:var(--verde);color:#fff}
+  .b1:hover{background:var(--verde-2)}
+  .b2{background:var(--wa);color:#fff}
+  .b2:hover{filter:brightness(.93)}
+
+  section{padding:44px 0}
+  .servizi{background:var(--crema-2);border-top:1px solid var(--riga);border-bottom:1px solid var(--riga)}
+  .sv{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:16px;margin-top:20px}
+  .sv div{background:var(--bianco);border:1px solid var(--riga);border-radius:6px;padding:18px 20px}
+  .sv h3{color:var(--verde);margin-bottom:5px}
+  .sv p{margin:0;font-size:.94rem;color:var(--ink-2)}
+
+  .dove{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:28px;margin-top:20px;align-items:start}
+  .ind{font-size:1.1rem;font-weight:700;margin-bottom:14px}
+  .num{color:var(--verde);font-weight:800;font-size:1.35rem;text-decoration:none;
+    font-family:"Bricolage Grotesque",sans-serif}
+  .orari{width:100%;border-collapse:collapse;margin-top:16px}
+  .orari td{padding:10px 0;border-bottom:1px solid var(--riga);font-size:.96rem}
+  .orari td:last-child{text-align:right;font-weight:700;font-variant-numeric:tabular-nums}
+  .mappa{border:0;width:100%;height:250px;border-radius:6px;filter:grayscale(.3)}
+
+  footer{background:var(--verde);color:#BFD9CC;padding:28px 0;font-size:.9rem;text-align:center}
+  footer a{color:#fff}
+
+  .barra{position:fixed;left:0;right:0;bottom:0;display:none;z-index:50;gap:8px;padding:9px 12px;
+    background:var(--bianco);border-top:1px solid var(--riga)}
+  .barra .btn{flex:1;padding:13px 6px;min-height:48px;font-size:1rem}
+  @media(max-width:760px){.barra{display:flex}}
+  a:focus-visible{outline:3px solid var(--ocra);outline-offset:3px}
+</style>
+</head>
+<body>
+
+<header class="apertura">
+  <div class="w">
+    <div class="luogo">Officina meccanica · Isernia</div>
+    <h1>Autofficina Scarselli</h1>
+    <p class="sub">In Via Sant'Ippolito, a Isernia. La tua auto in mano a chi la guarda con calma.</p>
+
+    <div class="reputazione">
+      <div>
+        <div class="voto">4,8</div>
+        <div class="st" aria-hidden="true">★★★★★</div>
+      </div>
+      <p><strong style="color:var(--ink)">36 recensioni su Google.</strong> A Isernia ci conoscono già: il sito serve solo a farci trovare anche da chi non ci ha ancora chiesto in giro.</p>
+    </div>
+
+    <div class="azioni">
+      <a class="btn b1" href="tel:3803149531">Chiama 380 314 9531</a>
+      <a class="btn b2" href="https://wa.me/393803149531?text=Buongiorno,%20vorrei%20un%20preventivo%20per">WhatsApp</a>
+    </div>
+  </div>
+</header>
+
+<section class="servizi">
+  <div class="w">
+    <h2>Di cosa ci occupiamo</h2>
+    <!-- GENERICI DI PROPOSITO: la scheda Google non specifica i servizi.
+         Da precisare col titolare: gommista, revisioni, auto sostitutiva. -->
+    <div class="sv">
+      <div><h3>Riparazioni</h3><p>Dai piccoli guasti agli interventi più impegnativi sulla meccanica.</p></div>
+      <div><h3>Tagliandi</h3><p>La manutenzione periodica, fatta quando serve e non quando conviene a noi.</p></div>
+      <div><h3>Diagnosi</h3><p>Prima capiamo da dove arriva il problema, poi si parla di preventivo.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="w">
+    <h2>Dove siamo</h2>
+    <div class="dove">
+      <div>
+        <p class="ind">Via Sant'Ippolito, 4<br>86170 Isernia (IS)</p>
+        <a class="num" href="tel:3803149531">380 314 9531</a>
+        <table class="orari">
+          <tr><td>Lunedì – Venerdì</td><td>8:30–13:00 · 15:30–19:00</td></tr>
+          <tr><td>Sabato</td><td>8:30–13:00</td></tr>
+          <tr><td>Domenica</td><td>Chiuso</td></tr>
+        </table>
+      </div>
+      <div>
+        <iframe class="mappa" loading="lazy" title="Dove siamo: Via Sant'Ippolito 4, Isernia"
+          src="https://maps.google.com/maps?q=Via%20Sant%27Ippolito%204,%2086170%20Isernia&output=embed"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="w">
+    <strong style="color:#fff">Autofficina Scarselli Gianluca</strong><br>
+    Via Sant'Ippolito 4, 86170 Isernia (IS) · <a href="tel:3803149531">380 314 9531</a>
+    <!-- aggiungere la partita IVA quando il titolare la comunica -->
+  </div>
+</footer>
+
+<nav class="barra" aria-label="Contatti rapidi">
+  <a class="btn b1" href="tel:3803149531">Chiama</a>
+  <a class="btn b2" href="https://wa.me/393803149531?text=Buongiorno,%20vorrei%20un%20preventivo%20per">WhatsApp</a>
+</nav>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org","@type":"AutoRepair",
+  "name":"Autofficina Scarselli Gianluca","telephone":"+393803149531",
+  "address":{"@type":"PostalAddress","streetAddress":"Via Sant'Ippolito, 4","postalCode":"86170",
+    "addressLocality":"Isernia","addressRegion":"IS","addressCountry":"IT"},
+  "openingHoursSpecification":[
+    {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"08:30","closes":"13:00"},
+    {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"15:30","closes":"19:00"},
+    {"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"08:30","closes":"13:00"}],
+  "areaServed":"Isernia e provincia"
+}
+</script>
+
+</body>
+</html>
