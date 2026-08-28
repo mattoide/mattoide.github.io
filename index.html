@@ -1,212 +1,304 @@
 <!DOCTYPE html>
-<html>
+<!--
+  ============================================================
+  SITO DI PRESENTAZIONE — Mattia Bellotti
+  Creato il 28/08/2026. Sostituisce la vecchia index.html.
+
+  Contatti gia' inseriti il 28/08/2026:
+     366 314 3578  ·  wa.me/393663143578  ·  mattiabellotti.dev@gmail.com
+  Se cambi numero o email, sono ripetuti in piu' punti: cercali tutti.
+
+  DA CONTROLLARE:
+
+  1. La vecchia index.html era la PRIVACY POLICY dell'app
+     DisisRadio (Associazione Tracce ETS). L'ho salvata in due
+     copie: index-backup-2026-08-28.html e privacy-disisradio.html.
+     Quella pagina resta raggiungibile su
+     https://mattoide.github.io/privacy-disisradio.html
+     e c'e' un link nel footer qui sotto.
+     SE quell'URL e' registrato sul Play Store o dentro l'app
+     come indirizzo della privacy policy, VA AGGIORNATO al nuovo
+     indirizzo, altrimenti l'app risulta senza policy valida.
+
+  2. Non ho messo nessun cliente e nessuna testimonianza:
+     non ne hai ancora, e inventarli e' il modo piu' veloce per
+     perdere credibilita' proprio con chi sa controllare.
+     Quando chiudi il primo, chiedigli una riga e mettila qui.
+  ============================================================
+-->
+<html lang="it">
 <head>
-    <meta charset='utf-8'>
-    <meta name='viewport' content='width=device-width'>
-    <title>Privacy Policy</title>
-    <style> body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; padding:1em; } </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mattia Bellotti — Siti web per officine e artigiani</title>
+<meta name="description" content="Faccio siti web semplici e veloci per officine, impiantisti e piccole attività. Una pagina sola, fatta per farti arrivare più telefonate. Isernia e tutta Italia.">
+<meta name="theme-color" content="#16191B">
+<meta property="og:title" content="Mattia Bellotti — Siti web per officine e artigiani">
+<meta property="og:description" content="Il sito te lo faccio prima, poi decidi. Una pagina, veloce, con il pulsante per chiamarti sempre in vista.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@500;600;700&display=swap">
+<style>
+  :root{
+    --ground:#F2F1EE; --surface:#FFFFFF; --surface2:#E9E7E2;
+    --ink:#16191B; --ink2:#4A5157; --muted:#7C858B; --rule:#DEDCD7;
+    --accent:#C24A18; --accent-scuro:#9E3A11; --wa:#128C4A;
+    --ombra:0 1px 2px rgba(22,25,27,.05), 0 12px 30px -22px rgba(22,25,27,.5);
+  }
+  @media (prefers-color-scheme:dark){
+    :root:not([data-theme="light"]){
+      --ground:#14171A; --surface:#1C2126; --surface2:#232A30;
+      --ink:#ECEFF1; --ink2:#C3CBD1; --muted:#8B959C; --rule:#2C3339;
+      --accent:#F0763A; --accent-scuro:#D45E24; --wa:#2FA76A;
+      --ombra:0 1px 2px rgba(0,0,0,.4), 0 12px 30px -22px rgba(0,0,0,.9);
+    }
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;background:var(--ground);color:var(--ink);
+    font:17px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+    -webkit-font-smoothing:antialiased;padding-bottom:78px;
+  }
+  .w{max-width:880px;margin:0 auto;padding:0 22px}
+  h1,h2,h3{font-family:"Familjen Grotesk",system-ui,sans-serif;line-height:1.1;margin:0;letter-spacing:-.02em;text-wrap:balance}
+  h1{font-size:clamp(2.2rem,7vw,3.6rem);font-weight:700}
+  h2{font-size:clamp(1.5rem,4vw,2.1rem);font-weight:700;margin-bottom:14px}
+  h3{font-size:1.08rem;font-weight:600}
+  p{margin:0 0 15px;max-width:62ch}
+  a{color:var(--accent)}
+
+  /* HERO */
+  .hero{padding:64px 0 52px;border-bottom:1px solid var(--rule)}
+  .occhiello{
+    font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);
+    font-weight:600;margin-bottom:20px;display:block;
+  }
+  .hero h1 span{color:var(--accent)}
+  .hero .sotto{font-size:1.2rem;color:var(--ink2);max-width:52ch;margin:20px 0 30px}
+  .azioni{display:flex;gap:12px;flex-wrap:wrap}
+  .btn{
+    display:inline-flex;align-items:center;justify-content:center;
+    padding:15px 28px;font-size:1.03rem;font-weight:600;text-decoration:none;
+    border-radius:3px;min-height:54px;font-family:"Familjen Grotesk",sans-serif;
+  }
+  .btn-1{background:var(--accent);color:#fff}
+  .btn-1:hover{background:var(--accent-scuro)}
+  .btn-2{background:var(--wa);color:#fff}
+  .btn-2:hover{filter:brightness(.92)}
+  .btn-3{background:transparent;color:var(--ink);border:1px solid var(--rule)}
+  .btn-3:hover{border-color:var(--ink)}
+  .btn:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+
+  section{padding:52px 0;border-bottom:1px solid var(--rule)}
+  .griglia{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:22px}
+  .card{background:var(--surface);border:1px solid var(--rule);border-radius:3px;padding:20px 22px}
+  .card p{margin:7px 0 0;font-size:.95rem;color:var(--ink2)}
+
+  ol.passi{counter-reset:p;list-style:none;padding:0;margin:24px 0 0;display:flex;flex-direction:column;gap:18px}
+  ol.passi li{counter-increment:p;padding-left:58px;position:relative}
+  ol.passi li::before{
+    content:counter(p);position:absolute;left:0;top:-2px;width:38px;height:38px;
+    background:var(--ink);color:var(--ground);display:grid;place-items:center;
+    font-family:"Familjen Grotesk",sans-serif;font-weight:700;font-size:1.05rem;border-radius:50%;
+  }
+  ol.passi h3{margin-bottom:4px}
+  ol.passi p{margin:0;color:var(--ink2);font-size:.97rem}
+
+  .prezzi{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin-top:22px}
+  .prezzo{background:var(--surface);border:1px solid var(--rule);border-radius:3px;padding:24px}
+  .prezzo.evid{border-color:var(--accent);border-width:2px}
+  .prezzo .et{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:600}
+  .prezzo .cifra{font-family:"Familjen Grotesk",sans-serif;font-size:2.4rem;font-weight:700;line-height:1.1;margin:8px 0 2px}
+  .prezzo .cifra small{font-size:1rem;font-weight:500;color:var(--muted)}
+  .prezzo ul{margin:14px 0 0;padding-left:20px;font-size:.94rem;color:var(--ink2)}
+  .prezzo li{margin-bottom:5px}
+
+  .nota{background:var(--surface2);border-left:3px solid var(--accent);padding:16px 20px;margin-top:24px;border-radius:0 3px 3px 0}
+  .nota p{margin:0;font-size:.97rem;color:var(--ink2)}
+
+  .contatti-box{background:var(--surface);border:1px solid var(--rule);border-radius:3px;padding:26px;margin-top:22px}
+  .contatti-box .riga{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-top:16px}
+  .contatti-box a.diretto{font-family:"Familjen Grotesk",sans-serif;font-size:1.3rem;font-weight:700;text-decoration:none}
+
+  .barra{
+    position:fixed;left:0;right:0;bottom:0;display:none;z-index:60;gap:9px;
+    background:var(--surface);border-top:1px solid var(--rule);padding:9px 12px;
+  }
+  .barra .btn{flex:1;padding:13px 8px;font-size:1rem;min-height:48px}
+  @media(max-width:720px){.barra{display:flex}}
+
+  footer{padding:34px 0 40px;font-size:.88rem;color:var(--muted)}
+  footer a{color:var(--ink2)}
+  footer p{max-width:70ch}
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
 </head>
 <body>
-<strong>Privacy Policy</strong> <p>
-    ASSOCIAZIONE TRACCE ETS built the DisisRadio app as
-    a Free app. This SERVICE is provided by
-    ASSOCIAZIONE TRACCE ETS at no cost and is intended for use as
-    is.
-</p> <p>
-    This page is used to inform visitors regarding our
-    policies with the collection, use, and disclosure of Personal
-    Information if anyone decided to use our Service.
-</p> <p>
-    If you choose to use our Service, then you agree to
-    the collection and use of information in relation to this
-    policy. The Personal Information that we collect is
-    used for providing and improving the Service. We will not use or share your information with
-    anyone except as described in this Privacy Policy.
-</p> <p>
-    The terms used in this Privacy Policy have the same meanings
-    as in our Terms and Conditions, which are accessible at
-    DisisRadio unless otherwise defined in this Privacy Policy.
-</p> <p><strong>Information Collection and Use</strong></p> <p>
-    For a better experience, while using our Service, we
-    may require you to provide us with certain personally
-    identifiable information, including but not limited to None. The information that
-    we request will be retained by us and used as described in this privacy policy.
-</p> <div bis_skin_checked="1"><p>
-    The app does use third-party services that may collect
-    information used to identify you.
-</p> <p>
-    Link to the privacy policy of third-party service providers used
-    by the app
-</p> <ul><li><a href="https://www.google.com/policies/privacy/" target="_blank" rel="noopener noreferrer" bis_skin_checked="1">Google Play Services</a></li><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----></ul></div> <p><strong>Log Data</strong></p> <p>
-    We want to inform you that whenever you
-    use our Service, in a case of an error in the app
-    we collect data and information (through third-party
-    products) on your phone called Log Data. This Log Data may
-    include information such as your device Internet Protocol
-    (“IP”) address, device name, operating system version, the
-    configuration of the app when utilizing our Service,
-    the time and date of your use of the Service, and other
-    statistics.
-</p> <p><strong>Cookies</strong></p> <p>
-    Cookies are files with a small amount of data that are
-    commonly used as anonymous unique identifiers. These are sent
-    to your browser from the websites that you visit and are
-    stored on your device's internal memory.
-</p> <p>
-    This Service does not use these “cookies” explicitly. However,
-    the app may use third-party code and libraries that use
-    “cookies” to collect information and improve their services.
-    You have the option to either accept or refuse these cookies
-    and know when a cookie is being sent to your device. If you
-    choose to refuse our cookies, you may not be able to use some
-    portions of this Service.
-</p> <p><strong>Service Providers</strong></p> <p>
-    We may employ third-party companies and
-    individuals due to the following reasons:
-</p> <ul><li>To facilitate our Service;</li> <li>To provide the Service on our behalf;</li> <li>To perform Service-related services; or</li> <li>To assist us in analyzing how our Service is used.</li></ul> <p>
-    We want to inform users of this Service
-    that these third parties have access to their Personal
-    Information. The reason is to perform the tasks assigned to
-    them on our behalf. However, they are obligated not to
-    disclose or use the information for any other purpose.
-</p> <p><strong>Security</strong></p> <p>
-    We value your trust in providing us your
-    Personal Information, thus we are striving to use commercially
-    acceptable means of protecting it. But remember that no method
-    of transmission over the internet, or method of electronic
-    storage is 100% secure and reliable, and we cannot
-    guarantee its absolute security.
-</p> <p><strong>Links to Other Sites</strong></p> <p>
-    This Service may contain links to other sites. If you click on
-    a third-party link, you will be directed to that site. Note
-    that these external sites are not operated by us.
-    Therefore, we strongly advise you to review the
-    Privacy Policy of these websites. We have
-    no control over and assume no responsibility for the content,
-    privacy policies, or practices of any third-party sites or
-    services.
-</p> <p><strong>Children’s Privacy</strong></p> <div bis_skin_checked="1"><p>
-    These Services do not address anyone under the age of 13.
-    We do not knowingly collect personally
-    identifiable information from children under 13 years of age. In the case
-    we discover that a child under 13 has provided
-    us with personal information, we immediately
-    delete this from our servers. If you are a parent or guardian
-    and you are aware that your child has provided us with
-    personal information, please contact us so that
-    we will be able to do the necessary actions.
-</p></div> <!----> <p><strong>Changes to This Privacy Policy</strong></p> <p>
-    We may update our Privacy Policy from
-    time to time. Thus, you are advised to review this page
-    periodically for any changes. We will
-    notify you of any changes by posting the new Privacy Policy on
-    this page.
-</p> <p>This policy is effective as of 2023-06-13</p> <p><strong>Contact Us</strong></p> <p>
-    If you have any questions or suggestions about our
-    Privacy Policy, do not hesitate to contact us at disisradioapp@gmail.com.
-</p> <p>This privacy policy page was created at <a href="https://privacypolicytemplate.net" target="_blank" rel="noopener noreferrer" bis_skin_checked="1">privacypolicytemplate.net </a>and modified/generated by <a href="https://app-privacy-policy-generator.nisrulz.com/" target="_blank" rel="noopener noreferrer" bis_skin_checked="1">App Privacy Policy Generator</a></p>
-<strong>Terms &amp; Conditions</strong> <p>
-    By downloading or using the app, these terms will
-    automatically apply to you – you should make sure therefore
-    that you read them carefully before using the app. You’re not
-    allowed to copy or modify the app, any part of the app, or
-    our trademarks in any way. You’re not allowed to attempt to
-    extract the source code of the app, and you also shouldn’t try
-    to translate the app into other languages or make derivative
-    versions. The app itself, and all the trademarks, copyright,
-    database rights, and other intellectual property rights related
-    to it, still belong to ASSOCIAZIONE TRACCE ETS.
-</p> <p>
-    ASSOCIAZIONE TRACCE ETS is committed to ensuring that the app is
-    as useful and efficient as possible. For that reason, we
-    reserve the right to make changes to the app or to charge for
-    its services, at any time and for any reason. We will never
-    charge you for the app or its services without making it very
-    clear to you exactly what you’re paying for.
-</p> <p>
-    The DisisRadio app stores and processes personal data that
-    you have provided to us, to provide our
-    Service. It’s your responsibility to keep your phone and
-    access to the app secure. We therefore recommend that you do
-    not jailbreak or root your phone, which is the process of
-    removing software restrictions and limitations imposed by the
-    official operating system of your device. It could make your
-    phone vulnerable to malware/viruses/malicious programs,
-    compromise your phone’s security features and it could mean
-    that the DisisRadio app won’t work properly or at all.
-</p> <div bis_skin_checked="1"><p>
-    The app does use third-party services that declare their
-    Terms and Conditions.
-</p> <p>
-    Link to Terms and Conditions of third-party service
-    providers used by the app
-</p> <ul><li><a href="https://policies.google.com/terms" target="_blank" rel="noopener noreferrer" bis_skin_checked="1">Google Play Services</a></li><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----></ul></div> <p>
-    You should be aware that there are certain things that
-    ASSOCIAZIONE TRACCE ETS will not take responsibility for. Certain
-    functions of the app will require the app to have an active
-    internet connection. The connection can be Wi-Fi or provided
-    by your mobile network provider, but ASSOCIAZIONE TRACCE ETS
-    cannot take responsibility for the app not working at full
-    functionality if you don’t have access to Wi-Fi, and you don’t
-    have any of your data allowance left.
-</p> <p></p> <p>
-    If you’re using the app outside of an area with Wi-Fi, you
-    should remember that the terms of the agreement with your
-    mobile network provider will still apply. As a result, you may
-    be charged by your mobile provider for the cost of data for
-    the duration of the connection while accessing the app, or
-    other third-party charges. In using the app, you’re accepting
-    responsibility for any such charges, including roaming data
-    charges if you use the app outside of your home territory
-    (i.e. region or country) without turning off data roaming. If
-    you are not the bill payer for the device on which you’re
-    using the app, please be aware that we assume that you have
-    received permission from the bill payer for using the app.
-</p> <p>
-    Along the same lines, ASSOCIAZIONE TRACCE ETS cannot always take
-    responsibility for the way you use the app i.e. You need to
-    make sure that your device stays charged – if it runs out of
-    battery and you can’t turn it on to avail the Service,
-    ASSOCIAZIONE TRACCE ETS cannot accept responsibility.
-</p> <p>
-    With respect to ASSOCIAZIONE TRACCE ETS’s responsibility for your
-    use of the app, when you’re using the app, it’s important to
-    bear in mind that although we endeavor to ensure that it is
-    updated and correct at all times, we do rely on third parties
-    to provide information to us so that we can make it available
-    to you. ASSOCIAZIONE TRACCE ETS accepts no liability for any
-    loss, direct or indirect, you experience as a result of
-    relying wholly on this functionality of the app.
-</p> <p>
-    At some point, we may wish to update the app. The app is
-    currently available on Android &amp; iOS – the requirements for the
-    both systems(and for any additional systems we
-    decide to extend the availability of the app to) may change,
-    and you’ll need to download the updates if you want to keep
-    using the app. ASSOCIAZIONE TRACCE ETS does not promise that it
-    will always update the app so that it is relevant to you
-    and/or works with the Android &amp; iOS version that you have
-    installed on your device. However, you promise to always
-    accept updates to the application when offered to you, We may
-    also wish to stop providing the app, and may terminate use of
-    it at any time without giving notice of termination to you.
-    Unless we tell you otherwise, upon any termination, (a) the
-    rights and licenses granted to you in these terms will end;
-    (b) you must stop using the app, and (if needed) delete it
-    from your device.
-</p> <p><strong>Changes to This Terms and Conditions</strong></p> <p>
-    We may update our Terms and Conditions
-    from time to time. Thus, you are advised to review this page
-    periodically for any changes. We will
-    notify you of any changes by posting the new Terms and
-    Conditions on this page.
-</p> <p>
-    These terms and conditions are effective as of 2023-06-13
-</p> <p><strong>Contact Us</strong></p> <p>
-    If you have any questions or suggestions about our
-    Terms and Conditions, do not hesitate to contact us
-    at disisradioapp@gmail.com.
-</p> <p>This Terms and Conditions page was generated by <a href="https://app-privacy-policy-generator.nisrulz.com/" target="_blank" rel="noopener noreferrer" bis_skin_checked="1">App Privacy Policy Generator</a></p>
+
+<header class="hero">
+  <div class="w">
+    <span class="occhiello">Mattia Bellotti · Isernia · lavoro in tutta Italia</span>
+    <h1>Faccio siti per chi<br>lavora <span>con le mani</span>.</h1>
+    <p class="sotto">Officine, impiantisti, elettricisti, piccole attività. Una pagina sola, che si apre veloce dal telefono e ha il pulsante per chiamarti sempre in vista. Niente di più, perché non serve niente di più.</p>
+    <div class="azioni">
+      <a class="btn btn-2" href="https://wa.me/393663143578?text=Buongiorno%20Mattia,%20vorrei%20informazioni%20sul%20sito">Scrivimi su WhatsApp</a>
+      <a class="btn btn-3" href="tel:3663143578">Chiama 366 314 3578</a>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="w">
+    <h2>Il problema non è che non hai un sito</h2>
+    <p>È che quando qualcuno ha bisogno di te tira fuori il telefono, scrive <em>“officina” più il nome del paese</em>, e trova una mappa con tre nomi sopra il tuo. Se clicca il tuo, non c'è niente da leggere: nessun orario, nessun servizio, nessun modo di scriverti in due secondi. Allora chiama quello sotto.</p>
+    <p>Un sito da una pagina non ti rende famoso. Fa una cosa sola: trasforma quella ricerca in una telefonata.</p>
+  </div>
+</section>
+
+<section>
+  <div class="w">
+    <h2>Cosa ti do</h2>
+    <div class="griglia">
+      <div class="card">
+        <h3>Il sito, una pagina</h3>
+        <p>Chi sei, cosa fai, dove sei, gli orari. Si apre in meno di un secondo anche con la linea del paese.</p>
+      </div>
+      <div class="card">
+        <h3>Pulsanti Chiama e WhatsApp</h3>
+        <p>Sempre visibili in fondo allo schermo mentre si scorre. Un tocco e ti stanno già scrivendo.</p>
+      </div>
+      <div class="card">
+        <h3>Il tuo dominio</h3>
+        <p>Un indirizzo tuo, non un indirizzo gratuito con un nome strano attaccato. Intestato a te.</p>
+      </div>
+      <div class="card">
+        <h3>La scheda Google sistemata</h3>
+        <p>Orari giusti, servizi, categorie, foto. È la parte che porta più telefonate del sito stesso, e quasi nessuno la cura.</p>
+      </div>
+      <div class="card">
+        <h3>Le modifiche, fatte da me</h3>
+        <p>Cambi orario, chiudi per ferie, aggiungi un servizio: me lo scrivi e lo faccio io in giornata. Non devi imparare niente.</p>
+      </div>
+      <div class="card">
+        <h3>Il numero di chi ti ha chiamato</h3>
+        <p>Ogni mese ti mando quante persone hanno premuto “Chiama” dalla tua scheda. Così vedi se sto lavorando bene.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="w">
+    <h2>Come funziona</h2>
+    <ol class="passi">
+      <li>
+        <h3>Il sito te lo faccio prima</h3>
+        <p>Non ti mando un preventivo da leggere. Prendo i dati che sono già pubblici sulla tua scheda Google, costruisco la pagina e te la mando fatta. Se non ti piace, non hai perso niente: il tempo l'ho messo io.</p>
+      </li>
+      <li>
+        <h3>Lo guardi e mi dici cosa è sbagliato</h3>
+        <p>Quasi sempre c'è qualcosa da correggere: un orario, un servizio che non fai più, uno che fai e non avevo capito. Sistemiamo insieme in cinque minuti al telefono.</p>
+      </li>
+      <li>
+        <h3>Decidi tu, e solo allora si paga</h3>
+        <p>Se ti va bene registro il dominio a tuo nome e lo mettiamo online. La prima fattura arriva a sito pubblicato, mai prima.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section>
+  <div class="w">
+    <h2>Quanto costa</h2>
+    <p>Due formule, scegli quella che ti torna meglio. Nessuna delle due ha costi nascosti.</p>
+    <div class="prezzi">
+      <div class="prezzo">
+        <span class="et">Formula A</span>
+        <div class="cifra">390 € <small>una volta sola</small></div>
+        <div class="cifra" style="font-size:1.5rem">+ 59 € <small>al mese</small></div>
+        <ul>
+          <li>Sito, dominio e messa online</li>
+          <li>Scheda Google sistemata</li>
+          <li>Due modifiche al mese incluse</li>
+          <li>Report mensile delle chiamate</li>
+        </ul>
+      </div>
+      <div class="prezzo evid">
+        <span class="et">Formula B — nessun anticipo</span>
+        <div class="cifra">0 € <small>oggi</small></div>
+        <div class="cifra" style="font-size:1.5rem">99 € <small>al mese, 12 mesi</small></div>
+        <ul>
+          <li>Tutto quello della formula A</li>
+          <li>Non anticipi niente</li>
+          <li>Paghi solo da quando il sito è online</li>
+        </ul>
+      </div>
+    </div>
+    <div class="nota">
+      <p><strong>Il dominio è tuo, sempre.</strong> Lo registro a tuo nome, non al mio. Se un domani non vuoi più lavorare con me, te lo porti via e il sito resta tuo. Non tengo in ostaggio niente di nessuno.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="w">
+    <h2>Chi sono</h2>
+    <p>Mi chiamo Mattia Bellotti, sono di Isernia. Costruisco siti per attività locali: mi occupo io di tutto, dalla pagina alla scheda Google, e rispondo io quando mi scrivi — non c'è un centralino e non c'è un account manager.</p>
+    <p>Lavoro anche a distanza, per attività di tutta Italia. Il sito lo faccio, lo pubblico e lo aggiorno da qui: per il lavoro non cambia niente, e se preferisci vederci di persona te lo dico subito se è possibile o no.</p>
+    <!-- SPAZIO PER TE: se vuoi aggiungere due righe sul tuo percorso, mettile qui.
+         Solo cose vere: chi compra da un fornitore piccolo controlla. -->
+  </div>
+</section>
+
+<section>
+  <div class="w">
+    <h2>Parliamone</h2>
+    <p>Se mi scrivi il nome della tua attività, ti mando la pagina già fatta entro un paio di giorni. Poi decidi con calma.</p>
+    <div class="contatti-box">
+      <div>
+        <span class="occhiello" style="margin-bottom:6px">Telefono e WhatsApp</span>
+        <a class="diretto" href="tel:3663143578">366 314 3578</a>
+      </div>
+      <div style="margin-top:18px">
+        <span class="occhiello" style="margin-bottom:6px">Email</span>
+        <a class="diretto" href="mailto:mattiabellotti.dev@gmail.com">mattiabellotti.dev@gmail.com</a>
+      </div>
+      <div class="riga">
+        <a class="btn btn-2" href="https://wa.me/393663143578?text=Buongiorno%20Mattia,%20vorrei%20informazioni%20sul%20sito">Scrivimi su WhatsApp</a>
+        <a class="btn btn-1" href="tel:3663143578">Chiamami</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="w">
+    <p><strong style="color:var(--ink2)">Mattia Bellotti</strong> — Siti web per attività locali · Isernia e tutta Italia</p>
+    <p style="margin-top:10px">
+      <a href="./privacy-disisradio.html">Privacy policy dell'app DisisRadio</a> ·
+      <a href="./iasmc/">IASMC</a>
+    </p>
+  </div>
+</footer>
+
+<nav class="barra" aria-label="Contatti rapidi">
+  <a class="btn btn-2" href="https://wa.me/393663143578?text=Buongiorno%20Mattia,%20vorrei%20informazioni%20sul%20sito">WhatsApp</a>
+  <a class="btn btn-1" href="tel:3663143578">Chiama</a>
+</nav>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Mattia Bellotti — Siti web per attività locali",
+  "description": "Realizzazione di siti web una pagina e gestione della scheda Google per officine, impiantisti e piccole attività.",
+  "areaServed": "IT",
+  "address": { "@type": "PostalAddress", "addressLocality": "Isernia", "addressCountry": "IT" },
+  "url": "https://mattoide.github.io/"
+}
+</script>
 
 </body>
 </html>
